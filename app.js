@@ -178,6 +178,22 @@ function getReminderPermission() {
   return Notification.permission;
 }
 
+function isStandaloneApp() {
+  const mediaStandalone =
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(display-mode: standalone)').matches;
+  const iosStandalone = window.navigator.standalone === true;
+  return mediaStandalone || iosStandalone;
+}
+
+function isMobileBrowserContext() {
+  const ua = navigator.userAgent || '';
+  const mobileDevice =
+    /Android|iPhone|iPad|iPod|Mobile/i.test(ua) ||
+    (navigator.maxTouchPoints > 1 && /Macintosh/.test(ua));
+  return mobileDevice && !isStandaloneApp();
+}
+
 function formatReminderTime(value) {
   return typeof value === 'string' && /^\d{2}:\d{2}$/.test(value) ? value : '20:00';
 }
@@ -237,6 +253,11 @@ function scheduleReminderCheck() {
 }
 
 async function enableReminder() {
+  if (isMobileBrowserContext()) {
+    renderHome();
+    return;
+  }
+
   if (getReminderPermission() === 'unsupported') {
     renderHome();
     return;
@@ -267,16 +288,29 @@ function renderHome() {
   const activeFilters = getActiveCategoryFilters();
   const permission = getReminderPermission();
   const reminderEnabled = state.reminderEnabled && permission === 'granted';
+  const mobileBrowserContext = isMobileBrowserContext();
   document.getElementById('daily-count').textContent = `${Math.min(done, goal)} / ${goal}`;
   document.getElementById('streak-num').textContent = state.streak || 0;
 
   const reminderToggle = document.getElementById('reminder-toggle');
   const reminderTime = document.getElementById('reminder-time');
-  reminderToggle.textContent = reminderEnabled ? 'напомнить · вкл' : 'напомнить';
+  const reminderNote = document.getElementById('reminder-note');
+  reminderToggle.textContent = mobileBrowserContext
+    ? 'напомнить · app'
+    : reminderEnabled
+      ? 'напомнить · вкл'
+      : 'напомнить';
   reminderToggle.classList.toggle('active', reminderEnabled);
   reminderTime.value = formatReminderTime(state.reminderTime);
-  reminderTime.disabled = !reminderEnabled;
-  reminderToggle.disabled = permission === 'unsupported';
+  reminderTime.disabled = !reminderEnabled || mobileBrowserContext;
+  reminderToggle.disabled = permission === 'unsupported' || mobileBrowserContext;
+  if (reminderNote) {
+    reminderNote.textContent = mobileBrowserContext
+      ? 'на телефоне работает после установки на экран'
+      : permission === 'unsupported'
+        ? 'уведомления здесь не поддерживаются'
+        : '';
+  }
 
   const visibleIds = getVisibleIds();
   const baseEnabled = getBaseEnabledIds();

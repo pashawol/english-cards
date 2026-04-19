@@ -262,6 +262,14 @@ header span {
   flex-wrap: nowrap;
 }
 
+.reminder-note {
+  min-height: 16px;
+  margin-top: 6px;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
 .reminder-toggle {
   flex: 0 1 calc(100% - 158px);
   min-width: 0;
