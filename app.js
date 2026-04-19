@@ -291,28 +291,21 @@ function renderHome() {
   const activeFilters = getActiveCategoryFilters();
   const permission = getReminderPermission();
   const reminderEnabled = state.reminderEnabled && permission === 'granted';
-  const mobileBrowserContext = isMobileBrowserContext();
   document.getElementById('daily-count').textContent = `${Math.min(done, goal)} / ${goal}`;
   document.getElementById('streak-num').textContent = state.streak || 0;
 
-  const reminderToggle = document.getElementById('reminder-toggle');
-  const reminderTime = document.getElementById('reminder-time');
-  const reminderNote = document.getElementById('reminder-note');
-  reminderToggle.textContent = mobileBrowserContext
-    ? 'напомнить · app'
-    : reminderEnabled
-      ? 'напомнить · вкл'
-      : 'напомнить';
-  reminderToggle.classList.toggle('active', reminderEnabled);
-  reminderTime.value = formatReminderTime(state.reminderTime);
-  reminderTime.disabled = !reminderEnabled || mobileBrowserContext;
-  reminderToggle.disabled = permission === 'unsupported' || mobileBrowserContext;
-  if (reminderNote) {
-    reminderNote.textContent = mobileBrowserContext
-      ? 'на телефоне работает после установки на экран'
-      : permission === 'unsupported'
-        ? 'уведомления здесь не поддерживаются'
-        : '';
+  const reminderPanel = document.querySelector('.daily-reminder');
+  const standalone = isStandaloneApp();
+  if (reminderPanel) reminderPanel.style.display = standalone ? '' : 'none';
+
+  if (standalone) {
+    const reminderToggle = document.getElementById('reminder-toggle');
+    const reminderTime = document.getElementById('reminder-time');
+    reminderToggle.textContent = reminderEnabled ? 'напомнить · вкл' : 'напомнить';
+    reminderToggle.classList.toggle('active', reminderEnabled);
+    reminderTime.value = formatReminderTime(state.reminderTime);
+    reminderTime.disabled = !reminderEnabled;
+    reminderToggle.disabled = permission === 'unsupported';
   }
 
   const visibleIds = getVisibleIds();
