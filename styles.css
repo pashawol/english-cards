@@ -68,6 +68,9 @@ body {
     background 0.3s,
     color 0.3s;
 }
+#app {
+  width: 100%;
+}
 
 /* HEADER */
 header {
