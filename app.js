@@ -364,6 +364,8 @@ document.getElementById('daily-goal').addEventListener('input', function () {
 // INIT
 async function init() {
   initTheme();
+  const vEl = document.getElementById('app-version');
+  if (vEl && window.APP_VERSION) vEl.textContent = window.APP_VERSION;
   await loadSets();
   loadState();
   if (state.enabledSets === null) {
