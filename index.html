@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>English Cards</title>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#f5f2eb" id="theme-color-meta" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="English Cards" />
+    <link rel="apple-touch-icon" href="icons/icon-192.png" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap"
       rel="stylesheet"
@@ -35,21 +46,9 @@
 
       <div class="settings-row">
         <label>карточек в день</label>
-        <div style="display: flex; align-items: center; gap: 10px">
-          <input
-            type="range"
-            id="daily-goal"
-            min="10"
-            max="50"
-            step="5"
-            value="10"
-            style="width: 110px"
-          />
-          <span
-            id="goal-val"
-            style="font-size: 13px; font-weight: 500; min-width: 28px; text-align: right"
-            >10</span
-          >
+        <div class="goal-slider-row">
+          <input type="range" id="daily-goal" min="10" max="50" step="5" value="10" />
+          <span id="goal-val">10</span>
         </div>
       </div>
 
@@ -61,6 +60,7 @@
         </div>
         <div class="mix-arrow">→</div>
       </div>
+      <div class="mix-warning" id="mix-warning">выберите хотя бы одну тему</div>
 
       <div class="section-header">
         <div class="section-title">все темы</div>

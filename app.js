@@ -82,8 +82,15 @@ function renderHome() {
   document.getElementById('goal-val').textContent = state.dailyGoal;
 
   const allIds = SETS.map((s) => s.id);
-  const allEnabled = allIds.every((id) => state.enabledSets.includes(id));
+  const noneEnabled = !state.enabledSets || state.enabledSets.length === 0;
+  const allEnabled = !noneEnabled && allIds.every((id) => state.enabledSets.includes(id));
   document.getElementById('select-all-btn').textContent = allEnabled ? 'снять все' : 'выбрать все';
+
+  const warning = document.getElementById('mix-warning');
+  const mixBtn = document.getElementById('mix-btn');
+  warning.style.display = noneEnabled ? 'block' : 'none';
+  mixBtn.style.opacity = noneEnabled ? '0.4' : '1';
+  mixBtn.style.pointerEvents = noneEnabled ? 'none' : 'auto';
 
   const list = document.getElementById('set-list');
   list.innerHTML = '';
@@ -121,7 +128,7 @@ function renderHome() {
 function toggleAllSets() {
   const allIds = SETS.map((s) => s.id);
   const allEnabled = allIds.every((id) => state.enabledSets.includes(id));
-  state.enabledSets = allEnabled ? [allIds[0]] : [...allIds];
+  state.enabledSets = allEnabled ? [] : [...allIds];
   saveState();
   renderHome();
 }
@@ -132,7 +139,6 @@ function toggleSetInMix(setId) {
   if (idx === -1) {
     state.enabledSets.push(setId);
   } else {
-    if (state.enabledSets.length === 1) return; // минимум одна тема
     state.enabledSets.splice(idx, 1);
   }
   saveState();
@@ -327,16 +333,24 @@ function showScreen(id) {
 }
 
 // THEME
+const THEME_COLORS = { light: '#f5f2eb', dark: '#2a2824' };
+
+function applyThemeColor(theme) {
+  document.getElementById('theme-color-meta').setAttribute('content', THEME_COLORS[theme]);
+}
+
 function toggleTheme() {
   const html = document.documentElement;
   const newTheme = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
   html.setAttribute('data-theme', newTheme);
   localStorage.setItem('ec_theme', newTheme);
+  applyThemeColor(newTheme);
 }
 
 function initTheme() {
-  const saved = localStorage.getItem('ec_theme');
-  document.documentElement.setAttribute('data-theme', saved || 'light');
+  const saved = localStorage.getItem('ec_theme') || 'light';
+  document.documentElement.setAttribute('data-theme', saved);
+  applyThemeColor(saved);
 }
 
 // DAILY GOAL

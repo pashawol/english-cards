@@ -12,6 +12,10 @@
   --accent-light: #fdf3e3;
   --card-back-bg: #1a1a18;
   --card-back-text: #fffdf8;
+  --mix-bg: #1a1a18;
+  --mix-title: #fffdf8;
+  --mix-sub: rgba(255, 253, 248, 0.45);
+  --mix-arrow: rgba(255, 253, 248, 0.35);
 }
 
 [data-theme='dark'] {
@@ -28,6 +32,10 @@
   --accent-light: #4a3f2a;
   --card-back-bg: #1a1814;
   --card-back-text: #d4d0c8;
+  --mix-bg: #4a4540;
+  --mix-title: #e8e5dc;
+  --mix-sub: #9b9691;
+  --mix-arrow: #6a6560;
 }
 
 * {
@@ -565,19 +573,36 @@ header span {
 
 /* SETTINGS ROW */
 .settings-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background: var(--card-bg);
   border: 1px solid var(--border);
   border-radius: 10px;
   padding: 12px 16px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .settings-row label {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--muted);
+}
+
+.goal-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.goal-slider-row input[type='range'] {
+  flex: 1;
+}
+
+.goal-slider-row span {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 28px;
+  text-align: right;
 }
 
 .settings-row select {
@@ -592,9 +617,19 @@ header span {
   text-align: right;
 }
 
+.mix-warning {
+  display: none;
+  font-size: 12px;
+  color: var(--red);
+  text-align: center;
+  margin-top: -12px;
+  margin-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
 /* MIX BUTTON */
 .mix-btn {
-  background: var(--text);
+  background: var(--mix-bg);
   border-radius: 12px;
   padding: 14px 18px;
   margin-bottom: 20px;
@@ -614,11 +649,11 @@ header span {
 .mix-title {
   font-size: 14px;
   font-weight: 500;
-  color: var(--bg);
+  color: var(--mix-title);
 }
 .mix-sub {
   font-size: 13px;
-  color: rgba(245, 242, 235, 0.5);
+  color: var(--mix-sub);
   margin-top: 2px;
 }
 .mix-info {
@@ -626,10 +661,81 @@ header span {
 }
 .mix-arrow {
   font-size: 16px;
-  color: rgba(245, 242, 235, 0.4);
+  color: var(--mix-arrow);
 }
 
 /* BOTTOM PADDING */
 .bottom-pad {
   height: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  header,
+  .screen {
+    max-width: 100%;
+  }
+
+  header {
+    padding: 20px 16px 12px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .screen {
+    padding: 0 16px;
+  }
+
+  .daily-banner-count {
+    font-size: 28px;
+  }
+
+  .card-area {
+    height: 280px;
+  }
+
+  .card-word {
+    font-size: 36px;
+  }
+
+  .card-label {
+    font-size: 13px;
+  }
+
+  .card-hint {
+    font-size: 15px;
+  }
+
+  .tap-hint {
+    font-size: 15px;
+  }
+
+  .answer-btn {
+    font-size: 16px;
+    padding: 16px;
+  }
+
+  .set-name {
+    font-size: 15px;
+  }
+
+  .set-meta {
+    font-size: 14px;
+  }
+
+  .done-title {
+    font-size: 38px;
+  }
+
+  .done-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .done-btns {
+    width: 100%;
+  }
 }
