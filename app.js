@@ -9,24 +9,33 @@ let cardAdvanceTimerId = null;
 let cardEnterTimerId = null;
 let mascotAmbientTimerId = null;
 let lastMascotLine = '';
+const I18N = window.I18N || {};
 
-const MASCOT_LINES = {
-  opening: ['погнали. две-три подряд и уже полетело', 'старт хороший. держи темп', 'поехали спокойно, но без пауз'],
-  early: ['нормально идём', 'ритм уже появился', 'ещё немного и разгонишься'],
-  mid: ['середину тоже забираем', 'темп держится, не роняй', 'ещё несколько и будет красиво'],
-  late: ['финиш уже близко', 'почти дожали', 'добираем последние'],
-  final: ['последняя карточка. добей её', 'одна осталась. не отпускай', 'финальный тап и готово'],
-  flipped: ['оцени честно и поехали дальше', 'если сомневаешься, жми честно', 'решай быстро, ритм важнее'],
-  ambient: ['ещё одну', 'хорошо идёшь', 'давай без пауз', 'держим ход', 'ты уже в ритме'],
-  ambientReveal: ['смотри спокойно', 'сейчас быстро решим', 'не тяни, отвечай по ощущению'],
-  correct: ['вау, отлично. ещё одну', 'чисто. забираем дальше', 'да, вот так', 'сильный ответ'],
-  wrong: ['нормально. следующую доберём', 'ошибка не страшна. дальше', 'быстро поправимся на следующих'],
-  streak: ['пошла серия', 'вот это уже красиво', 'ритм прям хороший'],
-  wonder: ['сейчас будет лёгкая', 'интересная попалась', 'эта с подвохом, но ты вывезешь'],
-  back: ['можно перепроверить', 'вернёмся и добьём', 'смотри ещё раз спокойно'],
-  donePerfect: ['идеально. можно праздновать', 'разнёс. чистое прохождение', 'вот это я понимаю финиш'],
-  doneGood: ['хорошая сессия. можно ещё круг', 'крепко прошёл. добьём остаток потом', 'нормально забрал, идём дальше'],
-};
+function getLang() {
+  return state.uiLang === 'ru' ? 'ru' : 'en';
+}
+
+function t(key, vars = {}) {
+  const lang = getLang();
+  const value = I18N[lang]?.[key] ?? I18N.en[key] ?? key;
+  if (typeof value !== 'string') return value;
+  return value.replace(/\{(\w+)\}/g, (_, token) => `${vars[token] ?? ''}`);
+}
+
+function getMascotLines(key) {
+  const lang = getLang();
+  return I18N[lang]?.mascot?.[key] ?? I18N.en.mascot[key] ?? [];
+}
+
+function translateCategory(label) {
+  const lang = getLang();
+  return I18N[lang]?.categories?.[label] ?? I18N.en?.categories?.[label] ?? label;
+}
+
+function translateSetName(name) {
+  const lang = getLang();
+  return I18N[lang]?.setNames?.[name] ?? I18N.en?.setNames?.[name] ?? name;
+}
 
 function pickMascotLine(lines, fallback = '') {
   const pool = Array.isArray(lines) ? lines.filter(Boolean) : [];
@@ -36,6 +45,10 @@ function pickMascotLine(lines, fallback = '') {
   const next = source[Math.floor(Math.random() * source.length)];
   lastMascotLine = next;
   return next;
+}
+
+function formatCardCount(count) {
+  return t('cards', { count });
 }
 
 function normalizeCategories(set) {
@@ -106,13 +119,14 @@ async function loadSets() {
     manifest.map((file, i) =>
       fetch(`data/${file}`)
         .then((r) => r.json())
-        .then((set) => ({ ...set, id: i + 1 }))
-    )
+        .then((set) => ({ ...set, id: i + 1 })),
+    ),
   );
 }
 
 // STATE
 let state = {
+  uiLang: 'en',
   dailyGoal: 10,
   todayCount: 0,
   streak: 0,
@@ -215,12 +229,9 @@ function getPendingCardsCount() {
 function showReminderNotification() {
   if (getReminderPermission() !== 'granted' || !hasPendingDailyCards()) return;
   const remaining = getPendingCardsCount();
-  const body =
-    remaining === 1
-      ? 'На сегодня осталась 1 карточка.'
-      : `На сегодня осталось ${remaining} карточек.`;
+  const body = remaining === 1 ? t('reminderBodyOne') : t('reminderBodyMany', { count: remaining });
 
-  new Notification('English Cards', {
+  new Notification(t('reminderNotificationTitle'), {
     body,
     tag: `daily-reminder-${new Date().toDateString()}`,
   });
@@ -293,6 +304,8 @@ function renderHome() {
   const reminderEnabled = state.reminderEnabled && permission === 'granted';
   document.getElementById('daily-count').textContent = `${Math.min(done, goal)} / ${goal}`;
   document.getElementById('streak-num').textContent = state.streak || 0;
+  const streakLabel = document.querySelector('.streak-dot .lbl');
+  if (streakLabel) streakLabel.textContent = t('days');
 
   const reminderPanel = document.querySelector('.daily-reminder');
   const standalone = isStandaloneApp();
@@ -301,7 +314,7 @@ function renderHome() {
   if (standalone) {
     const reminderToggle = document.getElementById('reminder-toggle');
     const reminderTime = document.getElementById('reminder-time');
-    reminderToggle.textContent = reminderEnabled ? 'напомнить · вкл' : 'напомнить';
+    reminderToggle.textContent = reminderEnabled ? t('remindOn') : t('remind');
     reminderToggle.classList.toggle('active', reminderEnabled);
     reminderTime.value = formatReminderTime(state.reminderTime);
     reminderTime.disabled = !reminderEnabled;
@@ -315,8 +328,8 @@ function renderHome() {
 
   const mixSubText =
     activeFilters.length === 0 && enabledForMix === SETS.length && SETS.length > 0
-      ? `${state.dailyGoal} карточек из всех тем`
-      : `${state.dailyGoal} карточек из ${enabledForMix} тем`;
+      ? t('mixFromAll', { count: state.dailyGoal })
+      : t('mixFromTopics', { count: state.dailyGoal, topics: enabledForMix });
   document.getElementById('mix-sub').textContent = mixSubText;
   document.getElementById('mix-fab-count').textContent = state.dailyGoal;
   document.getElementById('daily-goal').value = state.dailyGoal;
@@ -324,16 +337,18 @@ function renderHome() {
   const noneEnabled = mixSourceIds.length === 0;
   const allVisibleEnabled =
     visibleIds.length > 0 && visibleIds.every((id) => baseEnabled.includes(id));
-  document.getElementById('select-all-btn').textContent = allVisibleEnabled ? 'снять все' : 'выбрать все';
+  document.getElementById('select-all-btn').textContent = allVisibleEnabled
+    ? t('deselectAll')
+    : t('selectAll');
 
   const sectionTitleEl = document.querySelector('#home-screen .section-title');
   if (sectionTitleEl) {
     if (activeFilters.length === 0) {
-      sectionTitleEl.textContent = 'все темы';
+      sectionTitleEl.textContent = t('allTopics');
     } else if (activeFilters.length <= 2) {
-      sectionTitleEl.textContent = `темы: ${activeFilters.join(', ')}`;
+      sectionTitleEl.textContent = `${t('topicsPrefix')}: ${activeFilters.map(translateCategory).join(', ')}`;
     } else {
-      sectionTitleEl.textContent = `темы: ${activeFilters.length} категорий`;
+      sectionTitleEl.textContent = `${t('topicsPrefix')}: ${t('categoriesCount', { count: activeFilters.length })}`;
     }
   }
 
@@ -345,7 +360,7 @@ function renderHome() {
       const btn = document.createElement('button');
       btn.type = 'button';
       btn.className = 'category-chip' + (isActive ? ' active' : '');
-      btn.textContent = text;
+      btn.textContent = translateCategory(text);
       btn.onclick = () => {
         const next = new Set(getActiveCategoryFilters());
         if (next.has(text)) {
@@ -364,6 +379,7 @@ function renderHome() {
 
   const warning = document.getElementById('mix-warning');
   const mixBtn = document.getElementById('mix-btn');
+  warning.textContent = t('chooseAtLeastOne');
   warning.style.display = noneEnabled ? 'block' : 'none';
   mixBtn.style.opacity = noneEnabled ? '0.4' : '1';
   mixBtn.style.pointerEvents = noneEnabled ? 'none' : 'auto';
@@ -385,8 +401,8 @@ function renderHome() {
       <div class="set-check ${isEnabled ? 'checked' : ''}" data-id="${set.id}">✓</div>
       <div class="set-num">${String(set.id).padStart(2, '0')}</div>
       <div class="set-info">
-        <div class="set-name">${set.name}</div>
-        <div class="set-meta">${total} карточек${isDone ? ' · пройден' : ''}</div>
+        <div class="set-name">${translateSetName(set.name)}</div>
+        <div class="set-meta">${formatCardCount(total)}${isDone ? ` · ${t('doneShort')}` : ''}</div>
       </div>
       <div class="set-progress">
         <div class="set-bar-wrap"><div class="set-bar" style="width:${pct}%"></div></div>
@@ -450,7 +466,7 @@ function startMix() {
 
   session = createSession('mix', queue);
 
-  document.getElementById('study-title').textContent = 'случайный микс';
+  document.getElementById('study-title').textContent = t('randomMix');
   showScreen('study-screen');
   showCard();
 }
@@ -479,7 +495,7 @@ function startSet(setId) {
 
   session = createSession(setId, queue);
 
-  document.getElementById('study-title').textContent = set.name;
+  document.getElementById('study-title').textContent = translateSetName(set.name);
   showScreen('study-screen');
   showCard();
 }
@@ -493,26 +509,26 @@ function updateMascotMessage() {
   const remaining = Math.max(total - session.index, 0);
 
   if (session.index >= total) {
-    el.textContent = pickMascotLine(MASCOT_LINES.doneGood, 'готово. можно ещё круг');
+    el.textContent = pickMascotLine(getMascotLines('doneGood'), t('doneTitle'));
     return;
   }
 
   if (!session.flipped) {
     if (remaining === 1) {
-      el.textContent = pickMascotLine(MASCOT_LINES.final, 'последняя карточка. добей её');
+      el.textContent = pickMascotLine(getMascotLines('final'), '');
     } else if (current <= 2) {
-      el.textContent = pickMascotLine(MASCOT_LINES.opening, 'хороший темп. жми на карточку');
+      el.textContent = pickMascotLine(getMascotLines('opening'), '');
     } else if (remaining <= 3) {
-      el.textContent = pickMascotLine(MASCOT_LINES.late, `осталось ${remaining}. держим ритм`);
+      el.textContent = pickMascotLine(getMascotLines('late'), '');
     } else if (current > Math.ceil(total / 2)) {
-      el.textContent = pickMascotLine(MASCOT_LINES.mid, `осталось ${remaining}. держим ритм`);
+      el.textContent = pickMascotLine(getMascotLines('mid'), '');
     } else {
-      el.textContent = pickMascotLine(MASCOT_LINES.early, `осталось ${remaining}. держим ритм`);
+      el.textContent = pickMascotLine(getMascotLines('early'), '');
     }
     return;
   }
 
-  el.textContent = pickMascotLine(MASCOT_LINES.flipped, 'оцени честно и поехали дальше');
+  el.textContent = pickMascotLine(getMascotLines('flipped'), '');
 }
 
 function setMascotMood(mood) {
@@ -547,14 +563,14 @@ function scheduleMascotAmbient() {
     const remaining = session.queue.length - session.index;
     const mood = session.flipped ? 'blink' : Math.random() > 0.55 ? 'wonder' : 'idle';
     const lines = session.flipped
-      ? MASCOT_LINES.ambientReveal
+      ? getMascotLines('ambientReveal')
       : remaining <= 2
-        ? MASCOT_LINES.final
+        ? getMascotLines('final')
         : Math.random() > 0.7
-          ? MASCOT_LINES.wonder
-          : MASCOT_LINES.ambient;
+          ? getMascotLines('wonder')
+          : getMascotLines('ambient');
 
-    setMascotText(pickMascotLine(lines, 'держим ход'));
+    setMascotText(pickMascotLine(lines, ''));
     triggerMascotReaction(mood);
     scheduleMascotAmbient();
   }, delay);
@@ -588,8 +604,8 @@ function triggerDoneCelebration(perfect) {
   }
   if (doneText) {
     doneText.textContent = pickMascotLine(
-      perfect ? MASCOT_LINES.donePerfect : MASCOT_LINES.doneGood,
-      perfect ? 'идеально. можно праздновать' : 'хорошая сессия. можно ещё круг'
+      perfect ? getMascotLines('donePerfect') : getMascotLines('doneGood'),
+      perfect ? t('excellentTitle') : t('doneTitle'),
     );
   }
   if (doneCelebration) {
@@ -616,7 +632,7 @@ function showCard() {
   document.getElementById('back-hint').textContent = '';
   document.getElementById('study-counter').textContent = `${idx + 1} / ${total}`;
   document.getElementById('progress-fill').style.width = `${(idx / total) * 100}%`;
-  document.getElementById('tap-hint').textContent = 'нажми чтобы перевернуть';
+  document.getElementById('tap-hint').textContent = t('tapToFlip');
   const prevBtn = document.getElementById('study-backtrack-btn');
   if (prevBtn) prevBtn.disabled = idx === 0;
 
@@ -688,7 +704,7 @@ function flipCard() {
     front.classList.add('hidden');
     back.classList.add('visible');
     session.flipped = true;
-    document.getElementById('tap-hint').textContent = 'знал это слово?';
+    document.getElementById('tap-hint').textContent = t('knewThisWord');
     document.getElementById('btn-wrong').style.opacity = '1';
     document.getElementById('btn-right').style.opacity = '1';
     updateMascotMessage();
@@ -698,7 +714,7 @@ function flipCard() {
     front.classList.remove('hidden');
     back.classList.remove('visible');
     session.flipped = false;
-    document.getElementById('tap-hint').textContent = 'нажми чтобы перевернуть';
+    document.getElementById('tap-hint').textContent = t('tapToFlip');
     document.getElementById('btn-wrong').style.opacity = '0.35';
     document.getElementById('btn-right').style.opacity = '0.35';
     updateMascotMessage();
@@ -716,13 +732,10 @@ function answer(correct) {
       session.answers.filter((answer) => typeof answer === 'boolean').length + 1;
     const lines = correct
       ? answeredCount > 1 && answeredCount % 3 === 0
-        ? MASCOT_LINES.streak
-        : MASCOT_LINES.correct
-      : MASCOT_LINES.wrong;
-    mascotText.textContent = pickMascotLine(
-      lines,
-      correct ? 'вау, отлично. ещё одну' : 'нормально. следующую доберём'
-    );
+        ? getMascotLines('streak')
+        : getMascotLines('correct')
+      : getMascotLines('wrong');
+    mascotText.textContent = pickMascotLine(lines, '');
   }
   triggerMascotReaction(correct ? 'cheer' : 'nudge');
   session.transitioning = true;
@@ -747,7 +760,7 @@ function answer(correct) {
 function goPrevCard() {
   if (session.transitioning || session.index <= 0) return;
   session.index--;
-  setMascotText(pickMascotLine(MASCOT_LINES.back, 'вернёмся и добьём'));
+  setMascotText(pickMascotLine(getMascotLines('back'), ''));
   triggerMascotReaction('wonder');
   showScreen('study-screen');
   showCard();
@@ -763,10 +776,14 @@ function showDone() {
   document.getElementById('done-total').textContent = total;
 
   const name =
-    session.setId === 'mix' ? 'случайный микс' : SETS.find((s) => s.id === session.setId).name;
+    session.setId === 'mix'
+      ? t('randomMix')
+      : translateSetName(SETS.find((s) => s.id === session.setId).name);
   const perfect = right === total;
-  document.getElementById('done-title').textContent = perfect ? 'Отлично!' : 'Готово!';
-  document.getElementById('done-sub').textContent = `${name} · ${right} из ${total} правильно`;
+  document.getElementById('done-title').textContent = perfect
+    ? t('excellentTitle')
+    : t('doneTitle');
+  document.getElementById('done-sub').textContent = t('doneSub', { name, right, total });
   document.getElementById('progress-fill').style.width = '100%';
   triggerDoneCelebration(perfect);
   renderHome();
@@ -798,6 +815,8 @@ function goHome() {
 function showScreen(id) {
   document.querySelectorAll('.screen').forEach((s) => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
+  const footer = document.querySelector('.app-footer');
+  if (footer) footer.classList.toggle('visible', id === 'home-screen');
   if (id === 'study-screen') {
     scheduleMascotAmbient();
   } else {
@@ -820,6 +839,45 @@ function toggleTheme() {
   applyThemeColor(newTheme);
 }
 
+function applyLanguage() {
+  document.documentElement.lang = getLang();
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-aria-label]').forEach((el) => {
+    el.setAttribute('aria-label', t(el.dataset.i18nAriaLabel));
+  });
+  const langToggle = document.getElementById('lang-toggle');
+  if (langToggle) langToggle.setAttribute('aria-label', `language: ${getLang()}`);
+}
+
+function toggleLanguage() {
+  state.uiLang = getLang() === 'en' ? 'ru' : 'en';
+  saveState();
+  lastMascotLine = '';
+  applyLanguage();
+  renderHome();
+
+  if (
+    document.getElementById('study-screen')?.classList.contains('active') &&
+    session.queue.length
+  ) {
+    const studyTitle = document.getElementById('study-title');
+    if (studyTitle && session.setId === 'mix') studyTitle.textContent = t('randomMix');
+    document.getElementById('tap-hint').textContent = session.flipped
+      ? t('knewThisWord')
+      : t('tapToFlip');
+    updateMascotMessage();
+  }
+
+  if (
+    document.getElementById('done-screen')?.classList.contains('active') &&
+    session.queue.length
+  ) {
+    showDone();
+  }
+}
+
 function initTheme() {
   const saved = localStorage.getItem('ec_theme') || 'light';
   document.documentElement.setAttribute('data-theme', saved);
@@ -838,10 +896,13 @@ function buildDOM() {
   document.getElementById('app').innerHTML = `
     <header>
       <div class="header-left">
-        <h1>English Cards</h1>
-        <span>для повторения</span>
+        <a href="https://github.com/pashawol" target="_blank" rel="noreferrer" class="header-logo-link">
+          <h1>English Cards</h1>
+        </a>
+        <span data-i18n="appSubtitle"></span>
       </div>
       <span id="app-version" class="app-version">${v}${IS_DEV ? ' dev' : ''}</span>
+      <button id="lang-toggle" onclick="toggleLanguage()">EN</button>
       <button id="theme-toggle" onclick="toggleTheme()">◐</button>
     </header>
 
@@ -849,12 +910,12 @@ function buildDOM() {
       <div class="daily-card">
         <div class="daily-banner">
           <div class="daily-banner-main">
-            <div class="daily-banner-label">сегодня</div>
+            <div class="daily-banner-label" data-i18n="today"></div>
             <div class="daily-banner-count" id="daily-count">0 / 10</div>
           </div>
           <div class="streak-dot">
             <span class="num" id="streak-num">0</span>
-            <span class="lbl">дней</span>
+            <span class="lbl" data-i18n="days"></span>
           </div>
         </div>
 
@@ -868,7 +929,7 @@ function buildDOM() {
           <div class="daily-reminder-row">
             <button type="button" class="reminder-toggle" id="reminder-toggle"></button>
             <label class="reminder-time-wrap" for="reminder-time">
-              <span class="reminder-time-label">время</span>
+              <span class="reminder-time-label" data-i18n="time"></span>
               <input type="time" id="reminder-time" class="reminder-time" />
             </label>
           </div>
@@ -876,7 +937,7 @@ function buildDOM() {
       </div>
 
       <div class="section-header">
-        <div class="section-title">все темы</div>
+        <div class="section-title" data-i18n="allTopics"></div>
         <button class="select-all-btn" id="select-all-btn" onclick="toggleAllSets()"></button>
       </div>
 
@@ -884,14 +945,14 @@ function buildDOM() {
       <div class="home-actions">
         <button class="mix-fab" id="mix-btn" type="button" onclick="startMix()">
           <span class="mix-fab-count" id="mix-fab-count">10</span>
-          <span class="mix-fab-label">mix</span>
+          <span class="mix-fab-label" data-i18n="mix"></span>
         </button>
         <div class="category-filter-shell">
-          <div id="category-filter" class="category-filter" aria-label="Категории"></div>
+          <div id="category-filter" class="category-filter" data-i18n-aria-label="allTopics"></div>
         </div>
         <div class="mix-meta">
-          <div class="mix-sub" id="mix-sub">карточки из всех тем вперемешку</div>
-          <div class="mix-warning" id="mix-warning">выберите хотя бы одну тему</div>
+          <div class="mix-sub" id="mix-sub"></div>
+          <div class="mix-warning" id="mix-warning" data-i18n="chooseAtLeastOne"></div>
         </div>
       </div>
     </div>
@@ -912,33 +973,33 @@ function buildDOM() {
           <div class="study-mascot-eyes"><span></span><span></span></div>
           <div class="study-mascot-mouth"></div>
         </div>
-        <div class="study-mascot-bubble" id="mascot-text">погнали дальше</div>
+        <div class="study-mascot-bubble" id="mascot-text"></div>
       </div>
 
       <div class="card-area" id="card-area" onclick="flipCard()">
         <div class="card-inner" id="card-inner">
           <div class="card-face front">
-            <div class="card-label">русский</div>
+            <div class="card-label" data-i18n="russian"></div>
             <div class="card-word" id="front-word"></div>
             <div class="card-hint" id="front-hint"></div>
           </div>
           <div class="card-face back">
-            <div class="card-label">английский</div>
+            <div class="card-label" data-i18n="english"></div>
             <div class="card-word" id="back-word"></div>
             <div class="card-hint" id="back-hint"></div>
           </div>
         </div>
       </div>
 
-      <div class="tap-hint" id="tap-hint">нажми чтобы перевернуть</div>
+      <div class="tap-hint" id="tap-hint"></div>
 
       <div class="study-actions">
         <div class="study-nav-row">
-          <button class="study-backtrack-btn" id="study-backtrack-btn" onclick="goPrevCard()">← назад</button>
+          <button class="study-backtrack-btn" id="study-backtrack-btn" onclick="goPrevCard()" data-i18n="back"></button>
         </div>
         <div class="answer-row">
-          <button class="answer-btn" id="btn-wrong" onclick="answer(false)">✗ не знал</button>
-          <button class="answer-btn" id="btn-right" onclick="answer(true)">✓ знал</button>
+          <button class="answer-btn" id="btn-wrong" onclick="answer(false)" data-i18n="didntKnow"></button>
+          <button class="answer-btn" id="btn-right" onclick="answer(true)" data-i18n="knew"></button>
         </div>
       </div>
     </div>
@@ -948,38 +1009,38 @@ function buildDOM() {
         <span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
       <div class="done-icon">✦</div>
-      <div class="done-title" id="done-title">Готово!</div>
+      <div class="done-title" id="done-title" data-i18n="doneTitle"></div>
       <div class="done-sub" id="done-sub"></div>
       <div class="study-mascot done-mascot" id="done-mascot" aria-hidden="true">
         <div class="study-mascot-figure">
           <div class="study-mascot-eyes"><span></span><span></span></div>
           <div class="study-mascot-mouth"></div>
         </div>
-        <div class="study-mascot-bubble" id="done-mascot-text">чистая работа</div>
+        <div class="study-mascot-bubble" id="done-mascot-text" data-i18n="doneCleanWork"></div>
       </div>
       <div class="done-stats">
         <div class="done-stat good">
           <div class="done-stat-num" id="done-right">0</div>
-          <div class="done-stat-label">знал</div>
+          <div class="done-stat-label" data-i18n="statKnew"></div>
         </div>
         <div class="done-stat bad">
           <div class="done-stat-num" id="done-wrong">0</div>
-          <div class="done-stat-label">не знал</div>
+          <div class="done-stat-label" data-i18n="statDidntKnow"></div>
         </div>
         <div class="done-stat">
           <div class="done-stat-num" id="done-total">0</div>
-          <div class="done-stat-label">всего</div>
+          <div class="done-stat-label" data-i18n="statTotal"></div>
         </div>
       </div>
       <div class="done-btns">
-        <button class="done-btn" onclick="restartWrong()">повторить ошибки</button>
-        <button class="done-btn" onclick="restartAll()">пройти ещё раз</button>
-        <button class="done-btn primary" onclick="goHome()">← к темам</button>
+        <button class="done-btn" onclick="restartWrong()" data-i18n="retryMistakes"></button>
+        <button class="done-btn" onclick="restartAll()" data-i18n="goAgain"></button>
+        <button class="done-btn primary" onclick="goHome()" data-i18n="backToTopics"></button>
       </div>
     </div>
 
-    <footer class="app-footer">
-      <a href="https://github.com/pashawol" target="_blank" rel="noreferrer">contacts</a>
+    <footer class="app-footer visible">
+      <a href="https://github.com/pashawol" target="_blank" rel="noreferrer" data-i18n="contacts"></a>
     </footer>
   `;
 
@@ -1005,6 +1066,8 @@ function buildDOM() {
     renderHome();
     scheduleReminderCheck();
   });
+
+  applyLanguage();
 }
 
 document.addEventListener('visibilitychange', function () {
@@ -1017,10 +1080,10 @@ window.addEventListener('focus', function () {
 
 // INIT
 async function init() {
-  buildDOM();
   initTheme();
   await loadSets();
   loadState();
+  buildDOM();
   let shouldSave = false;
   if (state.enabledSets === null) {
     state.enabledSets = SETS.map((s) => s.id);
@@ -1028,7 +1091,10 @@ async function init() {
   }
   const labels = getAllCategoryLabels();
   const nextFilters = getActiveCategoryFilters().filter((label) => labels.includes(label));
-  if (nextFilters.length !== getActiveCategoryFilters().length || !Array.isArray(state.homeCategoryFilter)) {
+  if (
+    nextFilters.length !== getActiveCategoryFilters().length ||
+    !Array.isArray(state.homeCategoryFilter)
+  ) {
     state.homeCategoryFilter = nextFilters;
     shouldSave = true;
   }
