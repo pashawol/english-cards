@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги после существительных",
+  "cards": [
+    { "ru": "доступ к", "en": "access to" },
+    { "ru": "зависимость от", "en": "addiction to" },
+    { "ru": "совет по", "en": "advice on" },
+    { "ru": "ответ на", "en": "answer to" },
+    { "ru": "заявление на", "en": "application for" },
+    { "ru": "отношение к", "en": "attitude to" },
+    { "ru": "вера в", "en": "belief in" },
+    { "ru": "шанс на", "en": "chance of" },
+    { "ru": "уверенность в", "en": "confidence in" },
+    { "ru": "поздравления с", "en": "congratulations on" },
+    { "ru": "вклад в", "en": "contribution to" },
+    { "ru": "контроль над", "en": "control over" },
+    { "ru": "лекарство от", "en": "cure for" },
+    { "ru": "ущерб чему-либо", "en": "damage to" },
+    { "ru": "спрос на", "en": "demand for" },
+    { "ru": "разница между", "en": "difference between" },
+    { "ru": "влияние на", "en": "influence on" },
+    { "ru": "интерес к", "en": "interest in" },
+    { "ru": "ключ к", "en": "key to" },
+    { "ru": "нехватка чего-либо", "en": "lack of" },
+    { "ru": "любовь к", "en": "love of / for" },
+    { "ru": "необходимость в", "en": "need for" }
+  ]
+}

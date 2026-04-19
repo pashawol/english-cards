@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги образа действия 2",
+  "cards": [
+    { "ru": "в общем", "en": "in general" },
+    { "ru": "другими словами", "en": "in other words" },
+    { "ru": "лично", "en": "in person" },
+    { "ru": "публично", "en": "in public" },
+    { "ru": "короче говоря", "en": "in short" },
+    { "ru": "в тишине", "en": "in silence" },
+    { "ru": "несмотря на", "en": "in spite of" },
+    { "ru": "напрасно", "en": "in vain" },
+    { "ru": "на диете", "en": "on a diet" },
+    { "ru": "в среднем", "en": "on average" },
+    { "ru": "от имени", "en": "on behalf of" },
+    { "ru": "по делу", "en": "on business" },
+    { "ru": "нарочно", "en": "on purpose" },
+    { "ru": "на забастовке", "en": "on strike" },
+    { "ru": "на цыпочках", "en": "on tiptoe" },
+    { "ru": "вне опасности", "en": "out of danger" },
+    { "ru": "устаревший", "en": "out of date" },
+    { "ru": "не работает", "en": "out of order" },
+    { "ru": "под контролем", "en": "under control" },
+    { "ru": "под давлением", "en": "under pressure" },
+    { "ru": "без промедления", "en": "without delay" },
+    { "ru": "без исключения", "en": "without exception" }
+  ]
+}

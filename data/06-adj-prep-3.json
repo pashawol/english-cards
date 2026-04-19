@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги после прилагательных 3",
+  "cards": [
+    { "ru": "впечатлённый", "en": "impressed by" },
+    { "ru": "независимый от", "en": "independent of" },
+    { "ru": "невиновный в", "en": "innocent of" },
+    { "ru": "интересующийся", "en": "interested in" },
+    { "ru": "вовлечённый в", "en": "involved in" },
+    { "ru": "раздражённый", "en": "irritated at / with" },
+    { "ru": "ревнующий к", "en": "jealous of" },
+    { "ru": "увлечённый (хобби)", "en": "keen on" },
+    { "ru": "опаздывающий на", "en": "late for" },
+    { "ru": "женатый / замужем за", "en": "married to" },
+    { "ru": "нервничающий из-за", "en": "nervous about" },
+    { "ru": "занятый чем-то", "en": "occupied with" },
+    { "ru": "терпеливый к", "en": "patient with" },
+    { "ru": "довольный", "en": "pleased with" },
+    { "ru": "связанный с", "en": "related to" },
+    { "ru": "ответственный за", "en": "responsible for" },
+    { "ru": "удовлетворённый", "en": "satisfied with" },
+    { "ru": "чувствительный к", "en": "sensitive to" },
+    { "ru": "шокированный", "en": "shocked by" },
+    { "ru": "уставший от", "en": "tired of" },
+    { "ru": "беспокоящийся", "en": "worried about" },
+    { "ru": "достойный", "en": "worthy of" }
+  ]
+}

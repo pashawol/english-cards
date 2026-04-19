@@ -1,0 +1,27 @@
+{
+  "name": "Словообразование — глагол → сущ.",
+  "cards": [
+    { "ru": "accept → ?", "en": "acceptance (принятие)" },
+    { "ru": "admit → ?", "en": "admission (допуск)" },
+    { "ru": "advertise → ?", "en": "advertisement (реклама)" },
+    { "ru": "announce → ?", "en": "announcement (объявление)" },
+    { "ru": "apply → ?", "en": "application (заявление)" },
+    { "ru": "approve → ?", "en": "approval (одобрение)" },
+    { "ru": "arrange → ?", "en": "arrangement (договорённость)" },
+    { "ru": "decide → ?", "en": "decision (решение)" },
+    { "ru": "deny → ?", "en": "denial (отрицание)" },
+    { "ru": "describe → ?", "en": "description (описание)" },
+    { "ru": "discover → ?", "en": "discovery (открытие)" },
+    { "ru": "divide → ?", "en": "division (деление)" },
+    { "ru": "educate → ?", "en": "education (образование)" },
+    { "ru": "elect → ?", "en": "election (выборы)" },
+    { "ru": "employ → ?", "en": "employment (занятость)" },
+    { "ru": "exist → ?", "en": "existence (существование)" },
+    { "ru": "explain → ?", "en": "explanation (объяснение)" },
+    { "ru": "imagine → ?", "en": "imagination (воображение)" },
+    { "ru": "improve → ?", "en": "improvement (улучшение)" },
+    { "ru": "invent → ?", "en": "invention (изобретение)" },
+    { "ru": "perform → ?", "en": "performance (выступление)" },
+    { "ru": "permit → ?", "en": "permission (разрешение)" }
+  ]
+}

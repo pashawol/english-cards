@@ -1,0 +1,27 @@
+{
+  "name": "Артикль THE — фразы",
+  "cards": [
+    { "ru": "в начале (урока, шоу)", "en": "at the beginning" },
+    { "ru": "в конце (итог)", "en": "in the end" },
+    { "ru": "в долгосрочной перспективе", "en": "in the long run" },
+    { "ru": "в целом", "en": "on the whole" },
+    { "ru": "тем временем", "en": "in the meantime" },
+    { "ru": "исключено, невозможно", "en": "out of the question" },
+    { "ru": "послезавтра", "en": "the day after tomorrow" },
+    { "ru": "в данный момент", "en": "at the moment" },
+    { "ru": "мешать, стоять на пути", "en": "be in the way" },
+    { "ru": "на всякий случай", "en": "be on the safe side" },
+    { "ru": "кстати", "en": "by the way" },
+    { "ru": "с одной стороны", "en": "on the one hand" },
+    { "ru": "с другой стороны", "en": "on the other hand" },
+    { "ru": "на месте / сразу", "en": "on the spot" },
+    { "ru": "на днях", "en": "the other day" },
+    { "ru": "по правде говоря", "en": "to tell the truth" },
+    { "ru": "сделать всё возможное", "en": "do one's best" },
+    { "ru": "накрыть на стол", "en": "lay the table" },
+    { "ru": "заправить постель", "en": "make the bed" },
+    { "ru": "вдали", "en": "in the distance" },
+    { "ru": "напротив", "en": "on the contrary" },
+    { "ru": "в темноте", "en": "in the dark" }
+  ]
+}

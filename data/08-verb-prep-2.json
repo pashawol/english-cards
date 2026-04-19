@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги после глаголов 2",
+  "cards": [
+    { "ru": "вносить вклад в", "en": "contribute to" },
+    { "ru": "справляться с", "en": "cope with" },
+    { "ru": "рассчитывать на", "en": "count on" },
+    { "ru": "критиковать за", "en": "criticize for" },
+    { "ru": "иметь дело с", "en": "deal with" },
+    { "ru": "зависеть от", "en": "depend on" },
+    { "ru": "умереть от", "en": "die of" },
+    { "ru": "отличаться от", "en": "differ from" },
+    { "ru": "отговаривать от", "en": "discourage from" },
+    { "ru": "мечтать о", "en": "dream of / about" },
+    { "ru": "обменивать на", "en": "exchange for" },
+    { "ru": "потерпеть неудачу в", "en": "fail in" },
+    { "ru": "забыть о", "en": "forget about" },
+    { "ru": "простить за", "en": "forgive for" },
+    { "ru": "случаться с", "en": "happen to" },
+    { "ru": "направляться в", "en": "head for" },
+    { "ru": "надеяться на", "en": "hope for" },
+    { "ru": "информировать о", "en": "inform about" },
+    { "ru": "настаивать на", "en": "insist on" },
+    { "ru": "вмешиваться в", "en": "interfere in" },
+    { "ru": "вовлекать в", "en": "involve in" },
+    { "ru": "смеяться над", "en": "laugh at" }
+  ]
+}

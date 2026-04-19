@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги после глаголов 3",
+  "cards": [
+    { "ru": "жить на (средства)", "en": "live on" },
+    { "ru": "принять за", "en": "mistake for" },
+    { "ru": "возражать против", "en": "object to" },
+    { "ru": "платить за", "en": "pay for" },
+    { "ru": "убеждать в", "en": "persuade of" },
+    { "ru": "указывать на", "en": "point at / to" },
+    { "ru": "хвалить за", "en": "praise for" },
+    { "ru": "готовиться к", "en": "prepare for" },
+    { "ru": "защищать от", "en": "protect from" },
+    { "ru": "наказывать за", "en": "punish for" },
+    { "ru": "ссориться с", "en": "quarrel with" },
+    { "ru": "реагировать на", "en": "react to" },
+    { "ru": "оправляться от", "en": "recover from" },
+    { "ru": "полагаться на", "en": "rely on" },
+    { "ru": "напоминать о", "en": "remind of" },
+    { "ru": "отвечать на", "en": "reply to" },
+    { "ru": "специализироваться в", "en": "specialize in" },
+    { "ru": "тратить на", "en": "spend on" },
+    { "ru": "преуспеть в", "en": "succeed in" },
+    { "ru": "страдать от", "en": "suffer from" },
+    { "ru": "подозревать в", "en": "suspect of" },
+    { "ru": "беспокоиться о", "en": "worry about" }
+  ]
+}

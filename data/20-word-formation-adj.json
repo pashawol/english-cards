@@ -1,0 +1,27 @@
+{
+  "name": "Словообразование — прил./сущ. → сущ.",
+  "cards": [
+    { "ru": "absent → ?", "en": "absence (отсутствие)" },
+    { "ru": "beautiful → ?", "en": "beauty (красота)" },
+    { "ru": "cruel → ?", "en": "cruelty (жестокость)" },
+    { "ru": "curious → ?", "en": "curiosity (любопытство)" },
+    { "ru": "dark → ?", "en": "darkness (тьма)" },
+    { "ru": "equal → ?", "en": "equality (равенство)" },
+    { "ru": "foolish → ?", "en": "foolishness (глупость)" },
+    { "ru": "generous → ?", "en": "generosity (щедрость)" },
+    { "ru": "independent → ?", "en": "independence (независимость)" },
+    { "ru": "patient → ?", "en": "patience (терпение)" },
+    { "ru": "perfect → ?", "en": "perfection (совершенство)" },
+    { "ru": "possible → ?", "en": "possibility (возможность)" },
+    { "ru": "sad → ?", "en": "sadness (грусть)" },
+    { "ru": "similar → ?", "en": "similarity (сходство)" },
+    { "ru": "stupid → ?", "en": "stupidity (тупость)" },
+    { "ru": "tired → ?", "en": "tiredness (усталость)" },
+    { "ru": "weak → ?", "en": "weakness (слабость)" },
+    { "ru": "conscious → opposite", "en": "unconscious (бессознательный)" },
+    { "ru": "honest → opposite", "en": "dishonest (нечестный)" },
+    { "ru": "legal → opposite", "en": "illegal (незаконный)" },
+    { "ru": "possible → opposite", "en": "impossible (невозможный)" },
+    { "ru": "responsible → opposite", "en": "irresponsible (безответственный)" }
+  ]
+}

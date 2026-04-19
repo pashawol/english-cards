@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги образа действия",
+  "cards": [
+    { "ru": "наконец-то", "en": "at last" },
+    { "ru": "по крайней мере", "en": "at least" },
+    { "ru": "сразу", "en": "at once" },
+    { "ru": "вообще / вовсе", "en": "at all" },
+    { "ru": "любой ценой", "en": "at all costs" },
+    { "ru": "вручную", "en": "by hand" },
+    { "ru": "наизусть", "en": "by heart" },
+    { "ru": "ни в коем случае", "en": "by no means" },
+    { "ru": "по профессии", "en": "by profession" },
+    { "ru": "бесплатно", "en": "for free" },
+    { "ru": "ради удовольствия", "en": "for fun" },
+    { "ru": "как должное", "en": "for granted" },
+    { "ru": "зря", "en": "for nothing" },
+    { "ru": "наверняка", "en": "for sure" },
+    { "ru": "впервые", "en": "for the first time" },
+    { "ru": "по опыту", "en": "from experience" },
+    { "ru": "по памяти", "en": "from memory" },
+    { "ru": "отныне", "en": "from now on" },
+    { "ru": "время от времени", "en": "from time to time" },
+    { "ru": "заранее", "en": "in advance" },
+    { "ru": "в дополнение к", "en": "in addition to" },
+    { "ru": "в обмен на", "en": "in exchange for" }
+  ]
+}

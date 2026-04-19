@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги после глаголов 1",
+  "cards": [
+    { "ru": "обвинять в", "en": "accuse of" },
+    { "ru": "восхищаться чем-то", "en": "admire for" },
+    { "ru": "советовать по поводу", "en": "advise on" },
+    { "ru": "соглашаться с", "en": "agree with" },
+    { "ru": "целиться в", "en": "aim at" },
+    { "ru": "извиняться за", "en": "apologize for" },
+    { "ru": "обращаться к", "en": "appeal to" },
+    { "ru": "подавать заявку на", "en": "apply for" },
+    { "ru": "наградить за", "en": "award for" },
+    { "ru": "начинать с", "en": "begin with" },
+    { "ru": "верить в", "en": "believe in" },
+    { "ru": "извлекать выгоду из", "en": "benefit from" },
+    { "ru": "обвинять кого-то в", "en": "blame smb for" },
+    { "ru": "хвастаться чем-то", "en": "boast of / about" },
+    { "ru": "занимать у", "en": "borrow from" },
+    { "ru": "общаться с", "en": "communicate with" },
+    { "ru": "сравнивать с", "en": "compare with" },
+    { "ru": "соревноваться с", "en": "compete with" },
+    { "ru": "жаловаться на", "en": "complain about" },
+    { "ru": "сосредоточиться на", "en": "concentrate on" },
+    { "ru": "поздравлять с", "en": "congratulate on" },
+    { "ru": "состоять из", "en": "consist of" }
+  ]
+}

@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>English Cards</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>English Cards</h1>
+        <span>для повторения</span>
+      </div>
+      <button id="theme-toggle" onclick="toggleTheme()">◐</button>
+    </header>
+
+    <!-- HOME SCREEN -->
+    <div id="home-screen" class="screen active">
+      <div class="daily-banner">
+        <div class="daily-banner-left">
+          <div class="daily-banner-label">сегодня</div>
+          <div class="daily-banner-count" id="daily-count">0 / 10</div>
+          <div class="daily-banner-sub" id="daily-sub">начни первый сет</div>
+        </div>
+        <div class="streak-dot">
+          <span class="num" id="streak-num">0</span>
+          <span class="lbl">дней</span>
+        </div>
+      </div>
+
+      <div class="settings-row">
+        <label>карточек в день</label>
+        <div style="display: flex; align-items: center; gap: 10px">
+          <input
+            type="range"
+            id="daily-goal"
+            min="10"
+            max="50"
+            step="5"
+            value="10"
+            style="width: 110px"
+          />
+          <span
+            id="goal-val"
+            style="font-size: 13px; font-weight: 500; min-width: 28px; text-align: right"
+            >10</span
+          >
+        </div>
+      </div>
+
+      <div class="mix-btn" id="mix-btn" onclick="startMix()">
+        <div class="mix-icon">⚄</div>
+        <div class="mix-info">
+          <div class="mix-title">случайный микс</div>
+          <div class="mix-sub" id="mix-sub">карточки из всех тем вперемешку</div>
+        </div>
+        <div class="mix-arrow">→</div>
+      </div>
+
+      <div class="section-header">
+        <div class="section-title">все темы</div>
+        <button class="select-all-btn" id="select-all-btn" onclick="toggleAllSets()"></button>
+      </div>
+
+      <div class="set-list" id="set-list"></div>
+      <div class="bottom-pad"></div>
+    </div>
+
+    <!-- STUDY SCREEN -->
+    <div id="study-screen" class="screen">
+      <div id="study-header">
+        <button id="back-btn" onclick="goHome()">←</button>
+        <div id="study-title"></div>
+        <div id="study-counter"></div>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+
+      <div class="card-area" id="card-area" onclick="flipCard()">
+        <div class="card-inner" id="card-inner">
+          <div class="card-face front">
+            <div class="card-label">русский</div>
+            <div class="card-word" id="front-word"></div>
+            <div class="card-hint" id="front-hint"></div>
+          </div>
+          <div class="card-face back">
+            <div class="card-label">английский</div>
+            <div class="card-word" id="back-word"></div>
+            <div class="card-hint" id="back-hint"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tap-hint" id="tap-hint">нажми чтобы перевернуть</div>
+
+      <div class="answer-row">
+        <button class="answer-btn" id="btn-wrong" onclick="answer(false)">✗ не знал</button>
+        <button class="answer-btn" id="btn-right" onclick="answer(true)">✓ знал</button>
+      </div>
+
+      <div class="bottom-pad"></div>
+    </div>
+
+    <!-- DONE SCREEN -->
+    <div id="done-screen" class="screen">
+      <div class="done-icon">✦</div>
+      <div class="done-title" id="done-title">Готово!</div>
+      <div class="done-sub" id="done-sub"></div>
+      <div class="done-stats">
+        <div class="done-stat good">
+          <div class="done-stat-num" id="done-right">0</div>
+          <div class="done-stat-label">знал</div>
+        </div>
+        <div class="done-stat bad">
+          <div class="done-stat-num" id="done-wrong">0</div>
+          <div class="done-stat-label">не знал</div>
+        </div>
+        <div class="done-stat">
+          <div class="done-stat-num" id="done-total">0</div>
+          <div class="done-stat-label">всего</div>
+        </div>
+      </div>
+      <div class="done-btns">
+        <button class="done-btn" onclick="restartWrong()">повторить ошибки</button>
+        <button class="done-btn" onclick="restartAll()">пройти ещё раз</button>
+        <button class="done-btn primary" onclick="goHome()">← к темам</button>
+      </div>
+      <div class="bottom-pad"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

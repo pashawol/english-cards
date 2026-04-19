@@ -1,0 +1,27 @@
+{
+  "name": "Нулевой артикль",
+  "cards": [
+    { "ru": "дома", "en": "at home" },
+    { "ru": "на рассвете", "en": "at dawn" },
+    { "ru": "в сумерках", "en": "at dusk" },
+    { "ru": "ночью", "en": "at night" },
+    { "ru": "на работе", "en": "at work" },
+    { "ru": "случайно", "en": "by accident" },
+    { "ru": "по ошибке", "en": "by mistake" },
+    { "ru": "наизусть", "en": "by heart" },
+    { "ru": "пешком", "en": "on foot" },
+    { "ru": "в отпуске", "en": "on holiday" },
+    { "ru": "попасть в неприятности", "en": "get into trouble" },
+    { "ru": "идти домой", "en": "go home" },
+    { "ru": "ложиться спать", "en": "go to bed" },
+    { "ru": "завтракать / обедать", "en": "have breakfast / lunch" },
+    { "ru": "на самом деле", "en": "in fact" },
+    { "ru": "вовремя", "en": "in time" },
+    { "ru": "заботиться о", "en": "take care of" },
+    { "ru": "шаг за шагом", "en": "step by step" },
+    { "ru": "без сомнения", "en": "without question" },
+    { "ru": "в постели", "en": "in bed" },
+    { "ru": "в отчаянии", "en": "in despair" },
+    { "ru": "подробно", "en": "in detail" }
+  ]
+}

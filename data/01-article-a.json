@@ -1,0 +1,27 @@
+{
+  "name": "Артикль A — фразы",
+  "cards": [
+    { "ru": "собственно говоря", "en": "as a matter of fact" },
+    { "ru": "перекусить / поесть", "en": "have a bite / a meal" },
+    { "ru": "в беспорядке", "en": "in a mess" },
+    { "ru": "в результате", "en": "as a result" },
+    { "ru": "как правило", "en": "as a rule" },
+    { "ru": "простудиться / иметь жар", "en": "have a cold / a fever" },
+    { "ru": "вкратце", "en": "in a nutshell" },
+    { "ru": "с первого взгляда", "en": "at a glance" },
+    { "ru": "попробовать / взглянуть", "en": "have a go / a look" },
+    { "ru": "в очереди", "en": "in a queue" },
+    { "ru": "хорошо провести время", "en": "have a good time" },
+    { "ru": "в спешке", "en": "in a rush" },
+    { "ru": "болит голова", "en": "have a headache" },
+    { "ru": "в каком-то смысле", "en": "in a sense" },
+    { "ru": "быть в замешательстве", "en": "be at a loss" },
+    { "ru": "отдохнуть", "en": "have a rest" },
+    { "ru": "оказать услугу", "en": "do smb a favour" },
+    { "ru": "помочь кому-то", "en": "give smb a hand" },
+    { "ru": "жаль", "en": "it's a pity" },
+    { "ru": "принять душ / ванну", "en": "have a shower / bath" },
+    { "ru": "для разнообразия", "en": "for a change" },
+    { "ru": "одним словом", "en": "in a word" }
+  ]
+}

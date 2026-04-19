@@ -1,0 +1,27 @@
+{
+  "name": "Предлоги после прилагательных 1",
+  "cards": [
+    { "ru": "отсутствовать на", "en": "absent from" },
+    { "ru": "обвинённый в", "en": "accused of" },
+    { "ru": "привыкший к", "en": "accustomed to" },
+    { "ru": "зависимый от", "en": "addicted to" },
+    { "ru": "бояться чего-либо", "en": "afraid of" },
+    { "ru": "завидовать", "en": "envious of" },
+    { "ru": "опытный в", "en": "experienced in" },
+    { "ru": "популярный среди", "en": "popular with" },
+    { "ru": "гордиться чем-то", "en": "proud of" },
+    { "ru": "готовый к", "en": "ready for" },
+    { "ru": "встревоженный", "en": "alarmed at / by" },
+    { "ru": "изумлённый", "en": "amazed at / by" },
+    { "ru": "сердитый из-за", "en": "angry about / with" },
+    { "ru": "обеспокоенный", "en": "anxious about" },
+    { "ru": "пристыжённый", "en": "ashamed of" },
+    { "ru": "поражённый", "en": "astonished by" },
+    { "ru": "осведомлённый о", "en": "aware of" },
+    { "ru": "плохой в чём-то", "en": "bad at" },
+    { "ru": "основанный на", "en": "based on" },
+    { "ru": "скучающий от", "en": "bored with" },
+    { "ru": "способный на", "en": "capable of" },
+    { "ru": "осторожный с", "en": "careful about / with" }
+  ]
+}
