@@ -1,0 +1,17 @@
+{
+  "name": "Предлоги времени — IN",
+  "category": "предлоги",
+  "cards": [
+    { "ru": "части суток (не ночь!)", "en": "IN the morning / IN the afternoon / IN the evening" },
+    { "ru": "месяц", "en": "IN January / IN March / IN December" },
+    { "ru": "сезон", "en": "IN spring / IN summer / IN autumn / IN winter" },
+    { "ru": "год", "en": "IN 2024 / IN 1999 / IN 2000" },
+    { "ru": "век / эпоха", "en": "IN the 21st century / IN the Middle Ages" },
+    { "ru": "через (будущее)", "en": "IN 5 minutes / IN a week / IN two years" },
+    { "ru": "в итоге (= eventually)", "en": "IN the end ← но: AT the end = в конце (позиция)" },
+    { "ru": "за время (срок)", "en": "IN time — he did it in record time" },
+    { "ru": "успеть до срока", "en": "IN time ← но: ON time = пунктуально, точно в срок" },
+    { "ru": "в первую / последнюю неделю", "en": "IN the first week / IN the last month" },
+    { "ru": "в декаду / в период", "en": "IN the 1990s / IN the Victorian era" }
+  ]
+}

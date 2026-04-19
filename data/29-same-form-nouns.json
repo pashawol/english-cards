@@ -1,0 +1,25 @@
+{
+  "name": "Одна форма — ед. и мн.ч.",
+  "category": "число существительных",
+  "cards": [
+    { "ru": "фрукты (конкретные виды)", "en": "fruit / fruits" },
+    { "ru": "олень", "en": "deer / deer" },
+    { "ru": "овца / овцы", "en": "sheep / sheep" },
+    { "ru": "рыба (один вид)", "en": "fish / fish" },
+    { "ru": "форель", "en": "trout / trout" },
+    { "ru": "лосось", "en": "salmon / salmon" },
+    { "ru": "свинья / свиньи", "en": "swine / swine" },
+    { "ru": "судно", "en": "craft / craft" },
+    { "ru": "воздушное судно", "en": "aircraft / aircraft" },
+    { "ru": "космический аппарат", "en": "spacecraft / spacecraft" },
+    { "ru": "потомок / потомство", "en": "offspring / offspring" },
+    { "ru": "перекрёсток / перекрёстки", "en": "crossroads / crossroads" },
+    { "ru": "средство / средства", "en": "means / means" },
+    { "ru": "серия / серии", "en": "series / series" },
+    { "ru": "вид (биол.) / виды", "en": "species / species" },
+    { "ru": "завод / заводы", "en": "works / works" },
+    { "ru": "казарма / казармы", "en": "barracks / barracks" },
+    { "ru": "корпус (воен.)", "en": "corps / corps" },
+    { "ru": "штаб-квартира / штабы", "en": "headquarters / headquarters" }
+  ]
+}

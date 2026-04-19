@@ -1,0 +1,17 @@
+{
+  "name": "Предлоги причины и способа",
+  "category": "предлоги",
+  "cards": [
+    { "ru": "из-за (причина — нейтрально)", "en": "BECAUSE OF — cancelled because of rain / late because of traffic" },
+    { "ru": "из-за (причина — официально)", "en": "DUE TO — delayed due to technical issues / due to illness" },
+    { "ru": "по причине (официально)", "en": "OWING TO — owing to bad weather / owing to staff shortage" },
+    { "ru": "несмотря на", "en": "DESPITE / IN SPITE OF — despite the rain / in spite of the delay" },
+    { "ru": "с помощью / посредством", "en": "BY — by car / by email / by chance / made by hand" },
+    { "ru": "с (инструмент)", "en": "WITH — write with a pen / cut with scissors / pay with cash" },
+    { "ru": "без", "en": "WITHOUT — without a map / without help / without thinking" },
+    { "ru": "вместо", "en": "INSTEAD OF — instead of calling / instead of me" },
+    { "ru": "для (цель / назначение)", "en": "FOR — for fun / for free / a tool for cutting / it's for you" },
+    { "ru": "в обмен на", "en": "IN EXCHANGE FOR — in exchange for money / in return for help" },
+    { "ru": "с точки зрения", "en": "IN TERMS OF — in terms of cost / in terms of quality" }
+  ]
+}

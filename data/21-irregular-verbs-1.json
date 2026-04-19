@@ -1,0 +1,31 @@
+{
+  "name": "Неправильные глаголы I",
+  "category": "неправильные глаголы",
+  "cards": [
+    { "ru": "быть", "en": "be / was·were / been" },
+    { "ru": "иметь", "en": "have / had / had" },
+    { "ru": "делать", "en": "do / did / done" },
+    { "ru": "идти, ехать", "en": "go / went / gone" },
+    { "ru": "говорить", "en": "say / said / said" },
+    { "ru": "видеть", "en": "see / saw / seen" },
+    { "ru": "знать", "en": "know / knew / known" },
+    { "ru": "думать", "en": "think / thought / thought" },
+    { "ru": "приходить", "en": "come / came / come" },
+    { "ru": "давать", "en": "give / gave / given" },
+    { "ru": "брать, получать", "en": "get / got / got" },
+    { "ru": "делать, создавать", "en": "make / made / made" },
+    { "ru": "становиться", "en": "become / became / become" },
+    { "ru": "начинать", "en": "begin / began / begun" },
+    { "ru": "покупать", "en": "buy / bought / bought" },
+    { "ru": "приносить", "en": "bring / brought / brought" },
+    { "ru": "строить", "en": "build / built / built" },
+    { "ru": "поймать", "en": "catch / caught / caught" },
+    { "ru": "выбирать", "en": "choose / chose / chosen" },
+    { "ru": "резать", "en": "cut / cut / cut" },
+    { "ru": "чувствовать", "en": "feel / felt / felt" },
+    { "ru": "находить", "en": "find / found / found" },
+    { "ru": "забывать", "en": "forget / forgot / forgotten" },
+    { "ru": "держать", "en": "hold / held / held" },
+    { "ru": "оставлять", "en": "leave / left / left" }
+  ]
+}

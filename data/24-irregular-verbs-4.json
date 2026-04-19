@@ -1,0 +1,31 @@
+{
+  "name": "Неправильные глаголы IV",
+  "category": "неправильные глаголы",
+  "cards": [
+    { "ru": "кусать", "en": "bite / bit / bitten" },
+    { "ru": "дуть", "en": "blow / blew / blown" },
+    { "ru": "гореть", "en": "burn / burned·burnt / burned·burnt" },
+    { "ru": "рыть, копать", "en": "dig / dug / dug" },
+    { "ru": "рисовать, тянуть", "en": "draw / drew / drawn" },
+    { "ru": "мечтать", "en": "dream / dreamed·dreamt / dreamed·dreamt" },
+    { "ru": "кормить", "en": "feed / fed / fed" },
+    { "ru": "сбегать", "en": "flee / fled / fled" },
+    { "ru": "прощать", "en": "forgive / forgave / forgiven" },
+    { "ru": "замерзать", "en": "freeze / froze / frozen" },
+    { "ru": "вешать", "en": "hang / hung / hung" },
+    { "ru": "прятать", "en": "hide / hid / hidden" },
+    { "ru": "прыгать", "en": "leap / leaped·leapt / leaped·leapt" },
+    { "ru": "преодолевать", "en": "overcome / overcame / overcome" },
+    { "ru": "доказывать", "en": "prove / proved / proven" },
+    { "ru": "трясти", "en": "shake / shook / shaken" },
+    { "ru": "светить", "en": "shine / shone / shone" },
+    { "ru": "сокращать", "en": "shrink / shrank / shrunk" },
+    { "ru": "тонуть", "en": "sink / sank / sunk" },
+    { "ru": "скользить", "en": "slide / slid / slid" },
+    { "ru": "распускаться, распространяться", "en": "spread / spread / spread" },
+    { "ru": "клясться", "en": "swear / swore / sworn" },
+    { "ru": "бросать", "en": "throw / threw / thrown" },
+    { "ru": "вырывать", "en": "tear / tore / torn" },
+    { "ru": "ткать, плести", "en": "weave / wove / woven" }
+  ]
+}

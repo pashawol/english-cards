@@ -1,3 +1,6 @@
+// ENV
+const IS_DEV = ['localhost', '127.0.0.1', ''].includes(location.hostname);
+
 // DATA
 let SETS = [];
 let reminderTimerId = null;
@@ -830,29 +833,186 @@ function initTheme() {
   applyThemeColor(saved);
 }
 
-// DAILY GOAL
-document.getElementById('daily-goal').addEventListener('input', function () {
-  state.dailyGoal = parseInt(this.value);
-  saveState();
-  renderHome();
-  scheduleReminderCheck();
-});
+// DOM
+function buildDOM() {
+  const v = window.APP_VERSION || '';
 
-document.getElementById('reminder-toggle').addEventListener('click', function () {
-  if (state.reminderEnabled && getReminderPermission() === 'granted') {
-    disableReminder();
-    return;
-  }
-  enableReminder();
-});
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'styles.css' + (v ? '?v=' + v : '');
+  document.head.appendChild(link);
 
-document.getElementById('reminder-time').addEventListener('input', function () {
-  state.reminderTime = formatReminderTime(this.value);
-  state.reminderLastSentOn = null;
-  saveState();
-  renderHome();
-  scheduleReminderCheck();
-});
+  document.getElementById('app').innerHTML = `
+    <header>
+      <div class="header-left">
+        <h1>English Cards</h1>
+        <span>для повторения</span>
+      </div>
+      <span id="app-version" class="app-version">${v}${IS_DEV ? ' dev' : ''}</span>
+      <button id="theme-toggle" onclick="toggleTheme()">◐</button>
+    </header>
+
+    <div id="home-screen" class="screen active">
+      <div class="daily-card">
+        <div class="daily-banner">
+          <div class="daily-banner-main">
+            <div class="daily-banner-label">сегодня</div>
+            <div class="daily-banner-count" id="daily-count">0 / 10</div>
+          </div>
+          <div class="streak-dot">
+            <span class="num" id="streak-num">0</span>
+            <span class="lbl">дней</span>
+          </div>
+        </div>
+
+        <div class="settings-row">
+          <div class="goal-slider-row">
+            <input type="range" id="daily-goal" min="10" max="50" step="5" value="10" />
+          </div>
+        </div>
+
+        <div class="daily-reminder">
+          <div class="daily-reminder-row">
+            <button type="button" class="reminder-toggle" id="reminder-toggle"></button>
+            <label class="reminder-time-wrap" for="reminder-time">
+              <span class="reminder-time-label">время</span>
+              <input type="time" id="reminder-time" class="reminder-time" />
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-header">
+        <div class="section-title">все темы</div>
+        <button class="select-all-btn" id="select-all-btn" onclick="toggleAllSets()"></button>
+      </div>
+
+      <div class="set-list" id="set-list"></div>
+      <div class="home-actions">
+        <button class="mix-fab" id="mix-btn" type="button" onclick="startMix()">
+          <span class="mix-fab-count" id="mix-fab-count">10</span>
+          <span class="mix-fab-label">mix</span>
+        </button>
+        <div class="category-filter-shell">
+          <div id="category-filter" class="category-filter" aria-label="Категории"></div>
+        </div>
+        <div class="mix-meta">
+          <div class="mix-sub" id="mix-sub">карточки из всех тем вперемешку</div>
+          <div class="mix-warning" id="mix-warning">выберите хотя бы одну тему</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="study-screen" class="screen">
+      <div id="study-header">
+        <button id="back-btn" onclick="goHome()">←</button>
+        <div id="study-title"></div>
+        <div id="study-counter"></div>
+      </div>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+
+      <div class="study-mascot" id="study-mascot" aria-hidden="true">
+        <div class="study-mascot-figure">
+          <div class="study-mascot-eyes"><span></span><span></span></div>
+          <div class="study-mascot-mouth"></div>
+        </div>
+        <div class="study-mascot-bubble" id="mascot-text">погнали дальше</div>
+      </div>
+
+      <div class="card-area" id="card-area" onclick="flipCard()">
+        <div class="card-inner" id="card-inner">
+          <div class="card-face front">
+            <div class="card-label">русский</div>
+            <div class="card-word" id="front-word"></div>
+            <div class="card-hint" id="front-hint"></div>
+          </div>
+          <div class="card-face back">
+            <div class="card-label">английский</div>
+            <div class="card-word" id="back-word"></div>
+            <div class="card-hint" id="back-hint"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tap-hint" id="tap-hint">нажми чтобы перевернуть</div>
+
+      <div class="study-actions">
+        <div class="study-nav-row">
+          <button class="study-backtrack-btn" id="study-backtrack-btn" onclick="goPrevCard()">← назад</button>
+        </div>
+        <div class="answer-row">
+          <button class="answer-btn" id="btn-wrong" onclick="answer(false)">✗ не знал</button>
+          <button class="answer-btn" id="btn-right" onclick="answer(true)">✓ знал</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="done-screen" class="screen">
+      <div class="done-celebration" id="done-celebration" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <div class="done-icon">✦</div>
+      <div class="done-title" id="done-title">Готово!</div>
+      <div class="done-sub" id="done-sub"></div>
+      <div class="study-mascot done-mascot" id="done-mascot" aria-hidden="true">
+        <div class="study-mascot-figure">
+          <div class="study-mascot-eyes"><span></span><span></span></div>
+          <div class="study-mascot-mouth"></div>
+        </div>
+        <div class="study-mascot-bubble" id="done-mascot-text">чистая работа</div>
+      </div>
+      <div class="done-stats">
+        <div class="done-stat good">
+          <div class="done-stat-num" id="done-right">0</div>
+          <div class="done-stat-label">знал</div>
+        </div>
+        <div class="done-stat bad">
+          <div class="done-stat-num" id="done-wrong">0</div>
+          <div class="done-stat-label">не знал</div>
+        </div>
+        <div class="done-stat">
+          <div class="done-stat-num" id="done-total">0</div>
+          <div class="done-stat-label">всего</div>
+        </div>
+      </div>
+      <div class="done-btns">
+        <button class="done-btn" onclick="restartWrong()">повторить ошибки</button>
+        <button class="done-btn" onclick="restartAll()">пройти ещё раз</button>
+        <button class="done-btn primary" onclick="goHome()">← к темам</button>
+      </div>
+    </div>
+
+    <footer class="app-footer">
+      <a href="https://github.com/pashawol" target="_blank" rel="noreferrer">contacts</a>
+    </footer>
+  `;
+
+  document.getElementById('daily-goal').addEventListener('input', function () {
+    state.dailyGoal = parseInt(this.value);
+    saveState();
+    renderHome();
+    scheduleReminderCheck();
+  });
+
+  document.getElementById('reminder-toggle').addEventListener('click', function () {
+    if (state.reminderEnabled && getReminderPermission() === 'granted') {
+      disableReminder();
+      return;
+    }
+    enableReminder();
+  });
+
+  document.getElementById('reminder-time').addEventListener('input', function () {
+    state.reminderTime = formatReminderTime(this.value);
+    state.reminderLastSentOn = null;
+    saveState();
+    renderHome();
+    scheduleReminderCheck();
+  });
+}
 
 document.addEventListener('visibilitychange', function () {
   if (!document.hidden) scheduleReminderCheck();
@@ -864,9 +1024,8 @@ window.addEventListener('focus', function () {
 
 // INIT
 async function init() {
+  buildDOM();
   initTheme();
-  const vEl = document.getElementById('app-version');
-  if (vEl && window.APP_VERSION) vEl.textContent = window.APP_VERSION;
   await loadSets();
   loadState();
   let shouldSave = false;

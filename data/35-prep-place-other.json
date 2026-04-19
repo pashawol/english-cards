@@ -1,0 +1,35 @@
+{
+  "name": "Предлоги места — другие",
+  "category": "предлоги",
+  "cards": [
+    {
+      "ru": "над (выше, не касается)",
+      "en": "ABOVE — above the clouds / the picture above the sofa"
+    },
+    {
+      "ru": "над / поверх (прямо сверху)",
+      "en": "OVER — a bridge over the river / a blanket over him"
+    },
+    { "ru": "под (ниже, не касается)", "en": "BELOW — below sea level / below the surface" },
+    { "ru": "под / снизу (прямо под)", "en": "UNDER — under the table / under the bed" },
+    { "ru": "рядом с", "en": "BESIDE / NEXT TO — beside the window / next to the bank" },
+    { "ru": "напротив", "en": "OPPOSITE — opposite the station / sit opposite each other" },
+    { "ru": "между (двумя)", "en": "BETWEEN — between the two chairs / between 5 and 6" },
+    { "ru": "среди (многих)", "en": "AMONG — among the trees / among the crowd" },
+    {
+      "ru": "перед (лицом к)",
+      "en": "IN FRONT OF — in front of the mirror / in front of the class"
+    },
+    { "ru": "позади, за", "en": "BEHIND — behind the door / behind the building" },
+    { "ru": "вблизи, около", "en": "NEAR — near the school / near the river" },
+    { "ru": "вдоль", "en": "ALONG — along the street / along the coast" },
+    {
+      "ru": "сквозь, через (пространство)",
+      "en": "THROUGH — through the tunnel / through the forest"
+    },
+    {
+      "ru": "через (препятствие / поверхность)",
+      "en": "ACROSS — across the road / across the river"
+    }
+  ]
+}

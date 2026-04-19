@@ -1,0 +1,31 @@
+{
+  "name": "Неправильные глаголы II",
+  "category": "неправильные глаголы",
+  "cards": [
+    { "ru": "встречать", "en": "meet / met / met" },
+    { "ru": "платить", "en": "pay / paid / paid" },
+    { "ru": "читать", "en": "read / read / read" },
+    { "ru": "ехать (верхом)", "en": "ride / rode / ridden" },
+    { "ru": "бежать", "en": "run / ran / run" },
+    { "ru": "посылать", "en": "send / sent / sent" },
+    { "ru": "петь", "en": "sing / sang / sung" },
+    { "ru": "сидеть", "en": "sit / sat / sat" },
+    { "ru": "спать", "en": "sleep / slept / slept" },
+    { "ru": "говорить (речь)", "en": "speak / spoke / spoken" },
+    { "ru": "тратить (деньги/время)", "en": "spend / spent / spent" },
+    { "ru": "стоять", "en": "stand / stood / stood" },
+    { "ru": "украсть", "en": "steal / stole / stolen" },
+    { "ru": "плавать", "en": "swim / swam / swum" },
+    { "ru": "брать", "en": "take / took / taken" },
+    { "ru": "учить (преподавать)", "en": "teach / taught / taught" },
+    { "ru": "говорить, рассказывать", "en": "tell / told / told" },
+    { "ru": "понимать", "en": "understand / understood / understood" },
+    { "ru": "просыпаться", "en": "wake / woke / woken" },
+    { "ru": "носить, одевать", "en": "wear / wore / worn" },
+    { "ru": "побеждать", "en": "win / won / won" },
+    { "ru": "писать", "en": "write / wrote / written" },
+    { "ru": "вести машину", "en": "drive / drove / driven" },
+    { "ru": "падать", "en": "fall / fell / fallen" },
+    { "ru": "летать", "en": "fly / flew / flown" }
+  ]
+}

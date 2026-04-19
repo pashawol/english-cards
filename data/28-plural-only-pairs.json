@@ -1,0 +1,20 @@
+{
+  "name": "Только мн.ч. — парные предметы",
+  "category": "число существительных",
+  "cards": [
+    { "ru": "подтяжки", "en": "bracers" },
+    { "ru": "джинсы", "en": "jeans" },
+    { "ru": "леггинсы", "en": "leggings" },
+    { "ru": "комбинезон", "en": "overalls" },
+    { "ru": "штаны, брюки", "en": "pants" },
+    { "ru": "пижама", "en": "pyjamas" },
+    { "ru": "шорты", "en": "shorts" },
+    { "ru": "колготки", "en": "tights" },
+    { "ru": "брюки", "en": "trousers" },
+    { "ru": "бинокль", "en": "binoculars" },
+    { "ru": "очки", "en": "glasses" },
+    { "ru": "весы", "en": "scales" },
+    { "ru": "ножницы", "en": "scissors" },
+    { "ru": "солнцезащитные очки", "en": "sunglasses" }
+  ]
+}

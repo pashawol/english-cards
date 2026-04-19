@@ -1,0 +1,21 @@
+{
+  "name": "Предлоги времени — AT",
+  "category": "предлоги",
+  "cards": [
+    { "ru": "точное время (часы)", "en": "AT — at 5 o'clock / at noon / at midnight" },
+    { "ru": "ночью (тёмное время суток)", "en": "AT night ← но: IN the morning/evening!" },
+    { "ru": "на Рождество / на Пасху (период)", "en": "AT Christmas / AT Easter / AT New Year" },
+    { "ru": "на выходных (брит.)", "en": "AT the weekend ← амер.: on the weekend" },
+    { "ru": "прямо сейчас", "en": "AT the moment / AT present" },
+    {
+      "ru": "в конце фильма/книги (позиция)",
+      "en": "AT the end of the film ← но: IN the end = в итоге"
+    },
+    { "ru": "в возрасте (лет)", "en": "AT the age of 20 / AT 20" },
+    { "ru": "одновременно", "en": "AT the same time" },
+    { "ru": "в обед / в завтрак", "en": "AT lunchtime / AT breakfast" },
+    { "ru": "на рассвете / в сумерках", "en": "AT dawn / AT dusk / AT sunset" },
+    { "ru": "какое-то время назад / тогда", "en": "AT that time / AT the time" },
+    { "ru": "в начале (позиция)", "en": "AT the beginning of the film" }
+  ]
+}

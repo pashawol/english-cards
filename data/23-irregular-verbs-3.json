@@ -1,0 +1,31 @@
+{
+  "name": "Неправильные глаголы III",
+  "category": "неправильные глаголы",
+  "cards": [
+    { "ru": "ломать", "en": "break / broke / broken" },
+    { "ru": "пить", "en": "drink / drank / drunk" },
+    { "ru": "есть", "en": "eat / ate / eaten" },
+    { "ru": "драться, бороться", "en": "fight / fought / fought" },
+    { "ru": "расти", "en": "grow / grew / grown" },
+    { "ru": "слышать", "en": "hear / heard / heard" },
+    { "ru": "причинять боль", "en": "hurt / hurt / hurt" },
+    { "ru": "терять", "en": "lose / lost / lost" },
+    { "ru": "иметь в виду", "en": "mean / meant / meant" },
+    { "ru": "стрелять", "en": "shoot / shot / shot" },
+    { "ru": "показывать", "en": "show / showed / shown" },
+    { "ru": "закрывать", "en": "shut / shut / shut" },
+    { "ru": "продавать", "en": "sell / sold / sold" },
+    { "ru": "хранить, держать", "en": "keep / kept / kept" },
+    { "ru": "класть (горизонтально)", "en": "lay / laid / laid" },
+    { "ru": "лежать", "en": "lie / lay / lain" },
+    { "ru": "вести (за собой)", "en": "lead / led / led" },
+    { "ru": "давать взаймы", "en": "lend / lent / lent" },
+    { "ru": "позволять", "en": "let / let / let" },
+    { "ru": "освещать", "en": "light / lit / lit" },
+    { "ru": "класть (в пакет и т.п.)", "en": "put / put / put" },
+    { "ru": "подниматься", "en": "rise / rose / risen" },
+    { "ru": "устанавливать", "en": "set / set / set" },
+    { "ru": "сражаться", "en": "strike / struck / struck" },
+    { "ru": "строить, задумывать", "en": "plan / planned / planned" }
+  ]
+}

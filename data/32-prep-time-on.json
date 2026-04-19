@@ -1,0 +1,21 @@
+{
+  "name": "Предлоги времени — ON",
+  "category": "предлоги",
+  "cards": [
+    { "ru": "день недели", "en": "ON Monday / ON Friday / ON Sunday" },
+    { "ru": "конкретная дата", "en": "ON 5th May / ON the 1st of January" },
+    { "ru": "день рождения / годовщина", "en": "ON my birthday / ON our anniversary" },
+    {
+      "ru": "день праздника (сам день)",
+      "en": "ON Christmas Day / ON New Year's Day ← но: AT Christmas = период"
+    },
+    { "ru": "день + часть суток", "en": "ON Monday morning / ON Friday evening / ON Sunday night" },
+    {
+      "ru": "вовремя (пунктуально)",
+      "en": "ON time — The train arrived on time ← не путать: IN time = успеть"
+    },
+    { "ru": "в тот / этот день", "en": "ON that day / ON the day of the wedding" },
+    { "ru": "в следующий / прошлый (день)", "en": "ON the following day / ON the previous day" },
+    { "ru": "на выходных (амер.)", "en": "ON the weekend ← брит.: AT the weekend" }
+  ]
+}

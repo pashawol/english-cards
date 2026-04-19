@@ -1,0 +1,36 @@
+{
+  "name": "Предлоги места — AT / IN / ON",
+  "category": "предлоги",
+  "cards": [
+    {
+      "ru": "конкретная точка / место назначения",
+      "en": "AT — at the bus stop / at the door / at the crossroads"
+    },
+    {
+      "ru": "место деятельности (цель)",
+      "en": "AT — at school (учишься) / at work / at home / at the airport"
+    },
+    { "ru": "адрес (номер дома)", "en": "AT — at 10 Downing Street / at No. 5" },
+    {
+      "ru": "внутри закрытого пространства",
+      "en": "IN — in the room / in the box / in the bag / in the car"
+    },
+    { "ru": "город / страна / район", "en": "IN — in London / in France / in the north" },
+    {
+      "ru": "угол внутри помещения",
+      "en": "IN the corner (комнаты) ← но: ON the corner = угол улицы снаружи"
+    },
+    { "ru": "в больнице (пациент)", "en": "IN hospital ← но: AT the hospital = пришёл навестить" },
+    {
+      "ru": "на поверхности",
+      "en": "ON — on the table / on the floor / on the wall / on the shelf"
+    },
+    {
+      "ru": "транспорт (большой / общественный)",
+      "en": "ON — on the bus / on the train / on the plane / on the ship"
+    },
+    { "ru": "этаж", "en": "ON — on the first floor / on the ground floor" },
+    { "ru": "улица (адрес)", "en": "ON — on Baker Street / on the main road" },
+    { "ru": "в машине (маленькая, личная)", "en": "IN the car / IN a taxi ← но: ON the bus/train" }
+  ]
+}

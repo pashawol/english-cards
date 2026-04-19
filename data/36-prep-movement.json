@@ -1,0 +1,26 @@
+{
+  "name": "Предлоги движения",
+  "category": "предлоги",
+  "cards": [
+    { "ru": "к (направление)", "en": "TO — go to school / fly to Paris / walk to the shop" },
+    {
+      "ru": "по направлению к (не обязательно достичь)",
+      "en": "TOWARDS — walk towards the river / move towards the door"
+    },
+    { "ru": "внутрь (движение вовнутрь)", "en": "INTO — go into the room / jump into the pool" },
+    {
+      "ru": "наружу из (движение из)",
+      "en": "OUT OF — get out of the car / run out of the building"
+    },
+    { "ru": "вверх по / на", "en": "UP — go up the stairs / walk up the hill" },
+    { "ru": "вниз по", "en": "DOWN — come down the stairs / run down the slope" },
+    { "ru": "вдоль (в движении)", "en": "ALONG — walk along the street / drive along the road" },
+    { "ru": "через (поперёк)", "en": "ACROSS — swim across the river / walk across the road" },
+    { "ru": "сквозь (внутри)", "en": "THROUGH — drive through the tunnel / walk through the park" },
+    { "ru": "мимо", "en": "PAST — drive past the school / walk past the café" },
+    { "ru": "вокруг", "en": "AROUND / ROUND — walk around the lake / go round the corner" },
+    { "ru": "прочь от", "en": "AWAY FROM — move away from the window / run away from danger" },
+    { "ru": "на (транспорт — садиться)", "en": "GET ON — get on the bus / get on the train" },
+    { "ru": "с (транспорт — выходить)", "en": "GET OFF — get off the bus / get off the plane" }
+  ]
+}

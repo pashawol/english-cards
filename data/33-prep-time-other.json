@@ -1,0 +1,29 @@
+{
+  "name": "Другие предлоги времени",
+  "category": "предлоги",
+  "cards": [
+    {
+      "ru": "в течение (процесс внутри периода)",
+      "en": "DURING — during the meeting / during summer"
+    },
+    {
+      "ru": "на протяжении (длительность)",
+      "en": "FOR — for 3 hours / for two years / for a long time"
+    },
+    {
+      "ru": "с тех пор как (и до сих пор)",
+      "en": "SINCE — since Monday / since 2010 / since I was a child"
+    },
+    {
+      "ru": "не позднее чем, к (дедлайн)",
+      "en": "BY — by Friday / by 6 o'clock / by the end of the day"
+    },
+    { "ru": "до тех пор пока не", "en": "UNTIL / TILL — until midnight / till Monday" },
+    { "ru": "с … до …", "en": "FROM … TO … — from 9 to 5 / from Monday to Friday" },
+    { "ru": "тому назад", "en": "AGO — 3 days ago / two years ago / a moment ago" },
+    { "ru": "в течение (успеть за срок)", "en": "WITHIN — within a week / within 24 hours" },
+    { "ru": "перед / после", "en": "BEFORE / AFTER — before lunch / after the meeting" },
+    { "ru": "незадолго до", "en": "SHORTLY BEFORE — shortly before the exam" },
+    { "ru": "вскоре после", "en": "SHORTLY AFTER — shortly after midnight" }
+  ]
+}
