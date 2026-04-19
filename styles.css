@@ -1,3 +1,8 @@
+html {
+  min-height: 100%;
+  overflow-y: auto;
+}
+
 :root {
   --bg: #f5f2eb;
   --card-bg: #fffdf8;
@@ -49,12 +54,12 @@ body {
   color: var(--text);
   font-family: 'DM Mono', monospace;
   min-height: 100vh;
-  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   transition:
     background 0.3s,
     color 0.3s;
@@ -125,13 +130,6 @@ header span {
 }
 .screen.active {
   display: block;
-}
-
-#home-screen.active,
-#done-screen.active {
-  height: calc(100dvh - 53px);
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
 }
 
 #home-screen.active {
