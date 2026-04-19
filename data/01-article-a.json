@@ -1,5 +1,6 @@
 {
   "name": "Артикль A — фразы",
+  "category": "артикли",
   "cards": [
     { "ru": "собственно говоря", "en": "as a matter of fact" },
     { "ru": "перекусить / поесть", "en": "have a bite / a meal" },

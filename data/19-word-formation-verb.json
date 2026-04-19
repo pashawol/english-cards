@@ -1,5 +1,6 @@
 {
   "name": "Словообразование — глагол → сущ.",
+  "category": "словообразование",
   "cards": [
     { "ru": "accept → ?", "en": "acceptance (принятие)" },
     { "ru": "admit → ?", "en": "admission (допуск)" },
