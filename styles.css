@@ -1270,9 +1270,14 @@ header span {
   pointer-events: none;
 }
 
+@keyframes fab-pulse {
+  0%, 100% { transform: scale(1);    box-shadow: 0 14px 30px rgba(196,98,30,0.30); }
+  50%       { transform: scale(1.05); box-shadow: 0 20px 44px rgba(196,98,30,0.48); }
+}
+
 .mix-fab {
-  background: var(--mix-bg);
-  color: var(--mix-title);
+  background: linear-gradient(150deg, #f0a040 0%, #d4541a 100%);
+  color: #fffdf8;
   border: none;
   position: absolute;
   right: 10px;
@@ -1287,17 +1292,23 @@ header span {
   justify-content: center;
   gap: 2px;
   cursor: pointer;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
   pointer-events: auto;
-  transition:
-    opacity 0.15s,
-    transform 0.15s,
-    box-shadow 0.15s;
+  will-change: transform;
+  animation: fab-pulse 2.6s ease-in-out infinite;
+  transition: box-shadow 0.15s;
+}
+
+.mix-fab:hover {
+  animation-play-state: paused;
+  transform: scale(1.08);
+  box-shadow: 0 22px 44px rgba(0,0,0,0.26);
 }
 
 .mix-fab:active {
-  opacity: 0.92;
-  transform: translateY(1px) scale(0.98);
+  animation-play-state: paused;
+  transform: scale(0.94);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  transition: transform 0.08s, box-shadow 0.08s;
 }
 
 .mix-fab-count {
@@ -1310,7 +1321,7 @@ header span {
 .mix-fab-label {
   font-size: 12px;
   line-height: 1;
-  color: var(--mix-sub);
+  color: rgba(255, 253, 248, 0.65);
   text-transform: uppercase;
   letter-spacing: 0.12em;
 }
