@@ -13,46 +13,66 @@ function getSetBreadcrumb(set) {
   return categories.length ? categories.join(' · ') : null;
 }
 
+function createCell(text, className) {
+  const cell = document.createElement('div');
+  cell.className = `table-cell ${className}`;
+  cell.textContent = text;
+  return cell;
+}
+
+function createRow(card, allRevealed) {
+  const row = document.createElement('div');
+  row.className = 'table-row';
+
+  row.appendChild(createCell(card.ru, 'table-cell-ru'));
+  row.appendChild(createCell(card.en, `table-cell-en${allRevealed ? '' : ' blurred'}`));
+
+  return row;
+}
+
+function buildTableContent(groups, allRevealed) {
+  const fragment = document.createDocumentFragment();
+
+  groups.forEach(({ label, cards }) => {
+    if (label) {
+      const heading = document.createElement('div');
+      heading.className = 'table-group-heading';
+      heading.textContent = label;
+      fragment.appendChild(heading);
+    }
+
+    cards.forEach((card) => {
+      fragment.appendChild(createRow(card, allRevealed));
+    });
+  });
+
+  return fragment;
+}
+
 function renderTableScreen(title, subtitle, groups, { showScreen }) {
-  document.getElementById('table-title').textContent = title;
+  const titleEl = document.getElementById('table-title');
   const subEl = document.getElementById('table-subtitle');
+  const body = document.getElementById('table-body');
+  const toggleBtn = document.getElementById('table-toggle-ru');
+
+  if (!titleEl || !body || !toggleBtn) return;
+
+  titleEl.textContent = title;
   if (subEl) subEl.textContent = subtitle || '';
 
   let allRevealed = false;
-  const toggleBtn = document.getElementById('table-toggle-ru');
 
   function renderTable() {
-    const body = document.getElementById('table-body');
-    body.innerHTML = '';
-
-    groups.forEach(({ label, cards }) => {
-      if (label) {
-        const heading = document.createElement('div');
-        heading.className = 'table-group-heading';
-        heading.textContent = label;
-        body.appendChild(heading);
-      }
-
-      cards.forEach((card) => {
-        const row = document.createElement('div');
-        row.className = 'table-row';
-        const enClass = allRevealed ? 'table-cell-en' : 'table-cell-en blurred';
-        row.innerHTML = `
-          <div class="table-cell table-cell-ru">${card.ru}</div>
-          <div class="table-cell ${enClass}">${card.en}</div>
-        `;
-        if (!allRevealed) {
-          row.querySelector('.table-cell-en').addEventListener('click', (e) => {
-            e.currentTarget.classList.toggle('blurred');
-            e.stopPropagation();
-          });
-        }
-        body.appendChild(row);
-      });
-    });
-
+    body.replaceChildren(buildTableContent(groups, allRevealed));
     toggleBtn.textContent = allRevealed ? `◉ ${t('tableHide')}` : `○ ${t('tableReveal')}`;
   }
+
+  body.onclick = (event) => {
+    if (allRevealed) return;
+    const target = event.target.closest('.table-cell-en');
+    if (!target || !body.contains(target)) return;
+    // target.classList.toggle('blurred');
+  };
 
   toggleBtn.onclick = () => {
     allRevealed = !allRevealed;
@@ -66,7 +86,12 @@ function renderTableScreen(title, subtitle, groups, { showScreen }) {
 export function showTableView(setId, deps) {
   const set = app.sets.find((item) => item.id === setId);
   if (!set) return;
-  renderTableScreen(translateSetName(set.name), getSetBreadcrumb(set), [{ label: null, cards: set.cards }], deps);
+  renderTableScreen(
+    translateSetName(set.name),
+    getSetBreadcrumb(set),
+    [{ label: null, cards: set.cards }],
+    deps,
+  );
 }
 
 export function showMixTableView(deps) {

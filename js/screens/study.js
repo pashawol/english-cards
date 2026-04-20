@@ -263,7 +263,9 @@ export function showDone({ showScreen, renderHome }) {
   document.getElementById('done-right').textContent = right;
   document.getElementById('done-wrong').textContent = total - right;
   document.getElementById('done-total').textContent = total;
-  document.getElementById('done-title').textContent = perfect ? t('excellentTitle') : t('doneTitle');
+  document.getElementById('done-title').textContent = perfect
+    ? t('excellentTitle')
+    : t('doneTitle');
   document.getElementById('done-sub').textContent = t('doneSub', { name, right, total });
   document.getElementById('progress-fill').style.width = '100%';
   triggerDoneCelebration(perfect);
@@ -289,17 +291,25 @@ export function restartAll({ startMix, startSet }) {
 }
 
 export function refreshStudyLanguage() {
-  if (!document.getElementById('study-screen')?.classList.contains('active') || !app.session.queue.length) {
+  if (
+    !document.getElementById('study-screen')?.classList.contains('active') ||
+    !app.session.queue.length
+  ) {
     return;
   }
   const studyTitle = document.getElementById('study-title');
   if (studyTitle && app.session.setId === 'mix') studyTitle.textContent = t('randomMix');
-  document.getElementById('tap-hint').textContent = app.session.flipped ? t('knewThisWord') : t('tapToFlip');
+  document.getElementById('tap-hint').textContent = app.session.flipped
+    ? t('knewThisWord')
+    : t('tapToFlip');
   updateMascotMessage();
 }
 
 export function refreshDoneLanguage({ showDone }) {
-  if (!document.getElementById('done-screen')?.classList.contains('active') || !app.session.queue.length) {
+  if (
+    !document.getElementById('done-screen')?.classList.contains('active') ||
+    !app.session.queue.length
+  ) {
     return;
   }
   showDone();
