@@ -4,12 +4,16 @@ const IS_DEV = ['localhost', '127.0.0.1', ''].includes(location.hostname);
 // DATA
 let SETS = [];
 let reminderTimerId = null;
-let mascotReactionTimerId = null;
+const mascotReactionTimerIds = {};
 let cardAdvanceTimerId = null;
 let cardEnterTimerId = null;
 let mascotAmbientTimerId = null;
 let lastMascotLine = '';
 const I18N = window.I18N || {};
+const MASCOT_TAP_POOLS = {
+  study: ['somersault', 'coffee', 'smoke', 'moonwalk', 'facepalm', 'thumbsup', 'clap', 'basketball', 'wave'],
+  done: ['clap', 'somersault', 'moonwalk', 'thumbsup', 'wave', 'coffee'],
+};
 
 function getLang() {
   return state.uiLang === 'ru' ? 'ru' : 'en';
@@ -331,7 +335,6 @@ function renderHome() {
       ? t('mixFromAll', { count: state.dailyGoal })
       : t('mixFromTopics', { count: state.dailyGoal, topics: enabledForMix });
   document.getElementById('mix-sub').textContent = mixSubText;
-  document.getElementById('mix-fab-count').textContent = state.dailyGoal;
   document.getElementById('daily-goal').value = state.dailyGoal;
 
   const noneEnabled = mixSourceIds.length === 0;
@@ -408,10 +411,15 @@ function renderHome() {
         <div class="set-bar-wrap"><div class="set-bar" style="width:${pct}%"></div></div>
         <div class="set-pct">${pct}%</div>
       </div>
+      <button class="set-view-btn" data-id="${set.id}" title="Просмотр списком">≡</button>
     `;
     el.querySelector('.set-check').addEventListener('click', (e) => {
       e.stopPropagation();
       toggleSetInMix(set.id);
+    });
+    el.querySelector('.set-view-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      showTableView(set.id);
     });
     list.appendChild(el);
   });
@@ -561,14 +569,27 @@ function scheduleMascotAmbient() {
     if (!studyScreen.classList.contains('active') || session.transitioning) return;
 
     const remaining = session.queue.length - session.index;
-    const mood = session.flipped ? 'blink' : Math.random() > 0.55 ? 'wonder' : 'idle';
+    const r = Math.random();
+    const mood = session.flipped
+      ? 'blink'
+      : r > 0.84 ? 'coffee'
+      : r > 0.68 ? 'smoke'
+      : r > 0.52 ? 'basketball'
+      : r > 0.32 ? 'wonder'
+      : 'idle';
     const lines = session.flipped
       ? getMascotLines('ambientReveal')
-      : remaining <= 2
-        ? getMascotLines('final')
-        : Math.random() > 0.7
-          ? getMascotLines('wonder')
-          : getMascotLines('ambient');
+      : mood === 'coffee'
+        ? getMascotLines('coffee')
+        : mood === 'smoke'
+          ? getMascotLines('smoke')
+        : mood === 'basketball'
+          ? getMascotLines('basketball')
+          : remaining <= 2
+            ? getMascotLines('final')
+            : r > 0.7
+              ? getMascotLines('wonder')
+              : getMascotLines('ambient');
 
     setMascotText(pickMascotLine(lines, ''));
     triggerMascotReaction(mood);
@@ -576,20 +597,59 @@ function scheduleMascotAmbient() {
   }, delay);
 }
 
-function triggerMascotReaction(mood) {
-  const el = document.getElementById('study-mascot');
+const MOOD_DURATION = {
+  reveal: 450, cheer: 520, nudge: 420, wonder: 500, blink: 340,
+  somersault: 1200, wave: 750, thumbsup: 850,
+  clap: 1200, boxing: 1050, basketball: 1450, telescope: 650,
+  coffee: 2200, smoke: 2200, moonwalk: 1250, facepalm: 980,
+};
+
+function triggerMascotReaction(mood, elementId = 'study-mascot') {
+  const el = document.getElementById(elementId);
   if (!el) return;
 
-  if (mascotReactionTimerId) clearTimeout(mascotReactionTimerId);
+  if (mascotReactionTimerIds[elementId]) clearTimeout(mascotReactionTimerIds[elementId]);
   el.dataset.mood = mood;
   el.classList.remove('is-reacting');
   void el.offsetWidth;
   el.classList.add('is-reacting');
 
-  mascotReactionTimerId = window.setTimeout(() => {
+  mascotReactionTimerIds[elementId] = window.setTimeout(() => {
     el.classList.remove('is-reacting');
     el.dataset.mood = 'idle';
-  }, 520);
+  }, MOOD_DURATION[mood] ?? 520);
+}
+
+function getMascotTapLines(mood) {
+  if (mood === 'facepalm') return getMascotLines('facepalm');
+  if (mood === 'moonwalk') return getMascotLines('moonwalk');
+  return getMascotLines(mood);
+}
+
+function triggerMascotTapReaction(elementId = 'study-mascot', textId = 'mascot-text') {
+  const mascot = document.getElementById(elementId);
+  if (!mascot) return;
+
+  const pool = elementId === 'done-mascot' ? MASCOT_TAP_POOLS.done : MASCOT_TAP_POOLS.study;
+  const mood = pool[Math.floor(Math.random() * pool.length)];
+  const lines = getMascotTapLines(mood);
+  setMascotText(pickMascotLine(lines, ''), textId);
+  triggerMascotReaction(mood, elementId);
+
+  if (elementId === 'study-mascot') scheduleMascotAmbient();
+}
+
+function bindMascotInteraction(elementId, textId) {
+  const mascot = document.getElementById(elementId);
+  if (!mascot) return;
+
+  const run = () => triggerMascotTapReaction(elementId, textId);
+  mascot.addEventListener('click', run);
+  mascot.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    e.preventDefault();
+    run();
+  });
 }
 
 function triggerDoneCelebration(perfect) {
@@ -597,7 +657,7 @@ function triggerDoneCelebration(perfect) {
   const doneText = document.getElementById('done-mascot-text');
   const doneCelebration = document.getElementById('done-celebration');
   if (doneMascot) {
-    doneMascot.dataset.mood = perfect ? 'cheer' : 'wonder';
+    doneMascot.dataset.mood = perfect ? 'clap' : 'wonder';
     doneMascot.classList.remove('is-reacting');
     void doneMascot.offsetWidth;
     doneMascot.classList.add('is-reacting');
@@ -630,6 +690,15 @@ function showCard() {
   document.getElementById('back-word').textContent = card.en;
   document.getElementById('front-hint').textContent = '';
   document.getElementById('back-hint').textContent = '';
+
+  const crumbEl = document.getElementById('card-breadcrumb');
+  if (crumbEl) {
+    const set = SETS.find((s) => s.id === card._setId);
+    if (set) {
+      const crumb = getSetBreadcrumb(set);
+      crumbEl.textContent = [crumb, translateSetName(set.name)].filter(Boolean).join(' · ');
+    }
+  }
   document.getElementById('study-counter').textContent = `${idx + 1} / ${total}`;
   document.getElementById('progress-fill').style.width = `${(idx / total) * 100}%`;
   document.getElementById('tap-hint').textContent = t('tapToFlip');
@@ -650,7 +719,14 @@ function showCard() {
       }, 180);
     }
   }
-  updateMascotMessage();
+  if (idx === 0 && session.answers.every((a) => a === undefined)) {
+    setTimeout(() => {
+      setMascotText(pickMascotLine(getMascotLines('wave'), ''));
+      triggerMascotReaction('wave');
+    }, 350);
+  } else {
+    updateMascotMessage();
+  }
   setMascotMood('idle');
   scheduleMascotAmbient();
 
@@ -708,7 +784,7 @@ function flipCard() {
     document.getElementById('btn-wrong').style.opacity = '1';
     document.getElementById('btn-right').style.opacity = '1';
     updateMascotMessage();
-    triggerMascotReaction('reveal');
+    triggerMascotReaction(Math.random() > 0.5 ? 'telescope' : 'reveal');
     scheduleMascotAmbient();
   } else {
     front.classList.remove('hidden');
@@ -729,15 +805,36 @@ function answer(correct) {
   const mascotText = document.getElementById('mascot-text');
   if (mascotText) {
     const answeredCount =
-      session.answers.filter((answer) => typeof answer === 'boolean').length + 1;
-    const lines = correct
-      ? answeredCount > 1 && answeredCount % 3 === 0
-        ? getMascotLines('streak')
-        : getMascotLines('correct')
-      : getMascotLines('wrong');
+      session.answers.filter((a) => typeof a === 'boolean').length + 1;
+    let consecutiveCorrect = 0;
+    for (let i = session.index - 1; i >= 0; i--) {
+      if (session.answers[i] === true) consecutiveCorrect++;
+      else break;
+    }
+    let answerMood, lines;
+    if (correct) {
+      if (consecutiveCorrect >= 2) {
+        answerMood = 'somersault';
+        lines = getMascotLines('somersault');
+      } else if (consecutiveCorrect >= 1) {
+        answerMood = 'thumbsup';
+        lines = getMascotLines('thumbsup');
+      } else {
+        answerMood = 'thumbsup';
+        lines =
+          answeredCount > 1 && answeredCount % 3 === 0
+            ? getMascotLines('streak')
+            : getMascotLines('correct');
+      }
+    } else {
+      answerMood = 'boxing';
+      lines = getMascotLines('wrong');
+    }
     mascotText.textContent = pickMascotLine(lines, '');
+    triggerMascotReaction(answerMood);
+  } else {
+    triggerMascotReaction(correct ? 'cheer' : 'nudge');
   }
-  triggerMascotReaction(correct ? 'cheer' : 'nudge');
   session.transitioning = true;
   clearMascotAmbient();
 
@@ -761,7 +858,7 @@ function goPrevCard() {
   if (session.transitioning || session.index <= 0) return;
   session.index--;
   setMascotText(pickMascotLine(getMascotLines('back'), ''));
-  triggerMascotReaction('wonder');
+  triggerMascotReaction('wave');
   showScreen('study-screen');
   showCard();
 }
@@ -816,12 +913,91 @@ function showScreen(id) {
   document.querySelectorAll('.screen').forEach((s) => s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   const footer = document.querySelector('.app-footer');
-  if (footer) footer.classList.toggle('visible', id === 'home-screen');
+  if (footer) footer.classList.toggle('visible', id === 'home-screen' || id === 'table-screen');
   if (id === 'study-screen') {
     scheduleMascotAmbient();
   } else {
     clearMascotAmbient();
   }
+}
+
+function getSetBreadcrumb(set) {
+  const cats = normalizeCategories(set).map((c) => translateCategory(c));
+  return cats.length ? cats.join(' · ') : null;
+}
+
+function renderTableScreen(title, subtitle, groups) {
+  document.getElementById('table-title').textContent = title;
+  const subEl = document.getElementById('table-subtitle');
+  if (subEl) subEl.textContent = subtitle || '';
+
+  let allRevealed = false;
+
+  function renderTable() {
+    const body = document.getElementById('table-body');
+    body.innerHTML = '';
+    groups.forEach(({ label, cards }) => {
+      if (label) {
+        const heading = document.createElement('div');
+        heading.className = 'table-group-heading';
+        heading.textContent = label;
+        body.appendChild(heading);
+      }
+      cards.forEach((card) => {
+        const row = document.createElement('div');
+        row.className = 'table-row';
+        const enClass = allRevealed ? 'table-cell-en' : 'table-cell-en blurred';
+        row.innerHTML = `
+          <div class="table-cell table-cell-ru">${card.ru}</div>
+          <div class="table-cell ${enClass}">${card.en}</div>
+        `;
+        if (!allRevealed) {
+          row.querySelector('.table-cell-en').addEventListener('click', (e) => {
+            e.currentTarget.classList.remove('blurred');
+            e.stopPropagation();
+          });
+        }
+        body.appendChild(row);
+      });
+    });
+
+    const btn = document.getElementById('table-toggle-ru');
+    btn.textContent = allRevealed ? `◉ ${t('tableHide')}` : `○ ${t('tableReveal')}`;
+  }
+
+  document.getElementById('table-toggle-ru').onclick = () => {
+    allRevealed = !allRevealed;
+    renderTable();
+  };
+
+  renderTable();
+  showScreen('table-screen');
+}
+
+function showTableView(setId) {
+  const set = SETS.find((s) => s.id === setId);
+  if (!set) return;
+  renderTableScreen(
+    translateSetName(set.name),
+    getSetBreadcrumb(set),
+    [{ label: null, cards: set.cards }],
+  );
+}
+
+function showMixTableView() {
+  const visibleIds = getVisibleIds();
+  const baseEnabled = getBaseEnabledIds();
+  const mixIds = visibleIds.filter((id) => baseEnabled.includes(id));
+  const sets = SETS.filter((s) => mixIds.includes(s.id));
+  if (sets.length === 0) return;
+
+  const groups = sets.map((set) => {
+    const crumb = getSetBreadcrumb(set);
+    const label = [crumb, translateSetName(set.name)].filter(Boolean).join(' · ');
+    return { label, cards: set.cards };
+  });
+
+  renderTableScreen(t('randomMix'), null, groups);
 }
 
 // THEME
@@ -943,15 +1119,16 @@ function buildDOM() {
 
       <div class="set-list" id="set-list"></div>
       <div class="home-actions">
-        <button class="mix-fab" id="mix-btn" type="button" onclick="startMix()">
-          <span class="mix-fab-count" id="mix-fab-count">10</span>
-          <span class="mix-fab-label" data-i18n="mix"></span>
-        </button>
+        <div class="mix-fab" id="mix-btn">
+          <button class="mix-fab-half" type="button" onclick="showMixTableView()" title="Список">≡</button>
+          <div class="mix-fab-sep"></div>
+          <button class="mix-fab-half" type="button" onclick="startMix()" title="Карточки">⊡</button>
+        </div>
         <div class="category-filter-shell">
           <div id="category-filter" class="category-filter" data-i18n-aria-label="allTopics"></div>
         </div>
         <div class="mix-meta">
-          <div class="mix-sub" id="mix-sub"></div>
+          <div id="mix-sub"></div>
           <div class="mix-warning" id="mix-warning" data-i18n="chooseAtLeastOne"></div>
         </div>
       </div>
@@ -968,10 +1145,16 @@ function buildDOM() {
         <div class="progress-fill" id="progress-fill" style="width: 0%"></div>
       </div>
 
-      <div class="study-mascot" id="study-mascot" aria-hidden="true">
+      <div class="study-mascot" id="study-mascot" role="button" tabindex="0" data-i18n-aria-label="mascotTap">
         <div class="study-mascot-figure">
+          <div class="mascot-arm mascot-arm-left"></div>
+          <div class="mascot-arm mascot-arm-right"></div>
+          <div class="mascot-cup"><span class="mascot-cup-steam"></span><span class="mascot-cup-steam"></span></div>
+          <div class="mascot-cigarette"></div>
+          <div class="mascot-smoke-wrap"><span></span><span></span><span></span></div>
           <div class="study-mascot-eyes"><span></span><span></span></div>
           <div class="study-mascot-mouth"></div>
+          <div class="mascot-ripple-wrap"><span></span><span></span><span></span></div>
         </div>
         <div class="study-mascot-bubble" id="mascot-text"></div>
       </div>
@@ -979,6 +1162,7 @@ function buildDOM() {
       <div class="card-area" id="card-area" onclick="flipCard()">
         <div class="card-inner" id="card-inner">
           <div class="card-face front">
+            <div class="card-breadcrumb" id="card-breadcrumb"></div>
             <div class="card-label" data-i18n="russian"></div>
             <div class="card-word" id="front-word"></div>
             <div class="card-hint" id="front-hint"></div>
@@ -1011,10 +1195,16 @@ function buildDOM() {
       <div class="done-icon">✦</div>
       <div class="done-title" id="done-title" data-i18n="doneTitle"></div>
       <div class="done-sub" id="done-sub"></div>
-      <div class="study-mascot done-mascot" id="done-mascot" aria-hidden="true">
+      <div class="study-mascot done-mascot" id="done-mascot" role="button" tabindex="0" data-i18n-aria-label="mascotTap">
         <div class="study-mascot-figure">
+          <div class="mascot-arm mascot-arm-left"></div>
+          <div class="mascot-arm mascot-arm-right"></div>
+          <div class="mascot-cup"><span class="mascot-cup-steam"></span><span class="mascot-cup-steam"></span></div>
+          <div class="mascot-cigarette"></div>
+          <div class="mascot-smoke-wrap"><span></span><span></span><span></span></div>
           <div class="study-mascot-eyes"><span></span><span></span></div>
           <div class="study-mascot-mouth"></div>
+          <div class="mascot-ripple-wrap"><span></span><span></span><span></span></div>
         </div>
         <div class="study-mascot-bubble" id="done-mascot-text" data-i18n="doneCleanWork"></div>
       </div>
@@ -1037,6 +1227,18 @@ function buildDOM() {
         <button class="done-btn" onclick="restartAll()" data-i18n="goAgain"></button>
         <button class="done-btn primary" onclick="goHome()" data-i18n="backToTopics"></button>
       </div>
+    </div>
+
+    <div id="table-screen" class="screen">
+      <div id="table-header">
+        <button id="table-back-btn" onclick="goHome()">←</button>
+        <div id="table-title-wrap">
+          <div id="table-title"></div>
+          <div id="table-subtitle"></div>
+        </div>
+        <button id="table-toggle-ru"></button>
+      </div>
+      <div id="table-body"></div>
     </div>
 
     <footer class="app-footer visible">
@@ -1067,6 +1269,8 @@ function buildDOM() {
     scheduleReminderCheck();
   });
 
+  bindMascotInteraction('study-mascot', 'mascot-text');
+  bindMascotInteraction('done-mascot', 'done-mascot-text');
   applyLanguage();
 }
 
