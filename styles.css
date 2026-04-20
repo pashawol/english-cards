@@ -1130,7 +1130,12 @@ header {
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background: radial-gradient(circle, rgba(232, 232, 232, 0.65) 0%, rgba(232, 232, 232, 0.12) 70%, transparent 100%);
+  background: radial-gradient(
+    circle,
+    rgba(232, 232, 232, 0.65) 0%,
+    rgba(232, 232, 232, 0.12) 70%,
+    transparent 100%
+  );
   opacity: 0;
 }
 
@@ -1285,180 +1290,413 @@ header {
 }
 
 @keyframes mascotWaveArm {
-  0% { transform: rotate(20deg); }
-  18% { transform: rotate(-95deg) translate(-2px, -8px); }
-  36% { transform: rotate(-28deg) translateY(-2px); }
-  54% { transform: rotate(-88deg) translate(-1px, -7px); }
-  72% { transform: rotate(-22deg) translateY(-1px); }
-  100% { transform: rotate(20deg); }
+  0% {
+    transform: rotate(20deg);
+  }
+  18% {
+    transform: rotate(-95deg) translate(-2px, -8px);
+  }
+  36% {
+    transform: rotate(-28deg) translateY(-2px);
+  }
+  54% {
+    transform: rotate(-88deg) translate(-1px, -7px);
+  }
+  72% {
+    transform: rotate(-22deg) translateY(-1px);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
 }
 
 @keyframes mascotThumbsUpArm {
-  0% { transform: rotate(-20deg); }
-  20% { transform: rotate(-104deg) translate(1px, -10px) scale(1.02); }
-  45% { transform: rotate(-100deg) translate(1px, -12px) scale(1.04); }
-  75% { transform: rotate(-96deg) translate(1px, -10px); }
-  100% { transform: rotate(-20deg); }
+  0% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(-104deg) translate(1px, -10px) scale(1.02);
+  }
+  45% {
+    transform: rotate(-100deg) translate(1px, -12px) scale(1.04);
+  }
+  75% {
+    transform: rotate(-96deg) translate(1px, -10px);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
 }
 
 @keyframes mascotWaveBody {
-  0% { transform: translateX(0) rotate(0deg); }
-  20% { transform: translateX(-7px) rotate(-7deg); }
-  42% { transform: translateX(3px) rotate(2deg); }
-  64% { transform: translateX(-5px) rotate(-5deg); }
-  100% { transform: translateX(0) rotate(0deg); }
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-7px) rotate(-7deg);
+  }
+  42% {
+    transform: translateX(3px) rotate(2deg);
+  }
+  64% {
+    transform: translateX(-5px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
 }
 
 @keyframes mascotThumbsUpBody {
-  0% { transform: translateY(0) rotate(0deg) scale(1); }
-  22% { transform: translateY(-10px) rotate(-6deg) scale(1.06); }
-  48% { transform: translateY(-4px) rotate(4deg) scale(1.03); }
-  76% { transform: translateY(-2px) rotate(0deg) scale(1.01); }
-  100% { transform: translateY(0) rotate(0deg) scale(1); }
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  22% {
+    transform: translateY(-10px) rotate(-6deg) scale(1.06);
+  }
+  48% {
+    transform: translateY(-4px) rotate(4deg) scale(1.03);
+  }
+  76% {
+    transform: translateY(-2px) rotate(0deg) scale(1.01);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
 }
 
 @keyframes mascotClapLeft {
-  0%,100% { transform: rotate(20deg); }
-  25% { transform: rotate(-10deg) translateX(6px); }
-  50% { transform: rotate(15deg); }
-  75% { transform: rotate(-8deg) translateX(4px); }
+  0%,
+  100% {
+    transform: rotate(20deg);
+  }
+  25% {
+    transform: rotate(-10deg) translateX(6px);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-8deg) translateX(4px);
+  }
 }
 
 @keyframes mascotClapRight {
-  0%,100% { transform: rotate(-20deg); }
-  25% { transform: rotate(10deg) translateX(-6px); }
-  50% { transform: rotate(-15deg); }
-  75% { transform: rotate(8deg) translateX(-4px); }
+  0%,
+  100% {
+    transform: rotate(-20deg);
+  }
+  25% {
+    transform: rotate(10deg) translateX(-6px);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(8deg) translateX(-4px);
+  }
 }
 
 @keyframes mascotBoxArm {
-  0% { transform: rotate(-20deg); }
-  20% { transform: rotate(-90deg) translateY(-10px); }
-  35% { transform: rotate(-20deg); }
-  55% { transform: rotate(-85deg) translateY(-8px); }
-  70% { transform: rotate(-20deg); }
-  100% { transform: rotate(-20deg); }
+  0% {
+    transform: rotate(-20deg);
+  }
+  20% {
+    transform: rotate(-90deg) translateY(-10px);
+  }
+  35% {
+    transform: rotate(-20deg);
+  }
+  55% {
+    transform: rotate(-85deg) translateY(-8px);
+  }
+  70% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
 }
 
 @keyframes mascotBoxBody {
-  0% { transform: translateX(0) rotate(0); }
-  20% { transform: translateX(6px) rotate(4deg); }
-  35% { transform: translateX(0) rotate(0); }
-  55% { transform: translateX(5px) rotate(3deg); }
-  70% { transform: translateX(0) rotate(0); }
-  100% { transform: translateX(0) rotate(0); }
+  0% {
+    transform: translateX(0) rotate(0);
+  }
+  20% {
+    transform: translateX(6px) rotate(4deg);
+  }
+  35% {
+    transform: translateX(0) rotate(0);
+  }
+  55% {
+    transform: translateX(5px) rotate(3deg);
+  }
+  70% {
+    transform: translateX(0) rotate(0);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
 }
 
 @keyframes mascotBounceArm {
-  0%,100% { transform: rotate(-20deg); }
-  15% { transform: rotate(-50deg) translateY(8px); }
-  30% { transform: rotate(-20deg); }
-  45% { transform: rotate(-50deg) translateY(8px); }
-  60% { transform: rotate(-20deg); }
-  75% { transform: rotate(-50deg) translateY(8px); }
-  90% { transform: rotate(-20deg); }
+  0%,
+  100% {
+    transform: rotate(-20deg);
+  }
+  15% {
+    transform: rotate(-50deg) translateY(8px);
+  }
+  30% {
+    transform: rotate(-20deg);
+  }
+  45% {
+    transform: rotate(-50deg) translateY(8px);
+  }
+  60% {
+    transform: rotate(-20deg);
+  }
+  75% {
+    transform: rotate(-50deg) translateY(8px);
+  }
+  90% {
+    transform: rotate(-20deg);
+  }
 }
 
 @keyframes mascotFlip {
-  0% { transform: rotate(0deg) scale(1) translateY(0); }
-  20% { transform: rotate(90deg) scale(1.05) translateY(-14px); }
-  45% { transform: rotate(220deg) scale(1.12) translateY(-22px); }
-  75% { transform: rotate(330deg) scale(1.04) translateY(-4px); }
-  100% { transform: rotate(360deg) scale(1) translateY(0); }
+  0% {
+    transform: rotate(0deg) scale(1) translateY(0);
+  }
+  20% {
+    transform: rotate(90deg) scale(1.05) translateY(-14px);
+  }
+  45% {
+    transform: rotate(220deg) scale(1.12) translateY(-22px);
+  }
+  75% {
+    transform: rotate(330deg) scale(1.04) translateY(-4px);
+  }
+  100% {
+    transform: rotate(360deg) scale(1) translateY(0);
+  }
 }
 
 @keyframes mascotTelescope {
-  0% { transform: rotate(20deg); }
-  30% { transform: rotate(-70deg) translateY(-6px); }
-  70% { transform: rotate(-68deg) translateY(-6px); }
-  100% { transform: rotate(20deg); }
+  0% {
+    transform: rotate(20deg);
+  }
+  30% {
+    transform: rotate(-70deg) translateY(-6px);
+  }
+  70% {
+    transform: rotate(-68deg) translateY(-6px);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
 }
 
 @keyframes mascotEyeSquint {
-  0%,100% { transform: scaleY(1); }
-  30%,70% { transform: scaleY(0.4); }
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  30%,
+  70% {
+    transform: scaleY(0.4);
+  }
 }
 
 @keyframes mascotRipple {
-  0% { transform: scale(1); opacity: 0.6; }
-  100% { transform: scale(2.4); opacity: 0; }
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
 }
 
 @keyframes mascotCoffeeCup {
-  0%, 100% { opacity: 0; transform: translateY(8px) rotate(8deg) scale(0.8); }
-  15%, 85% { opacity: 1; transform: translateY(0) rotate(4deg) scale(1); }
-  35%, 60% { transform: translate(-8px, -10px) rotate(-8deg) scale(1.02); }
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateY(8px) rotate(8deg) scale(0.8);
+  }
+  15%,
+  85% {
+    opacity: 1;
+    transform: translateY(0) rotate(4deg) scale(1);
+  }
+  35%,
+  60% {
+    transform: translate(-8px, -10px) rotate(-8deg) scale(1.02);
+  }
 }
 
 @keyframes mascotSipArm {
-  0%, 100% { transform: rotate(-20deg); }
-  18%, 82% { transform: rotate(-62deg) translateY(-3px); }
-  35%, 60% { transform: rotate(-88deg) translate(-2px, -7px); }
+  0%,
+  100% {
+    transform: rotate(-20deg);
+  }
+  18%,
+  82% {
+    transform: rotate(-62deg) translateY(-3px);
+  }
+  35%,
+  60% {
+    transform: rotate(-88deg) translate(-2px, -7px);
+  }
 }
 
 @keyframes mascotCoffeeBody {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  30%, 60% { transform: translateY(-2px) rotate(6deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  30%,
+  60% {
+    transform: translateY(-2px) rotate(6deg);
+  }
 }
 
 @keyframes mascotSteam {
-  0% { opacity: 0; transform: translateY(6px) scale(0.7); }
-  30% { opacity: 0.8; }
-  100% { opacity: 0; transform: translateY(-12px) translateX(4px) scale(1.1); }
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.7);
+  }
+  30% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-12px) translateX(4px) scale(1.1);
+  }
 }
 
 @keyframes mascotSmokeHold {
-  0%, 100% { opacity: 0; transform: translateX(4px) rotate(-8deg); }
-  15%, 85% { opacity: 1; transform: translateX(0) rotate(-8deg); }
+  0%,
+  100% {
+    opacity: 0;
+    transform: translateX(4px) rotate(-8deg);
+  }
+  15%,
+  85% {
+    opacity: 1;
+    transform: translateX(0) rotate(-8deg);
+  }
 }
 
 @keyframes mascotSmokePuff {
-  0% { opacity: 0; transform: translate(0, 0) scale(0.5); }
-  25% { opacity: 0.75; }
-  100% { opacity: 0; transform: translate(-16px, -28px) scale(1.4); }
+  0% {
+    opacity: 0;
+    transform: translate(0, 0) scale(0.5);
+  }
+  25% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-16px, -28px) scale(1.4);
+  }
 }
 
 @keyframes mascotSmokeLean {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  35%, 70% { transform: translateY(-3px) rotate(-7deg); }
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  35%,
+  70% {
+    transform: translateY(-3px) rotate(-7deg);
+  }
 }
 
 @keyframes mascotMoonwalk {
-  0% { transform: translateX(0) skewX(0deg) rotate(0deg); }
-  20% { transform: translateX(-10px) skewX(-10deg) rotate(-5deg); }
-  45% { transform: translateX(8px) skewX(7deg) rotate(3deg); }
-  70% { transform: translateX(-6px) skewX(-6deg) rotate(-2deg); }
-  100% { transform: translateX(0) skewX(0deg) rotate(0deg); }
+  0% {
+    transform: translateX(0) skewX(0deg) rotate(0deg);
+  }
+  20% {
+    transform: translateX(-10px) skewX(-10deg) rotate(-5deg);
+  }
+  45% {
+    transform: translateX(8px) skewX(7deg) rotate(3deg);
+  }
+  70% {
+    transform: translateX(-6px) skewX(-6deg) rotate(-2deg);
+  }
+  100% {
+    transform: translateX(0) skewX(0deg) rotate(0deg);
+  }
 }
 
 @keyframes mascotMoonwalkArmLeft {
-  0%, 100% { transform: rotate(20deg); }
-  22% { transform: rotate(56deg) translate(-1px, -1px); }
-  48% { transform: rotate(-4deg) translate(4px, -4px); }
-  72% { transform: rotate(42deg) translate(0, -2px); }
+  0%,
+  100% {
+    transform: rotate(20deg);
+  }
+  22% {
+    transform: rotate(56deg) translate(-1px, -1px);
+  }
+  48% {
+    transform: rotate(-4deg) translate(4px, -4px);
+  }
+  72% {
+    transform: rotate(42deg) translate(0, -2px);
+  }
 }
 
 @keyframes mascotMoonwalkArmRight {
-  0%, 100% { transform: rotate(-20deg); }
-  22% { transform: rotate(-62deg) translate(2px, -4px); }
-  48% { transform: rotate(4deg) translate(-4px, 2px); }
-  72% { transform: rotate(-48deg) translate(1px, -2px); }
+  0%,
+  100% {
+    transform: rotate(-20deg);
+  }
+  22% {
+    transform: rotate(-62deg) translate(2px, -4px);
+  }
+  48% {
+    transform: rotate(4deg) translate(-4px, 2px);
+  }
+  72% {
+    transform: rotate(-48deg) translate(1px, -2px);
+  }
 }
 
 @keyframes mascotFacepalmArm {
-  0% { transform: rotate(20deg); }
-  28% { transform: rotate(-86deg) translate(7px, -10px); }
-  58% { transform: rotate(-104deg) translate(10px, -12px); }
-  78% { transform: rotate(-88deg) translate(7px, -10px); }
-  100% { transform: rotate(20deg); }
+  0% {
+    transform: rotate(20deg);
+  }
+  28% {
+    transform: rotate(-86deg) translate(7px, -10px);
+  }
+  58% {
+    transform: rotate(-104deg) translate(10px, -12px);
+  }
+  78% {
+    transform: rotate(-88deg) translate(7px, -10px);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
 }
 
 @keyframes mascotFacepalmBody {
-  0% { transform: translateY(0) rotate(0deg); }
-  24% { transform: translateY(1px) rotate(4deg); }
-  54% { transform: translateY(5px) rotate(7deg) scale(0.98); }
-  76% { transform: translateY(1px) rotate(3deg); }
-  100% { transform: translateY(0) rotate(0deg); }
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  24% {
+    transform: translateY(1px) rotate(4deg);
+  }
+  54% {
+    transform: translateY(5px) rotate(7deg) scale(0.98);
+  }
+  76% {
+    transform: translateY(1px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
 /* ANSWER BUTTONS */
@@ -1946,7 +2184,6 @@ header {
 }
 
 .table-cell {
-  font-size: 13px;
   line-height: 1.4;
 }
 
@@ -1957,7 +2194,6 @@ header {
 .table-cell-en {
   color: var(--green);
   font-family: 'Instrument Serif', serif;
-  font-size: 15px;
   transition: filter 0.2s;
 
   &.blurred {
