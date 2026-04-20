@@ -2195,6 +2195,7 @@ header {
   color: var(--green);
   font-family: 'Instrument Serif', serif;
   transition: filter 0.2s;
+  font-size: 1.26rem;
 
   &.blurred {
     filter: blur(5px);
@@ -2202,7 +2203,7 @@ header {
     user-select: none;
 
     &:hover {
-      filter: blur(3px);
+      filter: blur(0);
     }
   }
 }
