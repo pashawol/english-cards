@@ -314,6 +314,13 @@ export function buildDOM({
   cardAreaEl.appendChild(swipeOverlayEl);
 
   const SWIPE_THRESHOLD = 80;
+  const ARM_RATIO = 0.25;
+  const btnRightEl = document.getElementById('btn-right');
+  const btnWrongEl = document.getElementById('btn-wrong');
+  const clearArmed = () => {
+    btnRightEl.classList.remove('armed');
+    btnWrongEl.classList.remove('armed');
+  };
   let swipeStart = null;
   let swipeDx = 0;
   let swipeActive = false;
@@ -341,6 +348,7 @@ export function buildDOM({
         cardInnerEl.style.transform = '';
         swipeOverlayEl.style.opacity = '0';
         cardAreaEl.classList.remove('swiping');
+        clearArmed();
         swipeActive = false;
       }
       swipeStart = null;
@@ -352,9 +360,15 @@ export function buildDOM({
     swipeDx = dx;
     cardAreaEl.classList.add('swiping');
     cardInnerEl.style.transform = `translateX(${dx}px) rotate(${dx * 0.05}deg)`;
-    const intensity = Math.min(1, absDx / SWIPE_THRESHOLD) * 0.45;
-    swipeOverlayEl.style.opacity = String(intensity);
+    const ratio = Math.min(1, absDx / SWIPE_THRESHOLD);
+    swipeOverlayEl.style.opacity = String(ratio * 0.45);
     swipeOverlayEl.style.background = dx < 0 ? 'var(--green-light)' : 'var(--red-light)';
+
+    const isArming = ratio >= ARM_RATIO;
+    const targetBtn = dx < 0 ? btnRightEl : btnWrongEl;
+    const otherBtn = dx < 0 ? btnWrongEl : btnRightEl;
+    targetBtn.classList.toggle('armed', isArming);
+    otherBtn.classList.remove('armed');
   }, { passive: false });
 
   cardAreaEl.addEventListener('touchend', () => {
@@ -374,10 +388,11 @@ export function buildDOM({
       cardInnerEl.style.transition = 'transform 0.22s ease-in, opacity 0.22s ease-in';
       cardInnerEl.style.transform = `translateX(${flyX}) rotate(${flyRot})`;
       cardInnerEl.style.opacity = '0';
-      setTimeout(() => { answer(correct); }, 220);
+      setTimeout(() => { clearArmed(); answer(correct); }, 220);
     } else {
       cardAreaEl.classList.remove('swiping');
       swipeOverlayEl.style.opacity = '0';
+      clearArmed();
       cardInnerEl.style.transition = 'transform 0.2s ease-out';
       cardInnerEl.style.transform = '';
       setTimeout(() => { cardInnerEl.style.transition = ''; }, 200);

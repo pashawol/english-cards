@@ -1849,6 +1849,12 @@ header {
   &:active {
     transform: scale(0.97);
   }
+
+  &.armed {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 6px 18px -4px currentColor;
+    filter: brightness(1.04);
+  }
 }
 
 #btn-wrong {
