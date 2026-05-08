@@ -2,27 +2,93 @@
   "name": "Предлоги образа действия 2",
   "category": "предлоги",
   "cards": [
-    { "ru": "в общем", "en": "in general" },
-    { "ru": "другими словами", "en": "in other words" },
-    { "ru": "лично", "en": "in person" },
-    { "ru": "публично", "en": "in public" },
-    { "ru": "короче говоря", "en": "in short" },
-    { "ru": "в тишине", "en": "in silence" },
-    { "ru": "несмотря на", "en": "in spite of" },
-    { "ru": "напрасно", "en": "in vain" },
-    { "ru": "на диете", "en": "on a diet" },
-    { "ru": "в среднем", "en": "on average" },
-    { "ru": "от имени", "en": "on behalf of" },
-    { "ru": "по делу", "en": "on business" },
-    { "ru": "нарочно", "en": "on purpose" },
-    { "ru": "на забастовке", "en": "on strike" },
-    { "ru": "на цыпочках", "en": "on tiptoe" },
-    { "ru": "вне опасности", "en": "out of danger" },
-    { "ru": "устаревший", "en": "out of date" },
-    { "ru": "не работает", "en": "out of order" },
-    { "ru": "под контролем", "en": "under control" },
-    { "ru": "под давлением", "en": "under pressure" },
-    { "ru": "без промедления", "en": "without delay" },
-    { "ru": "без исключения", "en": "without exception" }
+    { "ru": "в общем", "en": "in general", "examples": [
+      { "en": "<b>In general</b>, people like ice cream.", "ru": "В общем, людям нравится мороженое." },
+      { "en": "<b>In general</b>, the plan works well.", "ru": "В общем, план работает хорошо." }
+    ]},
+    { "ru": "другими словами", "en": "in other words", "examples": [
+      { "en": "<b>In other words</b>, you're wrong.", "ru": "Другими словами, ты неправ." },
+      { "en": "<b>In other words</b>, it failed.", "ru": "Говоря иначе, это не удалось." }
+    ]},
+    { "ru": "лично", "en": "in person", "examples": [
+      { "en": "I'll meet you <b>in person</b>.", "ru": "Я встречу тебя лично." },
+      { "en": "The president appeared <b>in person</b>.", "ru": "Президент появился лично." }
+    ]},
+    { "ru": "публично", "en": "in public", "examples": [
+      { "en": "He apologized <b>in public</b>.", "ru": "Он извинился публично." },
+      { "en": "Don't embarrass me <b>in public</b>.", "ru": "Не смущай меня публично." }
+    ]},
+    { "ru": "короче говоря", "en": "in short", "examples": [
+      { "en": "<b>In short</b>, we lost the game.", "ru": "Короче говоря, мы проиграли игру." },
+      { "en": "<b>In short</b>, it's impossible.", "ru": "Вкратце, это невозможно." }
+    ]},
+    { "ru": "в тишине", "en": "in silence", "examples": [
+      { "en": "They watched <b>in silence</b>.", "ru": "Они смотрели в тишине." },
+      { "en": "He left <b>in silence</b>.", "ru": "Он ушёл в тишине." }
+    ]},
+    { "ru": "несмотря на", "en": "in spite of", "examples": [
+      { "en": "<b>In spite of</b> the rain, we went.", "ru": "Несмотря на дождь, мы пошли." },
+      { "en": "<b>In spite of</b> his age, he runs fast.", "ru": "Несмотря на его возраст, он быстро бегает." }
+    ]},
+    { "ru": "напрасно", "en": "in vain", "examples": [
+      { "en": "All his efforts were <b>in vain</b>.", "ru": "Все его усилия были напрасны." },
+      { "en": "We tried <b>in vain</b> to help.", "ru": "Мы попробовали помочь напрасно." }
+    ]},
+    { "ru": "на диете", "en": "on a diet", "examples": [
+      { "en": "She's <b>on a diet</b> now.", "ru": "Она сейчас на диете." },
+      { "en": "I've been <b>on a diet</b> for months.", "ru": "Я на диете уже несколько месяцев." }
+    ]},
+    { "ru": "в среднем", "en": "on average", "examples": [
+      { "en": "<b>On average</b>, people sleep 8 hours.", "ru": "В среднем люди спят 8 часов." },
+      { "en": "<b>On average</b>, it costs $50.", "ru": "В среднем это стоит 50 долларов." }
+    ]},
+    { "ru": "от имени", "en": "on behalf of", "examples": [
+      { "en": "I speak <b>on behalf of</b> the group.", "ru": "Я говорю от имени группы." },
+      { "en": "<b>On behalf of</b> everyone, thanks.", "ru": "От имени всех спасибо." }
+    ]},
+    { "ru": "по делу", "en": "on business", "examples": [
+      { "en": "He's traveling <b>on business</b>.", "ru": "Он путешествует по делу." },
+      { "en": "She went <b>on business</b> to Paris.", "ru": "Она поехала в Париж по делу." }
+    ]},
+    { "ru": "нарочно", "en": "on purpose", "examples": [
+      { "en": "I didn't do it <b>on purpose</b>.", "ru": "Я это сделал не нарочно." },
+      { "en": "Did you break it <b>on purpose</b>?", "ru": "Ты разбил это нарочно?" }
+    ]},
+    { "ru": "на забастовке", "en": "on strike", "examples": [
+      { "en": "The workers are <b>on strike</b>.", "ru": "Рабочие на забастовке." },
+      { "en": "The buses are <b>on strike</b> today.", "ru": "Автобусы на забастовке сегодня." }
+    ]},
+    { "ru": "на цыпочках", "en": "on tiptoe", "examples": [
+      { "en": "She walked <b>on tiptoe</b> quietly.", "ru": "Она ходила на цыпочках тихо." },
+      { "en": "The children moved <b>on tiptoe</b>.", "ru": "Дети двигались на цыпочках." }
+    ]},
+    { "ru": "вне опасности", "en": "out of danger", "examples": [
+      { "en": "He's finally <b>out of danger</b>.", "ru": "Он наконец вне опасности." },
+      { "en": "The country is <b>out of danger</b> now.", "ru": "Страна вне опасности сейчас." }
+    ]},
+    { "ru": "устаревший", "en": "out of date", "examples": [
+      { "en": "Your passport is <b>out of date</b>.", "ru": "Ваш паспорт устарел." },
+      { "en": "This information is <b>out of date</b>.", "ru": "Эта информация устарела." }
+    ]},
+    { "ru": "не работает", "en": "out of order", "examples": [
+      { "en": "The elevator is <b>out of order</b>.", "ru": "Лифт не работает." },
+      { "en": "The phone is <b>out of order</b>.", "ru": "Телефон не работает." }
+    ]},
+    { "ru": "под контролем", "en": "under control", "examples": [
+      { "en": "The situation is <b>under control</b>.", "ru": "Ситуация под контролем." },
+      { "en": "Everything is <b>under control</b>.", "ru": "Всё под контролем." }
+    ]},
+    { "ru": "под давлением", "en": "under pressure", "examples": [
+      { "en": "I feel <b>under pressure</b> at work.", "ru": "Я чувствую себя под давлением на работе." },
+      { "en": "He works <b>under pressure</b> well.", "ru": "Он хорошо работает под давлением." }
+    ]},
+    { "ru": "без промедления", "en": "without delay", "examples": [
+      { "en": "Come here <b>without delay</b>!", "ru": "Иди сюда без промедления!" },
+      { "en": "Send it <b>without delay</b>.", "ru": "Отправь это без промедления." }
+    ]},
+    { "ru": "без исключения", "en": "without exception", "examples": [
+      { "en": "Everyone must follow the rules <b>without exception</b>.", "ru": "Все должны следовать правилам без исключения." },
+      { "en": "<b>Without exception</b>, they agreed.", "ru": "Без исключения они согласились." }
+    ]}
   ]
 }

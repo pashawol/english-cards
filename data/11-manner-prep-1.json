@@ -2,27 +2,93 @@
   "name": "Предлоги образа действия",
   "category": "предлоги",
   "cards": [
-    { "ru": "наконец-то", "en": "at last" },
-    { "ru": "по крайней мере", "en": "at least" },
-    { "ru": "сразу", "en": "at once" },
-    { "ru": "вообще / вовсе", "en": "at all" },
-    { "ru": "любой ценой", "en": "at all costs" },
-    { "ru": "вручную", "en": "by hand" },
-    { "ru": "наизусть", "en": "by heart" },
-    { "ru": "ни в коем случае", "en": "by no means" },
-    { "ru": "по профессии", "en": "by profession" },
-    { "ru": "бесплатно", "en": "for free" },
-    { "ru": "ради удовольствия", "en": "for fun" },
-    { "ru": "как должное", "en": "for granted" },
-    { "ru": "зря", "en": "for nothing" },
-    { "ru": "наверняка", "en": "for sure" },
-    { "ru": "впервые", "en": "for the first time" },
-    { "ru": "по опыту", "en": "from experience" },
-    { "ru": "по памяти", "en": "from memory" },
-    { "ru": "отныне", "en": "from now on" },
-    { "ru": "время от времени", "en": "from time to time" },
-    { "ru": "заранее", "en": "in advance" },
-    { "ru": "в дополнение к", "en": "in addition to" },
-    { "ru": "в обмен на", "en": "in exchange for" }
+    { "ru": "наконец-то", "en": "at last", "examples": [
+      { "en": "He arrived <b>at last</b>!", "ru": "Он наконец приехал!" },
+      { "en": "<b>At last</b>, the project is done.", "ru": "Наконец-то проект готов." }
+    ]},
+    { "ru": "по крайней мере", "en": "at least", "examples": [
+      { "en": "It costs <b>at least</b> $100.", "ru": "Это стоит по крайней мере 100 долларов." },
+      { "en": "<b>At least</b> I tried my best.", "ru": "По крайней мере я старался." }
+    ]},
+    { "ru": "сразу", "en": "at once", "examples": [
+      { "en": "Come here <b>at once</b>!", "ru": "Иди сюда сразу же!" },
+      { "en": "She knew <b>at once</b> it was wrong.", "ru": "Она сразу поняла, что это неправильно." }
+    ]},
+    { "ru": "вообще / вовсе", "en": "at all", "examples": [
+      { "en": "I don't care <b>at all</b>.", "ru": "Я вообще не волнуюсь." },
+      { "en": "Not <b>at all</b>, thanks.", "ru": "Ничего, спасибо." }
+    ]},
+    { "ru": "любой ценой", "en": "at all costs", "examples": [
+      { "en": "We must win <b>at all costs</b>.", "ru": "Мы должны победить любой ценой." },
+      { "en": "Avoid it <b>at all costs</b>.", "ru": "Избегай этого любой ценой." }
+    ]},
+    { "ru": "вручную", "en": "by hand", "examples": [
+      { "en": "This was made <b>by hand</b>.", "ru": "Это было сделано вручную." },
+      { "en": "She wrote the letter <b>by hand</b>.", "ru": "Она написала письмо вручную." }
+    ]},
+    { "ru": "наизусть", "en": "by heart", "examples": [
+      { "en": "I know it <b>by heart</b>.", "ru": "Я знаю это наизусть." },
+      { "en": "Learn the poem <b>by heart</b>.", "ru": "Выучи стихотворение наизусть." }
+    ]},
+    { "ru": "ни в коем случае", "en": "by no means", "examples": [
+      { "en": "<b>By no means</b> should you do that.", "ru": "Ни в коем случае ты не должен это делать." },
+      { "en": "That's <b>by no means</b> acceptable.", "ru": "Это совершенно неприемлемо." }
+    ]},
+    { "ru": "по профессии", "en": "by profession", "examples": [
+      { "en": "She's a doctor <b>by profession</b>.", "ru": "Она врач по профессии." },
+      { "en": "He's an engineer <b>by profession</b>.", "ru": "Он инженер по профессии." }
+    ]},
+    { "ru": "бесплатно", "en": "for free", "examples": [
+      { "en": "This software is <b>for free</b>.", "ru": "Это программное обеспечение бесплатно." },
+      { "en": "I'll do it <b>for free</b> for you.", "ru": "Я сделаю это бесплатно для тебя." }
+    ]},
+    { "ru": "ради удовольствия", "en": "for fun", "examples": [
+      { "en": "Let's play tennis <b>for fun</b>.", "ru": "Давайте поиграем в теннис ради удовольствия." },
+      { "en": "I do it <b>for fun</b>, not money.", "ru": "Я это делаю ради удовольствия, не денег." }
+    ]},
+    { "ru": "как должное", "en": "for granted", "examples": [
+      { "en": "Don't take life <b>for granted</b>.", "ru": "Не воспринимай жизнь как должное." },
+      { "en": "He takes her <b>for granted</b>.", "ru": "Он воспринимает её как само собой разумеющееся." }
+    ]},
+    { "ru": "зря", "en": "for nothing", "examples": [
+      { "en": "All that work was <b>for nothing</b>.", "ru": "Вся эта работа была зря." },
+      { "en": "Don't waste time <b>for nothing</b>.", "ru": "Не трать время зря." }
+    ]},
+    { "ru": "наверняка", "en": "for sure", "examples": [
+      { "en": "I know that <b>for sure</b>.", "ru": "Я это знаю наверняка." },
+      { "en": "<b>For sure</b> I'll be there.", "ru": "Я точно буду там." }
+    ]},
+    { "ru": "впервые", "en": "for the first time", "examples": [
+      { "en": "I met him <b>for the first time</b>.", "ru": "Я встретил его впервые." },
+      { "en": "<b>For the first time</b> she felt happy.", "ru": "Впервые она чувствовала себя счастливой." }
+    ]},
+    { "ru": "по опыту", "en": "from experience", "examples": [
+      { "en": "I know this <b>from experience</b>.", "ru": "Я знаю это по опыту." },
+      { "en": "<b>From experience</b>, it works better.", "ru": "По опыту это работает лучше." }
+    ]},
+    { "ru": "по памяти", "en": "from memory", "examples": [
+      { "en": "I recall it <b>from memory</b>.", "ru": "Я припоминаю это по памяти." },
+      { "en": "He painted it <b>from memory</b>.", "ru": "Он нарисовал это по памяти." }
+    ]},
+    { "ru": "отныне", "en": "from now on", "examples": [
+      { "en": "<b>From now on</b>, things will change.", "ru": "Отныне всё будет по-другому." },
+      { "en": "<b>From now on</b> I'll be careful.", "ru": "Отныне я буду осторожен." }
+    ]},
+    { "ru": "время от времени", "en": "from time to time", "examples": [
+      { "en": "I see him <b>from time to time</b>.", "ru": "Я вижу его время от времени." },
+      { "en": "She calls <b>from time to time</b>.", "ru": "Она звонит время от времени." }
+    ]},
+    { "ru": "заранее", "en": "in advance", "examples": [
+      { "en": "Book tickets <b>in advance</b>.", "ru": "Заказывай билеты заранее." },
+      { "en": "Thank you <b>in advance</b>.", "ru": "Спасибо заранее." }
+    ]},
+    { "ru": "в дополнение к", "en": "in addition to", "examples": [
+      { "en": "<b>In addition to</b> English, I speak French.", "ru": "В дополнение к английскому я говорю по-французски." },
+      { "en": "<b>In addition to</b> the fee, there's tax.", "ru": "В дополнение к плате есть налог." }
+    ]},
+    { "ru": "в обмен на", "en": "in exchange for", "examples": [
+      { "en": "I'll do it <b>in exchange for</b> payment.", "ru": "Я это сделаю в обмен на оплату." },
+      { "en": "<b>In exchange for</b> help, I'll help you.", "ru": "В обмен на помощь я помогу тебе." }
+    ]}
   ]
 }

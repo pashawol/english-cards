@@ -2,27 +2,93 @@
   "name": "Фразовые глаголы 3",
   "category": "фразовые глаголы",
   "cards": [
-    { "ru": "присматривать за", "en": "look after" },
-    { "ru": "вспоминать", "en": "look back" },
-    { "ru": "смотреть свысока", "en": "look down on" },
-    { "ru": "искать", "en": "look for" },
-    { "ru": "предвкушать", "en": "look forward to" },
-    { "ru": "изучать (вопрос)", "en": "look into" },
-    { "ru": "остерегаться", "en": "look out" },
-    { "ru": "просматривать", "en": "look through" },
-    { "ru": "понять с трудом", "en": "make out" },
-    { "ru": "составлять / мириться", "en": "make up" },
-    { "ru": "вернуть деньги", "en": "pay back" },
-    { "ru": "поднимать / заехать за", "en": "pick up" },
-    { "ru": "указывать", "en": "point out" },
-    { "ru": "откладывать", "en": "put off" },
-    { "ru": "надевать / включать", "en": "put on" },
-    { "ru": "тушить (огонь)", "en": "put out" },
-    { "ru": "терпеть / мириться", "en": "put up with" },
-    { "ru": "кончаться", "en": "run out of" },
-    { "ru": "копить деньги", "en": "save up for" },
-    { "ru": "провожать", "en": "see off" },
-    { "ru": "отправляться в путь", "en": "set off" },
-    { "ru": "основывать / устанавливать", "en": "set up" }
+    { "ru": "присматривать за", "en": "look after", "examples": [
+      { "en": "Can you <b>look after</b> my cat?", "ru": "Ты можешь присмотреть за моей кошкой?" },
+      { "en": "She <b>looked after</b> the children.", "ru": "Она присматривала за детьми." }
+    ]},
+    { "ru": "вспоминать", "en": "look back", "examples": [
+      { "en": "When I <b>look back</b>, I smile.", "ru": "Когда я вспоминаю, я улыбаюсь." },
+      { "en": "<b>Looking back</b>, it was fun.", "ru": "Вспоминая, это было весело." }
+    ]},
+    { "ru": "смотреть свысока", "en": "look down on", "examples": [
+      { "en": "Don't <b>look down on</b> poor people.", "ru": "Не смотри свысока на бедных." },
+      { "en": "He <b>looks down on</b> everyone.", "ru": "Он смотрит свысока на всех." }
+    ]},
+    { "ru": "искать", "en": "look for", "examples": [
+      { "en": "I'm <b>looking for</b> my keys.", "ru": "Я ищу свои ключи." },
+      { "en": "What are you <b>looking for</b>?", "ru": "Что ты ищешь?" }
+    ]},
+    { "ru": "предвкушать", "en": "look forward to", "examples": [
+      { "en": "I <b>look forward to</b> your reply.", "ru": "Я предвкушаю твой ответ." },
+      { "en": "She's <b>looking forward to</b> vacation.", "ru": "Она предвкушает отпуск." }
+    ]},
+    { "ru": "изучать (вопрос)", "en": "look into", "examples": [
+      { "en": "We need to <b>look into</b> this matter.", "ru": "Нам нужно изучить этот вопрос." },
+      { "en": "He <b>looked into</b> the problem.", "ru": "Он изучил проблему." }
+    ]},
+    { "ru": "остерегаться", "en": "look out", "examples": [
+      { "en": "<b>Look out</b> for cars!", "ru": "Берегись машин!" },
+      { "en": "We'll <b>look out</b> for you.", "ru": "Мы будем остерегаться за тебя." }
+    ]},
+    { "ru": "просматривать", "en": "look through", "examples": [
+      { "en": "Let me <b>look through</b> your notes.", "ru": "Дай мне просмотреть твои заметки." },
+      { "en": "She <b>looked through</b> the magazine.", "ru": "Она просмотрела журнал." }
+    ]},
+    { "ru": "понять с трудом", "en": "make out", "examples": [
+      { "en": "I can't <b>make</b> <b>out</b> your writing.", "ru": "Я не могу разобрать твой почерк." },
+      { "en": "Can you <b>make out</b> what he said?", "ru": "Ты можешь понять что он сказал?" }
+    ]},
+    { "ru": "составлять / мириться", "en": "make up", "examples": [
+      { "en": "They <b>made up</b> after the fight.", "ru": "Они помирились после ссоры." },
+      { "en": "She's <b>making up</b> a story.", "ru": "Она составляет историю." }
+    ]},
+    { "ru": "вернуть деньги", "en": "pay back", "examples": [
+      { "en": "I'll <b>pay</b> you <b>back</b> soon.", "ru": "Я скоро тебе верну деньги." },
+      { "en": "When will you <b>pay</b> me <b>back</b>?", "ru": "Когда ты мне вернёшь деньги?" }
+    ]},
+    { "ru": "поднимать / заехать за", "en": "pick up", "examples": [
+      { "en": "Can you <b>pick</b> me <b>up</b> at 5?", "ru": "Ты можешь заехать за мной в 5?" },
+      { "en": "<b>Pick up</b> that trash.", "ru": "Подбери этот мусор." }
+    ]},
+    { "ru": "указывать", "en": "point out", "examples": [
+      { "en": "Can you <b>point</b> <b>out</b> the difference?", "ru": "Ты можешь указать на разницу?" },
+      { "en": "She <b>pointed out</b> my mistake.", "ru": "Она указала на мою ошибку." }
+    ]},
+    { "ru": "откладывать", "en": "put off", "examples": [
+      { "en": "Don't <b>put</b> the meeting <b>off</b>.", "ru": "Не откладывай встречу." },
+      { "en": "We <b>put off</b> the trip.", "ru": "Мы отложили поездку." }
+    ]},
+    { "ru": "надевать / включать", "en": "put on", "examples": [
+      { "en": "<b>Put on</b> your coat.", "ru": "Надень своё пальто." },
+      { "en": "She <b>put on</b> her makeup.", "ru": "Она надела макияж." }
+    ]},
+    { "ru": "тушить (огонь)", "en": "put out", "examples": [
+      { "en": "Please <b>put out</b> the fire.", "ru": "Пожалуйста, потуши огонь." },
+      { "en": "They <b>put out</b> the lights.", "ru": "Они выключили свет." }
+    ]},
+    { "ru": "терпеть / мириться", "en": "put up with", "examples": [
+      { "en": "I can't <b>put up with</b> this.", "ru": "Я не могу это терпеть." },
+      { "en": "How long will she <b>put up with</b> it?", "ru": "Как долго она это будет терпеть?" }
+    ]},
+    { "ru": "кончаться", "en": "run out of", "examples": [
+      { "en": "We've <b>run out of</b> milk.", "ru": "У нас закончилось молоко." },
+      { "en": "Time is <b>running out</b>.", "ru": "Время кончается." }
+    ]},
+    { "ru": "копить деньги", "en": "save up for", "examples": [
+      { "en": "I'm <b>saving up for</b> a car.", "ru": "Я копплю деньги на машину." },
+      { "en": "She's <b>saving up for</b> a house.", "ru": "Она копит деньги на дом." }
+    ]},
+    { "ru": "провожать", "en": "see off", "examples": [
+      { "en": "I'll <b>see</b> you <b>off</b> at the station.", "ru": "Я провожу тебя на вокзале." },
+      { "en": "They <b>saw off</b> the guests.", "ru": "Они провожали гостей." }
+    ]},
+    { "ru": "отправляться в путь", "en": "set off", "examples": [
+      { "en": "We <b>set off</b> early tomorrow.", "ru": "Мы отправляемся в путь рано завтра." },
+      { "en": "When will we <b>set</b> <b>off</b>?", "ru": "Когда мы отправимся в путь?" }
+    ]},
+    { "ru": "основывать / устанавливать", "en": "set up", "examples": [
+      { "en": "He <b>set up</b> a new company.", "ru": "Он основал новую компанию." },
+      { "en": "Can you <b>set up</b> the tent?", "ru": "Ты можешь установить палатку?" }
+    ]}
   ]
 }
