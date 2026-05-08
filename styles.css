@@ -589,7 +589,8 @@ header {
 
 /* CARD */
 .card-area {
-  height: 280px;
+  /* height: 280px; */
+  flex-grow: 1;
   margin-top: 12px;
   margin-bottom: 10px;
   cursor: pointer;
@@ -733,7 +734,7 @@ header {
   display: flex;
   align-items: flex-end;
   gap: 10px;
-  margin-bottom: 14px;
+  margin-block: 14px;
   align-self: flex-start;
   cursor: pointer;
   user-select: none;
