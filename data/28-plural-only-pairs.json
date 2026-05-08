@@ -2,19 +2,19 @@
   "name": "Только мн.ч. — парные предметы",
   "category": "число существительных",
   "cards": [
-    { "ru": "подтяжки", "en": "bracers" },
-    { "ru": "джинсы", "en": "jeans" },
-    { "ru": "леггинсы", "en": "leggings" },
-    { "ru": "комбинезон", "en": "overalls" },
-    { "ru": "штаны, брюки", "en": "pants" },
-    { "ru": "пижама", "en": "pyjamas" },
-    { "ru": "шорты", "en": "shorts" },
-    { "ru": "колготки", "en": "tights" },
-    { "ru": "брюки", "en": "trousers" },
-    { "ru": "бинокль", "en": "binoculars" },
-    { "ru": "очки", "en": "glasses" },
-    { "ru": "весы", "en": "scales" },
-    { "ru": "ножницы", "en": "scissors" },
-    { "ru": "солнцезащитные очки", "en": "sunglasses" }
+    { "ru": "подтяжки", "en": "bracers", "examples": [{ "en": "My <b>bracers</b> are leather.", "ru": "Мои подтяжки из кожи." }, { "en": "These <b>bracers</b> hold tight.", "ru": "Эти подтяжки держат крепко." }, { "en": "Old <b>bracers</b> are uncomfortable.", "ru": "Старые подтяжки неудобны." }] },
+    { "ru": "джинсы", "en": "jeans", "examples": [{ "en": "Blue <b>jeans</b> are classic.", "ru": "Синие джинсы классика." }, { "en": "These <b>jeans</b> fit well.", "ru": "Эти джинсы хорошо сидят." }, { "en": "Ripped <b>jeans</b> are trendy.", "ru": "Порванные джинсы модны." }] },
+    { "ru": "леггинсы", "en": "leggings", "examples": [{ "en": "Black <b>leggings</b> are versatile.", "ru": "Чёрные леггинсы универсальны." }, { "en": "These <b>leggings</b> are stretchy.", "ru": "Эти леггинсы растяжимые." }, { "en": "Thick <b>leggings</b> are warm.", "ru": "Толстые леггинсы тёплые." }] },
+    { "ru": "комбинезон", "en": "overalls", "examples": [{ "en": "Denim <b>overalls</b> are casual.", "ru": "Деним комбинезоны спортивные." }, { "en": "These <b>overalls</b> have deep pockets.", "ru": "Эти комбинезоны имеют глубокие карманы." }, { "en": "Work <b>overalls</b> are durable.", "ru": "Рабочие комбинезоны прочные." }] },
+    { "ru": "штаны, брюки", "en": "pants", "examples": [{ "en": "Baggy <b>pants</b> are comfortable.", "ru": "Мешковатые штаны удобны." }, { "en": "These <b>pants</b> are too tight.", "ru": "Эти штаны слишком узкие." }, { "en": "Khaki <b>pants</b> are practical.", "ru": "Хаки брюки практичны." }] },
+    { "ru": "пижама", "en": "pyjamas", "examples": [{ "en": "Soft <b>pyjamas</b> help sleep.", "ru": "Мягкая пижама помогает спать." }, { "en": "Striped <b>pyjamas</b> are cozy.", "ru": "Полосатая пижама уютна." }, { "en": "Cotton <b>pyjamas</b> are breathable.", "ru": "Хлопковая пижама дышит." }] },
+    { "ru": "шорты", "en": "shorts", "examples": [{ "en": "Summer <b>shorts</b> are cool.", "ru": "Летние шорты прохладны." }, { "en": "Athletic <b>shorts</b> are light.", "ru": "Спортивные шорты лёгкие." }, { "en": "Denim <b>shorts</b> are trendy.", "ru": "Деним шорты модны." }] },
+    { "ru": "колготки", "en": "tights", "examples": [{ "en": "Thick <b>tights</b> are warm.", "ru": "Толстые колготки тёплые." }, { "en": "These <b>tights</b> are itchy.", "ru": "Эти колготки зудят." }, { "en": "Wool <b>tights</b> are cosy.", "ru": "Шерстяные колготки уютны." }] },
+    { "ru": "брюки", "en": "trousers", "examples": [{ "en": "Formal <b>trousers</b> are pressed.", "ru": "Формальные брюки отглажены." }, { "en": "These <b>trousers</b> need hemming.", "ru": "Эти брюки требуют подшивки." }, { "en": "Navy <b>trousers</b> are classic.", "ru": "Тёмно-синие брюки классичны." }] },
+    { "ru": "бинокль", "en": "binoculars", "examples": [{ "en": "High-power <b>binoculars</b> are clear.", "ru": "Мощный бинокль ясен." }, { "en": "These <b>binoculars</b> magnify well.", "ru": "Этот бинокль хорошо увеличивает." }, { "en": "Military <b>binoculars</b> are durable.", "ru": "Военный бинокль прочен." }] },
+    { "ru": "очки", "en": "glasses", "examples": [{ "en": "Prescription <b>glasses</b> help vision.", "ru": "Очки по рецепту помогают зрению." }, { "en": "These <b>glasses</b> are scratched.", "ru": "Эти очки поцарапаны." }, { "en": "Thick <b>glasses</b> are noticeable.", "ru": "Толстые очки заметны." }] },
+    { "ru": "весы", "en": "scales", "examples": [{ "en": "Bathroom <b>scales</b> are accurate.", "ru": "Ванные весы точны." }, { "en": "These <b>scales</b> need calibrating.", "ru": "Эти весы нужно откалибровать." }, { "en": "Kitchen <b>scales</b> weigh ingredients.", "ru": "Кухонные весы взвешивают ингредиенты." }] },
+    { "ru": "ножницы", "en": "scissors", "examples": [{ "en": "Sharp <b>scissors</b> cut easily.", "ru": "Острые ножницы режут легко." }, { "en": "These <b>scissors</b> are blunt.", "ru": "Эти ножницы тупые." }, { "en": "Surgical <b>scissors</b> are precise.", "ru": "Хирургические ножницы точны." }] },
+    { "ru": "солнцезащитные очки", "en": "sunglasses", "examples": [{ "en": "Dark <b>sunglasses</b> protect eyes.", "ru": "Тёмные очки защищают глаза." }, { "en": "These <b>sunglasses</b> are expensive.", "ru": "Эти очки дорогие." }, { "en": "Designer <b>sunglasses</b> look cool.", "ru": "Дизайнерские очки выглядят круто." }] }
   ]
 }
