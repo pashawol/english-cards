@@ -2,27 +2,93 @@
   "name": "Предлоги после существительных",
   "category": "предлоги",
   "cards": [
-    { "ru": "доступ к", "en": "access to" },
-    { "ru": "зависимость от", "en": "addiction to" },
-    { "ru": "совет по", "en": "advice on" },
-    { "ru": "ответ на", "en": "answer to" },
-    { "ru": "заявление на", "en": "application for" },
-    { "ru": "отношение к", "en": "attitude to" },
-    { "ru": "вера в", "en": "belief in" },
-    { "ru": "шанс на", "en": "chance of" },
-    { "ru": "уверенность в", "en": "confidence in" },
-    { "ru": "поздравления с", "en": "congratulations on" },
-    { "ru": "вклад в", "en": "contribution to" },
-    { "ru": "контроль над", "en": "control over" },
-    { "ru": "лекарство от", "en": "cure for" },
-    { "ru": "ущерб чему-либо", "en": "damage to" },
-    { "ru": "спрос на", "en": "demand for" },
-    { "ru": "разница между", "en": "difference between" },
-    { "ru": "влияние на", "en": "influence on" },
-    { "ru": "интерес к", "en": "interest in" },
-    { "ru": "ключ к", "en": "key to" },
-    { "ru": "нехватка чего-либо", "en": "lack of" },
-    { "ru": "любовь к", "en": "love of / for" },
-    { "ru": "необходимость в", "en": "need for" }
+    { "ru": "доступ к", "en": "access to", "examples": [
+      { "en": "Everyone has <b>access to</b> clean water.", "ru": "У всех есть доступ к чистой воде." },
+      { "en": "She gained <b>access to</b> the building.", "ru": "Она получила доступ к зданию." }
+    ]},
+    { "ru": "зависимость от", "en": "addiction to", "examples": [
+      { "en": "His <b>addiction to</b> drugs was serious.", "ru": "Его зависимость от наркотиков была серьёзной." },
+      { "en": "An <b>addiction to</b> sugar is unhealthy.", "ru": "Зависимость от сахара нездорова." }
+    ]},
+    { "ru": "совет по", "en": "advice on", "examples": [
+      { "en": "I need <b>advice on</b> my career.", "ru": "Мне нужен совет по моей карьере." },
+      { "en": "He gave <b>advice on</b> finances.", "ru": "Он дал совет по финансам." }
+    ]},
+    { "ru": "ответ на", "en": "answer to", "examples": [
+      { "en": "What's your <b>answer to</b> this?", "ru": "Какой твой ответ на это?" },
+      { "en": "The <b>answer to</b> the question is yes.", "ru": "Ответ на вопрос - да." }
+    ]},
+    { "ru": "заявление на", "en": "application for", "examples": [
+      { "en": "I submitted an <b>application for</b> a loan.", "ru": "Я подал заявление на кредит." },
+      { "en": "Her <b>application for</b> the job was accepted.", "ru": "Её заявление на работу было принято." }
+    ]},
+    { "ru": "отношение к", "en": "attitude to", "examples": [
+      { "en": "Your <b>attitude to</b> work is great.", "ru": "Твоё отношение к работе отличное." },
+      { "en": "His <b>attitude to</b> life changed.", "ru": "Его отношение к жизни изменилось." }
+    ]},
+    { "ru": "вера в", "en": "belief in", "examples": [
+      { "en": "She has strong <b>belief in</b> God.", "ru": "У неё сильная вера в Бога." },
+      { "en": "My <b>belief in</b> you is firm.", "ru": "Моя вера в тебя твёрдая." }
+    ]},
+    { "ru": "шанс на", "en": "chance of", "examples": [
+      { "en": "There's a <b>chance of</b> rain today.", "ru": "Сегодня есть шанс дождя." },
+      { "en": "What's the <b>chance of</b> success?", "ru": "Какой шанс успеха?" }
+    ]},
+    { "ru": "уверенность в", "en": "confidence in", "examples": [
+      { "en": "I have <b>confidence in</b> you.", "ru": "У меня есть уверенность в тебе." },
+      { "en": "Her <b>confidence in</b> herself grew.", "ru": "Её уверенность в себе выросла." }
+    ]},
+    { "ru": "поздравления с", "en": "congratulations on", "examples": [
+      { "en": "<b>Congratulations on</b> your wedding!", "ru": "Поздравления с вашей свадьбой!" },
+      { "en": "My <b>congratulations on</b> the promotion.", "ru": "Мои поздравления с повышением." }
+    ]},
+    { "ru": "вклад в", "en": "contribution to", "examples": [
+      { "en": "Her <b>contribution to</b> the project was huge.", "ru": "Её вклад в проект был огромным." },
+      { "en": "What's your <b>contribution to</b> society?", "ru": "Каков твой вклад в общество?" }
+    ]},
+    { "ru": "контроль над", "en": "control over", "examples": [
+      { "en": "She has <b>control over</b> the team.", "ru": "Она имеет контроль над командой." },
+      { "en": "His <b>control over</b> emotions improved.", "ru": "Его контроль над эмоциями улучшился." }
+    ]},
+    { "ru": "лекарство от", "en": "cure for", "examples": [
+      { "en": "Is there a <b>cure for</b> cancer?", "ru": "Есть ли лекарство от рака?" },
+      { "en": "This is a <b>cure for</b> the illness.", "ru": "Это лекарство от болезни." }
+    ]},
+    { "ru": "ущерб чему-либо", "en": "damage to", "examples": [
+      { "en": "The storm caused <b>damage to</b> homes.", "ru": "Шторм нанёс ущерб домам." },
+      { "en": "How much <b>damage to</b> your car?", "ru": "Сколько ущерба твоей машине?" }
+    ]},
+    { "ru": "спрос на", "en": "demand for", "examples": [
+      { "en": "There's high <b>demand for</b> nurses.", "ru": "Высокий спрос на медсестёр." },
+      { "en": "The <b>demand for</b> oil increased.", "ru": "Спрос на нефть увеличился." }
+    ]},
+    { "ru": "разница между", "en": "difference between", "examples": [
+      { "en": "What's the <b>difference between</b> them?", "ru": "Какая разница между ними?" },
+      { "en": "The <b>difference between</b> the prices is small.", "ru": "Разница между ценами небольшая." }
+    ]},
+    { "ru": "влияние на", "en": "influence on", "examples": [
+      { "en": "Your <b>influence on</b> him is strong.", "ru": "Твоё влияние на него сильное." },
+      { "en": "What's the <b>influence on</b> climate?", "ru": "Какое влияние на климат?" }
+    ]},
+    { "ru": "интерес к", "en": "interest in", "examples": [
+      { "en": "I have <b>interest in</b> music.", "ru": "У меня есть интерес к музыке." },
+      { "en": "His <b>interest in</b> sports is growing.", "ru": "Его интерес к спорту растёт." }
+    ]},
+    { "ru": "ключ к", "en": "key to", "examples": [
+      { "en": "Education is the <b>key to</b> success.", "ru": "Образование - ключ к успеху." },
+      { "en": "Hard work is the <b>key to</b> achievement.", "ru": "Тяжелый труд - ключ к достижению." }
+    ]},
+    { "ru": "нехватка чего-либо", "en": "lack of", "examples": [
+      { "en": "The <b>lack of</b> sleep affects health.", "ru": "Нехватка сна влияет на здоровье." },
+      { "en": "There's a <b>lack of</b> evidence.", "ru": "Есть нехватка доказательств." }
+    ]},
+    { "ru": "любовь к", "en": "love of / for", "examples": [
+      { "en": "Her <b>love of</b> nature was clear.", "ru": "Её любовь к природе была ясна." },
+      { "en": "My <b>love for</b> you is eternal.", "ru": "Моя любовь к тебе вечна." }
+    ]},
+    { "ru": "необходимость в", "en": "need for", "examples": [
+      { "en": "There's a <b>need for</b> change.", "ru": "Есть необходимость в изменении." },
+      { "en": "The <b>need for</b> workers is urgent.", "ru": "Необходимость в рабочих срочна." }
+    ]}
   ]
 }

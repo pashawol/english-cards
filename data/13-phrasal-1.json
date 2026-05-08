@@ -2,27 +2,93 @@
   "name": "Фразовые глаголы 1",
   "category": "фразовые глаголы",
   "cards": [
-    { "ru": "сломаться / потерпеть неудачу", "en": "break down" },
-    { "ru": "вторгаться", "en": "break into" },
-    { "ru": "неожиданно начаться", "en": "break out" },
-    { "ru": "добиться успеха", "en": "break through" },
-    { "ru": "вызывать (результат)", "en": "bring about" },
-    { "ru": "снижать (цену)", "en": "bring down" },
-    { "ru": "воспитывать", "en": "bring up" },
-    { "ru": "перезвонить", "en": "call back" },
-    { "ru": "отменить", "en": "call off" },
-    { "ru": "продолжать", "en": "carry on" },
-    { "ru": "выполнять", "en": "carry out" },
-    { "ru": "войти в моду", "en": "catch on" },
-    { "ru": "догонять", "en": "catch up with" },
-    { "ru": "зарегистрироваться", "en": "check in" },
-    { "ru": "освободить номер", "en": "check out" },
-    { "ru": "выяснить / убраться", "en": "clear up" },
-    { "ru": "случайно встретить", "en": "come across" },
-    { "ru": "возвращаться", "en": "come back" },
-    { "ru": "унаследовать", "en": "come into" },
-    { "ru": "заходить / прийти в себя", "en": "come round" },
-    { "ru": "сокращать", "en": "cut down on" },
-    { "ru": "избавиться от", "en": "do away with" }
+    { "ru": "сломаться / потерпеть неудачу", "en": "break down", "examples": [
+      { "en": "The car <b>broke</b> <b>down</b> yesterday.", "ru": "Машина сломалась вчера." },
+      { "en": "The system <b>broke down</b> completely.", "ru": "Система полностью вышла из строя." }
+    ]},
+    { "ru": "вторгаться", "en": "break into", "examples": [
+      { "en": "Thieves <b>broke</b> <b>into</b> the bank.", "ru": "Воры вторглись в банк." },
+      { "en": "Someone <b>broke into</b> my house.", "ru": "Кто-то вторгся в мой дом." }
+    ]},
+    { "ru": "неожиданно начаться", "en": "break out", "examples": [
+      { "en": "A fire <b>broke</b> <b>out</b> downtown.", "ru": "Пожар неожиданно вспыхнул в центре города." },
+      { "en": "War <b>broke out</b> suddenly.", "ru": "Война неожиданно началась." }
+    ]},
+    { "ru": "добиться успеха", "en": "break through", "examples": [
+      { "en": "The team <b>broke</b> <b>through</b> finally.", "ru": "Команда наконец добилась успеха." },
+      { "en": "She <b>broke through</b> to fame.", "ru": "Она добилась успеха и стала знаменита." }
+    ]},
+    { "ru": "вызывать (результат)", "en": "bring about", "examples": [
+      { "en": "This <b>brought</b> <b>about</b> big changes.", "ru": "Это вызвало большие изменения." },
+      { "en": "What <b>brought about</b> this problem?", "ru": "Что вызвало эту проблему?" }
+    ]},
+    { "ru": "снижать (цену)", "en": "bring down", "examples": [
+      { "en": "We need to <b>bring</b> prices <b>down</b>.", "ru": "Нам нужно снизить цены." },
+      { "en": "He <b>brought down</b> the cost by half.", "ru": "Он снизил стоимость вдвое." }
+    ]},
+    { "ru": "воспитывать", "en": "bring up", "examples": [
+      { "en": "She <b>brought up</b> three children.", "ru": "Она воспитала трёх детей." },
+      { "en": "They <b>brought</b> him <b>up</b> well.", "ru": "Они воспитали его хорошо." }
+    ]},
+    { "ru": "перезвонить", "en": "call back", "examples": [
+      { "en": "Please <b>call</b> me <b>back</b> later.", "ru": "Пожалуйста, перезвони мне позже." },
+      { "en": "He <b>called</b> her <b>back</b> immediately.", "ru": "Он сразу же ей перезвонил." }
+    ]},
+    { "ru": "отменить", "en": "call off", "examples": [
+      { "en": "They <b>called off</b> the wedding.", "ru": "Они отменили свадьбу." },
+      { "en": "Let's <b>call</b> the game <b>off</b>.", "ru": "Давай отменим игру." }
+    ]},
+    { "ru": "продолжать", "en": "carry on", "examples": [
+      { "en": "<b>Carry on</b> with your work.", "ru": "Продолжай работу." },
+      { "en": "She <b>carried on</b> despite the pain.", "ru": "Она продолжала несмотря на боль." }
+    ]},
+    { "ru": "выполнять", "en": "carry out", "examples": [
+      { "en": "We <b>carried out</b> the plan successfully.", "ru": "Мы выполнили план успешно." },
+      { "en": "Please <b>carry</b> the order <b>out</b>.", "ru": "Пожалуйста, выполни заказ." }
+    ]},
+    { "ru": "войти в моду", "en": "catch on", "examples": [
+      { "en": "The trend <b>caught</b> <b>on</b> quickly.", "ru": "Тренд быстро вошёл в моду." },
+      { "en": "This style finally <b>caught on</b>.", "ru": "Этот стиль наконец вошёл в моду." }
+    ]},
+    { "ru": "догонять", "en": "catch up with", "examples": [
+      { "en": "I need to <b>catch up with</b> you.", "ru": "Мне нужно с тобой догнать." },
+      { "en": "Can you <b>catch</b> <b>up with</b> me?", "ru": "Ты можешь меня догнать?" }
+    ]},
+    { "ru": "зарегистрироваться", "en": "check in", "examples": [
+      { "en": "We <b>checked in</b> at the hotel.", "ru": "Мы зарегистрировались в отеле." },
+      { "en": "When should we <b>check in</b>?", "ru": "Когда мы должны зарегистрироваться?" }
+    ]},
+    { "ru": "освободить номер", "en": "check out", "examples": [
+      { "en": "We <b>checked out</b> this morning.", "ru": "Мы освободили номер утром." },
+      { "en": "Please <b>check out</b> by eleven.", "ru": "Пожалуйста, освободи номер к одиннадцати." }
+    ]},
+    { "ru": "выяснить / убраться", "en": "clear up", "examples": [
+      { "en": "Let's <b>clear</b> this confusion <b>up</b>.", "ru": "Давай разберёмся в этой путанице." },
+      { "en": "The weather <b>cleared up</b> finally.", "ru": "Погода наконец наладилась." }
+    ]},
+    { "ru": "случайно встретить", "en": "come across", "examples": [
+      { "en": "I <b>came</b> <b>across</b> an old friend.", "ru": "Я случайно встретил старого друга." },
+      { "en": "She <b>came across</b> this book by chance.", "ru": "Она случайно встретила эту книгу." }
+    ]},
+    { "ru": "возвращаться", "en": "come back", "examples": [
+      { "en": "When will you <b>come</b> <b>back</b>?", "ru": "Когда ты вернёшься?" },
+      { "en": "They <b>came back</b> at midnight.", "ru": "Они вернулись в полночь." }
+    ]},
+    { "ru": "унаследовать", "en": "come into", "examples": [
+      { "en": "She <b>came into</b> a large inheritance.", "ru": "Она унаследовала большое состояние." },
+      { "en": "He <b>came into</b> money last year.", "ru": "Он унаследовал деньги в прошлом году." }
+    ]},
+    { "ru": "заходить / прийти в себя", "en": "come round", "examples": [
+      { "en": "He finally <b>came</b> <b>round</b> to my idea.", "ru": "Он наконец согласился с моей идеей." },
+      { "en": "When will she <b>come round</b> to us?", "ru": "Когда она к нам зайдёт?" }
+    ]},
+    { "ru": "сокращать", "en": "cut down on", "examples": [
+      { "en": "I need to <b>cut down on</b> sugar.", "ru": "Мне нужно сократить потребление сахара." },
+      { "en": "He <b>cut</b> <b>down on</b> smoking.", "ru": "Он сократил курение." }
+    ]},
+    { "ru": "избавиться от", "en": "do away with", "examples": [
+      { "en": "We should <b>do away with</b> this rule.", "ru": "Мы должны избавиться от этого правила." },
+      { "en": "They <b>did away with</b> the old system.", "ru": "Они избавились от старой системы." }
+    ]}
   ]
 }

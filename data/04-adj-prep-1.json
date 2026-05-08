@@ -2,27 +2,93 @@
   "name": "Предлоги после прилагательных 1",
   "category": "предлоги",
   "cards": [
-    { "ru": "отсутствовать на", "en": "absent from" },
-    { "ru": "обвинённый в", "en": "accused of" },
-    { "ru": "привыкший к", "en": "accustomed to" },
-    { "ru": "зависимый от", "en": "addicted to" },
-    { "ru": "бояться чего-либо", "en": "afraid of" },
-    { "ru": "завидовать", "en": "envious of" },
-    { "ru": "опытный в", "en": "experienced in" },
-    { "ru": "популярный среди", "en": "popular with" },
-    { "ru": "гордиться чем-то", "en": "proud of" },
-    { "ru": "готовый к", "en": "ready for" },
-    { "ru": "встревоженный", "en": "alarmed at / by" },
-    { "ru": "изумлённый", "en": "amazed at / by" },
-    { "ru": "сердитый из-за", "en": "angry about / with" },
-    { "ru": "обеспокоенный", "en": "anxious about" },
-    { "ru": "пристыжённый", "en": "ashamed of" },
-    { "ru": "поражённый", "en": "astonished by" },
-    { "ru": "осведомлённый о", "en": "aware of" },
-    { "ru": "плохой в чём-то", "en": "bad at" },
-    { "ru": "основанный на", "en": "based on" },
-    { "ru": "скучающий от", "en": "bored with" },
-    { "ru": "способный на", "en": "capable of" },
-    { "ru": "осторожный с", "en": "careful about / with" }
+    { "ru": "отсутствовать на", "en": "absent from", "examples": [
+      { "en": "She was <b>absent from</b> work.", "ru": "Она отсутствовала на работе." },
+      { "en": "He's <b>absent from</b> school today.", "ru": "Он отсутствует в школе сегодня." }
+    ]},
+    { "ru": "обвинённый в", "en": "accused of", "examples": [
+      { "en": "He was <b>accused of</b> theft.", "ru": "Его обвинили в краже." },
+      { "en": "They're <b>accused of</b> lying.", "ru": "Их обвиняют во лжи." }
+    ]},
+    { "ru": "привыкший к", "en": "accustomed to", "examples": [
+      { "en": "I'm <b>accustomed to</b> this.", "ru": "Я привык к этому." },
+      { "en": "Are you <b>accustomed to</b> cold?", "ru": "Ты привык к холоду?" }
+    ]},
+    { "ru": "зависимый от", "en": "addicted to", "examples": [
+      { "en": "He's <b>addicted to</b> gaming.", "ru": "Он зависит от игр." },
+      { "en": "She became <b>addicted to</b> coffee.", "ru": "Она пристрастилась к кофе." }
+    ]},
+    { "ru": "бояться чего-либо", "en": "afraid of", "examples": [
+      { "en": "I'm <b>afraid of</b> spiders.", "ru": "Я боюсь пауков." },
+      { "en": "Are you <b>afraid of</b> heights?", "ru": "Ты боишься высоты?" }
+    ]},
+    { "ru": "завидовать", "en": "envious of", "examples": [
+      { "en": "She's <b>envious of</b> your success.", "ru": "Она завидует твоему успеху." },
+      { "en": "He was <b>envious of</b> them.", "ru": "Он был завидующ им." }
+    ]},
+    { "ru": "опытный в", "en": "experienced in", "examples": [
+      { "en": "He's <b>experienced in</b> teaching.", "ru": "Он опытен в преподавании." },
+      { "en": "Are you <b>experienced in</b> coding?", "ru": "Ты опытен в программировании?" }
+    ]},
+    { "ru": "популярный среди", "en": "popular with", "examples": [
+      { "en": "The song's <b>popular with</b> teens.", "ru": "Песня популярна среди подростков." },
+      { "en": "He's <b>popular with</b> his friends.", "ru": "Он популярен среди друзей." }
+    ]},
+    { "ru": "гордиться чем-то", "en": "proud of", "examples": [
+      { "en": "We're <b>proud of</b> our work.", "ru": "Мы гордимся нашей работой." },
+      { "en": "She's <b>proud of</b> her daughter.", "ru": "Она гордится своей дочерью." }
+    ]},
+    { "ru": "готовый к", "en": "ready for", "examples": [
+      { "en": "Are you <b>ready for</b> the test?", "ru": "Ты готов к тесту?" },
+      { "en": "I'm <b>ready for</b> anything.", "ru": "Я готов к чему угодно." }
+    ]},
+    { "ru": "встревоженный", "en": "alarmed at / by", "examples": [
+      { "en": "He was <b>alarmed at</b> the noise.", "ru": "Его встревожил шум." },
+      { "en": "She seemed <b>alarmed by</b> the news.", "ru": "Она казалась встревоженной новостями." }
+    ]},
+    { "ru": "изумлённый", "en": "amazed at / by", "examples": [
+      { "en": "I was <b>amazed at</b> his skill.", "ru": "Я был поражён его мастерством." },
+      { "en": "They were <b>amazed by</b> the view.", "ru": "Они были поражены видом." }
+    ]},
+    { "ru": "сердитый из-за", "en": "angry about / with", "examples": [
+      { "en": "He's <b>angry about</b> the delay.", "ru": "Он раздражён задержкой." },
+      { "en": "She's <b>angry with</b> you now.", "ru": "Она рассердилась на тебя." }
+    ]},
+    { "ru": "обеспокоенный", "en": "anxious about", "examples": [
+      { "en": "I'm <b>anxious about</b> the exam.", "ru": "Я обеспокоен экзаменом." },
+      { "en": "Are you <b>anxious about</b> this?", "ru": "Ты озабочен этим?" }
+    ]},
+    { "ru": "пристыжённый", "en": "ashamed of", "examples": [
+      { "en": "He's <b>ashamed of</b> his mistake.", "ru": "Он пристыжен своей ошибкой." },
+      { "en": "Don't be <b>ashamed of</b> it.", "ru": "Не стыдись этого." }
+    ]},
+    { "ru": "поражённый", "en": "astonished by", "examples": [
+      { "en": "I was <b>astonished by</b> the result.", "ru": "Я был поражён результатом." },
+      { "en": "They seemed <b>astonished by</b> the truth.", "ru": "Они казались поражёнными истиной." }
+    ]},
+    { "ru": "осведомлённый о", "en": "aware of", "examples": [
+      { "en": "Are you <b>aware of</b> the rules?", "ru": "Ты осведомлён о правилах?" },
+      { "en": "We're <b>aware of</b> the problem.", "ru": "Мы осведомлены о проблеме." }
+    ]},
+    { "ru": "плохой в чём-то", "en": "bad at", "examples": [
+      { "en": "I'm <b>bad at</b> math.", "ru": "Я плох в математике." },
+      { "en": "He's <b>bad at</b> sports.", "ru": "Он плох в спорте." }
+    ]},
+    { "ru": "основанный на", "en": "based on", "examples": [
+      { "en": "The movie's <b>based on</b> a book.", "ru": "Фильм основан на книге." },
+      { "en": "Decisions <b>based on</b> facts.", "ru": "Решения основаны на фактах." }
+    ]},
+    { "ru": "скучающий от", "en": "bored with", "examples": [
+      { "en": "I'm <b>bored with</b> this movie.", "ru": "Мне скучно с этим фильмом." },
+      { "en": "He got <b>bored with</b> the game.", "ru": "Ему надоела игра." }
+    ]},
+    { "ru": "способный на", "en": "capable of", "examples": [
+      { "en": "She's <b>capable of</b> anything.", "ru": "Она способна на всё." },
+      { "en": "Is he <b>capable of</b> this?", "ru": "Он способен на это?" }
+    ]},
+    { "ru": "осторожный с", "en": "careful about / with", "examples": [
+      { "en": "Be <b>careful about</b> your words.", "ru": "Будь осторожен со своими словами." },
+      { "en": "She's <b>careful with</b> money.", "ru": "Она осторожна с деньгами." }
+    ]}
   ]
 }

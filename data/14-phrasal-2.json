@@ -2,27 +2,93 @@
   "name": "Фразовые глаголы 2",
   "category": "фразовые глаголы",
   "cards": [
-    { "ru": "обходиться без", "en": "do without" },
-    { "ru": "заходить в гости", "en": "drop in" },
-    { "ru": "бросить учёбу / выбыть", "en": "drop out" },
-    { "ru": "ссориться", "en": "fall out" },
-    { "ru": "заполнять (анкету)", "en": "fill in / out" },
-    { "ru": "выяснить / узнать", "en": "find out" },
-    { "ru": "сбежать", "en": "get away" },
-    { "ru": "легко отделаться", "en": "get away with" },
-    { "ru": "вернуться", "en": "get back" },
-    { "ru": "сводить концы с концами", "en": "get by" },
-    { "ru": "приняться за работу", "en": "get down to" },
-    { "ru": "выйти из транспорта", "en": "get off" },
-    { "ru": "делать успехи", "en": "get on" },
-    { "ru": "ладить с кем-то", "en": "get on with" },
-    { "ru": "выздороветь / преодолеть", "en": "get over" },
-    { "ru": "справиться / дозвониться", "en": "get through" },
-    { "ru": "раздавать / разоблачать", "en": "give away" },
-    { "ru": "уступать / сдаваться", "en": "give in" },
-    { "ru": "отказаться / бросить", "en": "give up" },
-    { "ru": "увлекаться / участвовать", "en": "go in for" },
-    { "ru": "отключаться / портиться", "en": "go off" },
-    { "ru": "происходить / продолжать", "en": "go on" }
+    { "ru": "обходиться без", "en": "do without", "examples": [
+      { "en": "I can <b>do without</b> your help.", "ru": "Я могу обойтись без твоей помощи." },
+      { "en": "We can't <b>do without</b> water.", "ru": "Мы не можем обойтись без воды." }
+    ]},
+    { "ru": "заходить в гости", "en": "drop in", "examples": [
+      { "en": "She <b>dropped in</b> to see me.", "ru": "Она заходила ко мне в гости." },
+      { "en": "<b>Drop in</b> anytime you want.", "ru": "Заходи ко мне в гости, когда захочешь." }
+    ]},
+    { "ru": "бросить учёбу / выбыть", "en": "drop out", "examples": [
+      { "en": "He <b>dropped out</b> of college.", "ru": "Он бросил колледж." },
+      { "en": "Why did she <b>drop out</b>?", "ru": "Почему она выбыла?" }
+    ]},
+    { "ru": "ссориться", "en": "fall out", "examples": [
+      { "en": "They <b>fell out</b> over money.", "ru": "Они поссорились из-за денег." },
+      { "en": "Don't <b>fall out</b> with your friends.", "ru": "Не ссорься с друзьями." }
+    ]},
+    { "ru": "заполнять (анкету)", "en": "fill in / out", "examples": [
+      { "en": "Please <b>fill</b> the form <b>in</b>.", "ru": "Пожалуйста, заполни форму." },
+      { "en": "You need to <b>fill out</b> this application.", "ru": "Тебе нужно заполнить эту анкету." }
+    ]},
+    { "ru": "выяснить / узнать", "en": "find out", "examples": [
+      { "en": "I need to <b>find out</b> the truth.", "ru": "Мне нужно узнать правду." },
+      { "en": "Did you <b>find</b> <b>out</b> what happened?", "ru": "Ты узнал что случилось?" }
+    ]},
+    { "ru": "сбежать", "en": "get away", "examples": [
+      { "en": "He <b>got away</b> from the police.", "ru": "Он сбежал от полиции." },
+      { "en": "They <b>got away</b> successfully.", "ru": "Они сбежали успешно." }
+    ]},
+    { "ru": "легко отделаться", "en": "get away with", "examples": [
+      { "en": "He <b>got away with</b> the crime.", "ru": "Он легко отделался за преступление." },
+      { "en": "You can't <b>get away with</b> lying.", "ru": "Ты не можешь легко отделаться за ложь." }
+    ]},
+    { "ru": "вернуться", "en": "get back", "examples": [
+      { "en": "When will you <b>get</b> <b>back</b>?", "ru": "Когда ты вернёшься?" },
+      { "en": "I <b>got back</b> home late.", "ru": "Я вернулся домой поздно." }
+    ]},
+    { "ru": "сводить концы с концами", "en": "get by", "examples": [
+      { "en": "We <b>get by</b> on our salary.", "ru": "Мы сводим концы с концами с нашей зарплатой." },
+      { "en": "Can you <b>get by</b> without help?", "ru": "Ты можешь обойтись без помощи?" }
+    ]},
+    { "ru": "приняться за работу", "en": "get down to", "examples": [
+      { "en": "Let's <b>get down to</b> business.", "ru": "Давай приступим к делу." },
+      { "en": "She <b>got</b> <b>down to</b> working seriously.", "ru": "Она серьёзно приступила к работе." }
+    ]},
+    { "ru": "выйти из транспорта", "en": "get off", "examples": [
+      { "en": "<b>Get off</b> at the next stop.", "ru": "Выйди на следующей остановке." },
+      { "en": "We <b>got off</b> the train early.", "ru": "Мы вышли из поезда рано." }
+    ]},
+    { "ru": "делать успехи", "en": "get on", "examples": [
+      { "en": "How are you <b>getting on</b>?", "ru": "Как ты делаешь успехи?" },
+      { "en": "She's <b>getting on</b> well at school.", "ru": "Она хорошо делает успехи в школе." }
+    ]},
+    { "ru": "ладить с кем-то", "en": "get on with", "examples": [
+      { "en": "I <b>get on</b> well <b>with</b> my boss.", "ru": "Я хорошо ладю со своим начальником." },
+      { "en": "Do you <b>get on with</b> your colleagues?", "ru": "Ты ладишь с коллегами?" }
+    ]},
+    { "ru": "выздороветь / преодолеть", "en": "get over", "examples": [
+      { "en": "She needs to <b>get over</b> her illness.", "ru": "Ей нужно преодолеть её болезнь." },
+      { "en": "I can't <b>get over</b> his decision.", "ru": "Я не могу смириться с его решением." }
+    ]},
+    { "ru": "справиться / дозвониться", "en": "get through", "examples": [
+      { "en": "I finally <b>got through</b> to him.", "ru": "Я наконец дозвонился до него." },
+      { "en": "Can you <b>get through</b> this test?", "ru": "Ты сможешь справиться с этим тестом?" }
+    ]},
+    { "ru": "раздавать / разоблачать", "en": "give away", "examples": [
+      { "en": "Don't <b>give away</b> the secret.", "ru": "Не разглашай секрет." },
+      { "en": "She <b>gave away</b> her old clothes.", "ru": "Она раздала свою старую одежду." }
+    ]},
+    { "ru": "уступать / сдаваться", "en": "give in", "examples": [
+      { "en": "Finally, he <b>gave in</b>.", "ru": "Наконец он сдался." },
+      { "en": "Don't <b>give in</b> to pressure.", "ru": "Не сдавайся под давлением." }
+    ]},
+    { "ru": "отказаться / бросить", "en": "give up", "examples": [
+      { "en": "Don't <b>give up</b> your dreams.", "ru": "Не отказывайся от своих мечтаний." },
+      { "en": "He <b>gave up</b> smoking last year.", "ru": "Он бросил курить в прошлом году." }
+    ]},
+    { "ru": "увлекаться / участвовать", "en": "go in for", "examples": [
+      { "en": "I <b>go in for</b> sports.", "ru": "Я увлекаюсь спортом." },
+      { "en": "Does she <b>go in for</b> art?", "ru": "Она увлекается искусством?" }
+    ]},
+    { "ru": "отключаться / портиться", "en": "go off", "examples": [
+      { "en": "The alarm <b>went off</b> loudly.", "ru": "Сигнал отключился громко." },
+      { "en": "The milk <b>went off</b> yesterday.", "ru": "Молоко испортилось вчера." }
+    ]},
+    { "ru": "происходить / продолжать", "en": "go on", "examples": [
+      { "en": "What's <b>going on</b> here?", "ru": "Что здесь происходит?" },
+      { "en": "The party <b>went on</b> all night.", "ru": "Вечеринка продолжалась всю ночь." }
+    ]}
   ]
 }

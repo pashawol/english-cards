@@ -2,27 +2,93 @@
   "name": "Артикль A — фразы",
   "category": "артикли",
   "cards": [
-    { "ru": "собственно говоря", "en": "as a matter of fact" },
-    { "ru": "перекусить / поесть", "en": "have a bite / a meal" },
-    { "ru": "в беспорядке", "en": "in a mess" },
-    { "ru": "в результате", "en": "as a result" },
-    { "ru": "как правило", "en": "as a rule" },
-    { "ru": "простудиться / иметь жар", "en": "have a cold / a fever" },
-    { "ru": "вкратце", "en": "in a nutshell" },
-    { "ru": "с первого взгляда", "en": "at a glance" },
-    { "ru": "попробовать / взглянуть", "en": "have a go / a look" },
-    { "ru": "в очереди", "en": "in a queue" },
-    { "ru": "хорошо провести время", "en": "have a good time" },
-    { "ru": "в спешке", "en": "in a rush" },
-    { "ru": "болит голова", "en": "have a headache" },
-    { "ru": "в каком-то смысле", "en": "in a sense" },
-    { "ru": "быть в замешательстве", "en": "be at a loss" },
-    { "ru": "отдохнуть", "en": "have a rest" },
-    { "ru": "оказать услугу", "en": "do smb a favour" },
-    { "ru": "помочь кому-то", "en": "give smb a hand" },
-    { "ru": "жаль", "en": "it's a pity" },
-    { "ru": "принять душ / ванну", "en": "have a shower / bath" },
-    { "ru": "для разнообразия", "en": "for a change" },
-    { "ru": "одним словом", "en": "in a word" }
+    { "ru": "собственно говоря", "en": "as a matter of fact", "examples": [
+      { "en": "As <b>a matter</b> of fact, I agree.", "ru": "Собственно, я согласен." },
+      { "en": "It's <b>a matter</b> of time now.", "ru": "Это вопрос времени." }
+    ]},
+    { "ru": "перекусить / поесть", "en": "have a bite / a meal", "examples": [
+      { "en": "Let's <b>have a bite</b> before work.", "ru": "Давай поедим что-нибудь до работы." },
+      { "en": "We <b>have a meal</b> at noon.", "ru": "Мы едим в полдень." }
+    ]},
+    { "ru": "в беспорядке", "en": "in a mess", "examples": [
+      { "en": "The room is <b>in a mess</b> today.", "ru": "Комната в беспорядке." },
+      { "en": "My life was <b>in a mess</b> then.", "ru": "Моя жизнь была в хаосе." }
+    ]},
+    { "ru": "в результате", "en": "as a result", "examples": [
+      { "en": "As <b>a result</b>, we won the match.", "ru": "В результате мы выиграли матч." },
+      { "en": "<b>As a result</b> of rain, schools closed.", "ru": "Из-за дождя школы закрылись." }
+    ]},
+    { "ru": "как правило", "en": "as a rule", "examples": [
+      { "en": "As <b>a rule</b>, she's on time.", "ru": "Как правило, она приходит вовремя." },
+      { "en": "As <b>a rule</b> they work Saturdays.", "ru": "Обычно они работают по субботам." }
+    ]},
+    { "ru": "простудиться / иметь жар", "en": "have a cold / a fever", "examples": [
+      { "en": "I <b>have a cold</b> this week.", "ru": "На этой неделе я простужена." },
+      { "en": "He <b>has a fever</b> of 39 degrees.", "ru": "У него температура 39 градусов." }
+    ]},
+    { "ru": "вкратце", "en": "in a nutshell", "examples": [
+      { "en": "In <b>a nutshell</b>, we need money.", "ru": "Вкратце, нам нужны деньги." },
+      { "en": "<b>In a nutshell</b>, she refused.", "ru": "Вкратце, она отказала." }
+    ]},
+    { "ru": "с первого взгляда", "en": "at a glance", "examples": [
+      { "en": "At <b>a glance</b>, the plan looked good.", "ru": "С первого взгляда план выглядел хорошо." },
+      { "en": "You can tell <b>at a glance</b> it's fake.", "ru": "С первого взгляда видно, что это подделка." }
+    ]},
+    { "ru": "попробовать / взглянуть", "en": "have a go / a look", "examples": [
+      { "en": "Let me <b>have a go</b> at fixing it.", "ru": "Дай мне попробовать это исправить." },
+      { "en": "Can I <b>have a look</b> at your phone?", "ru": "Можно мне посмотреть на твой телефон?" }
+    ]},
+    { "ru": "в очереди", "en": "in a queue", "examples": [
+      { "en": "We waited <b>in a queue</b> for hours.", "ru": "Мы стояли в очереди часами." },
+      { "en": "Stand <b>in a queue</b> or leave.", "ru": "Либо встаньте в очередь, либо уходите." }
+    ]},
+    { "ru": "хорошо провести время", "en": "have a good time", "examples": [
+      { "en": "We <b>had a good time</b> at the party.", "ru": "Мы хорошо провели время на вечеринке." },
+      { "en": "Did you <b>have a good time</b> yesterday?", "ru": "Ты хорошо провел время вчера?" }
+    ]},
+    { "ru": "в спешке", "en": "in a rush", "examples": [
+      { "en": "I'm <b>in a rush</b> to catch the train.", "ru": "Я тороплюсь поймать поезд." },
+      { "en": "Don't leave <b>in a rush</b>, relax.", "ru": "Не уходи так быстро, расслабься." }
+    ]},
+    { "ru": "болит голова", "en": "have a headache", "examples": [
+      { "en": "I <b>have a headache</b> today.", "ru": "У меня болит голова." },
+      { "en": "She <b>has a headache</b> from stress.", "ru": "У неё болит голова от стресса." }
+    ]},
+    { "ru": "в каком-то смысле", "en": "in a sense", "examples": [
+      { "en": "In <b>a sense</b>, you're both right.", "ru": "В каком-то смысле вы оба правы." },
+      { "en": "<b>In a sense</b>, it's my fault.", "ru": "В известном смысле, это моя вина." }
+    ]},
+    { "ru": "быть в замешательстве", "en": "be at a loss", "examples": [
+      { "en": "I'm <b>at a loss</b> for words.", "ru": "Я в замешательстве и не знаю, что сказать." },
+      { "en": "They were <b>at a loss</b> what to do.", "ru": "Они не знали, что делать." }
+    ]},
+    { "ru": "отдохнуть", "en": "have a rest", "examples": [
+      { "en": "Let's <b>have a rest</b> here a moment.", "ru": "Давай отдохнём здесь немного." },
+      { "en": "You need to <b>have a rest</b> today.", "ru": "Тебе нужно отдохнуть сегодня." }
+    ]},
+    { "ru": "оказать услугу", "en": "do smb a favour", "examples": [
+      { "en": "Can you <b>do me a favour</b> please?", "ru": "Можешь мне оказать услугу?" },
+      { "en": "He <b>did us a favour</b> yesterday.", "ru": "Вчера он нам помог." }
+    ]},
+    { "ru": "помочь кому-то", "en": "give smb a hand", "examples": [
+      { "en": "Can you <b>give me a hand</b> here?", "ru": "Можешь мне помочь здесь?" },
+      { "en": "She <b>gave him a hand</b> with boxes.", "ru": "Она помогла ему с коробками." }
+    ]},
+    { "ru": "жаль", "en": "it's a pity", "examples": [
+      { "en": "<b>It's a pity</b> you're leaving.", "ru": "Жаль, что ты уходишь." },
+      { "en": "<b>It's a pity</b> we didn't meet.", "ru": "Жаль, что мы не встретились." }
+    ]},
+    { "ru": "принять душ / ванну", "en": "have a shower / bath", "examples": [
+      { "en": "I'll <b>have a shower</b> before bed.", "ru": "Я приму душ перед сном." },
+      { "en": "She <b>has a bath</b> every evening.", "ru": "Она принимает ванну каждый вечер." }
+    ]},
+    { "ru": "для разнообразия", "en": "for a change", "examples": [
+      { "en": "<b>For a change</b>, let's go out.", "ru": "Для разнообразия давай выйдем." },
+      { "en": "I'll cook <b>for a change</b> tonight.", "ru": "Я сегодня буду готовить для разнообразия." }
+    ]},
+    { "ru": "одним словом", "en": "in a word", "examples": [
+      { "en": "<b>In a word</b>, it's impossible.", "ru": "Одним словом, это невозможно." },
+      { "en": "<b>In a word</b>, she's brilliant.", "ru": "Одним словом, она блестящая." }
+    ]}
   ]
 }

@@ -2,27 +2,93 @@
   "name": "Предлоги после глаголов 2",
   "category": "предлоги",
   "cards": [
-    { "ru": "вносить вклад в", "en": "contribute to" },
-    { "ru": "справляться с", "en": "cope with" },
-    { "ru": "рассчитывать на", "en": "count on" },
-    { "ru": "критиковать за", "en": "criticize for" },
-    { "ru": "иметь дело с", "en": "deal with" },
-    { "ru": "зависеть от", "en": "depend on" },
-    { "ru": "умереть от", "en": "die of" },
-    { "ru": "отличаться от", "en": "differ from" },
-    { "ru": "отговаривать от", "en": "discourage from" },
-    { "ru": "мечтать о", "en": "dream of / about" },
-    { "ru": "обменивать на", "en": "exchange for" },
-    { "ru": "потерпеть неудачу в", "en": "fail in" },
-    { "ru": "забыть о", "en": "forget about" },
-    { "ru": "простить за", "en": "forgive for" },
-    { "ru": "случаться с", "en": "happen to" },
-    { "ru": "направляться в", "en": "head for" },
-    { "ru": "надеяться на", "en": "hope for" },
-    { "ru": "информировать о", "en": "inform about" },
-    { "ru": "настаивать на", "en": "insist on" },
-    { "ru": "вмешиваться в", "en": "interfere in" },
-    { "ru": "вовлекать в", "en": "involve in" },
-    { "ru": "смеяться над", "en": "laugh at" }
+    { "ru": "вносить вклад в", "en": "contribute to", "examples": [
+      { "en": "He <b>contributes</b> <b>to</b> the project.", "ru": "Он вносит вклад в проект." },
+      { "en": "She <b>contributed</b> <b>to</b> our success.", "ru": "Она внесла вклад в наш успех." }
+    ]},
+    { "ru": "справляться с", "en": "cope with", "examples": [
+      { "en": "Can you <b>cope</b> <b>with</b> this?", "ru": "Ты справишься с этим?" },
+      { "en": "He <b>coped</b> <b>with</b> the pressure well.", "ru": "Он хорошо справился с давлением." }
+    ]},
+    { "ru": "рассчитывать на", "en": "count on", "examples": [
+      { "en": "You can <b>count on</b> me.", "ru": "Ты можешь рассчитывать на меня." },
+      { "en": "I <b>counted on</b> your help.", "ru": "Я рассчитывал на твою помощь." }
+    ]},
+    { "ru": "критиковать за", "en": "criticize for", "examples": [
+      { "en": "She <b>criticized</b> him <b>for</b> lateness.", "ru": "Она критиковала его за опоздание." },
+      { "en": "Don't <b>criticize</b> me <b>for</b> it.", "ru": "Не критикуй меня за это." }
+    ]},
+    { "ru": "иметь дело с", "en": "deal with", "examples": [
+      { "en": "I have to <b>deal</b> <b>with</b> this.", "ru": "Я должен иметь дело с этим." },
+      { "en": "She <b>dealt</b> <b>with</b> the crisis calmly.", "ru": "Она спокойно справилась с кризисом." }
+    ]},
+    { "ru": "зависеть от", "en": "depend on", "examples": [
+      { "en": "It <b>depends on</b> the weather.", "ru": "Это зависит от погоды." },
+      { "en": "You can <b>depend on</b> him.", "ru": "Ты можешь на него положиться." }
+    ]},
+    { "ru": "умереть от", "en": "die of", "examples": [
+      { "en": "Many <b>died of</b> disease.", "ru": "Многие умерли от болезни." },
+      { "en": "He <b>died of</b> old age.", "ru": "Он умер от старости." }
+    ]},
+    { "ru": "отличаться от", "en": "differ from", "examples": [
+      { "en": "This <b>differs from</b> that.", "ru": "Это отличается от того." },
+      { "en": "Their opinions <b>differ from</b> ours.", "ru": "Их мнения отличаются от наших." }
+    ]},
+    { "ru": "отговаривать от", "en": "discourage from", "examples": [
+      { "en": "Don't <b>discourage</b> them <b>from</b> trying.", "ru": "Не отговаривай их от попытки." },
+      { "en": "She <b>discouraged</b> me <b>from</b> going.", "ru": "Она отговорила меня от похода." }
+    ]},
+    { "ru": "мечтать о", "en": "dream of / about", "examples": [
+      { "en": "I <b>dream of</b> travel.", "ru": "Я мечтаю о путешествиях." },
+      { "en": "She <b>dreamed about</b> success.", "ru": "Она мечтала об успехе." }
+    ]},
+    { "ru": "обменивать на", "en": "exchange for", "examples": [
+      { "en": "Can I <b>exchange</b> this <b>for</b> that?", "ru": "Могу я обменять это на то?" },
+      { "en": "He <b>exchanged</b> his car <b>for</b> a newer one.", "ru": "Он обменял свою машину на новую." }
+    ]},
+    { "ru": "потерпеть неудачу в", "en": "fail in", "examples": [
+      { "en": "I won't <b>fail in</b> this task.", "ru": "Я не подведу в этой задаче." },
+      { "en": "He <b>failed in</b> his attempt.", "ru": "Он потерпел неудачу в своей попытке." }
+    ]},
+    { "ru": "забыть о", "en": "forget about", "examples": [
+      { "en": "<b>Forget about</b> it.", "ru": "Забудь об этом." },
+      { "en": "She <b>forgot about</b> the meeting.", "ru": "Она забыла о встречу." }
+    ]},
+    { "ru": "простить за", "en": "forgive for", "examples": [
+      { "en": "<b>Forgive</b> me <b>for</b> my mistake.", "ru": "Прости меня за мою ошибку." },
+      { "en": "She <b>forgave</b> him <b>for</b> lying.", "ru": "Она простила ему ложь." }
+    ]},
+    { "ru": "случаться с", "en": "happen to", "examples": [
+      { "en": "What <b>happened to</b> you?", "ru": "Что с тобой случилось?" },
+      { "en": "Something <b>happened to</b> my phone.", "ru": "С моим телефоном что-то случилось." }
+    ]},
+    { "ru": "направляться в", "en": "head for", "examples": [
+      { "en": "We're <b>heading for</b> the beach.", "ru": "Мы направляемся на пляж." },
+      { "en": "They <b>headed for</b> the mountains.", "ru": "Они направились в горы." }
+    ]},
+    { "ru": "надеяться на", "en": "hope for", "examples": [
+      { "en": "I <b>hope for</b> the best.", "ru": "Я надеюсь на лучшее." },
+      { "en": "We <b>hoped for</b> victory.", "ru": "Мы надеялись на победу." }
+    ]},
+    { "ru": "информировать о", "en": "inform about", "examples": [
+      { "en": "Please <b>inform</b> me <b>about</b> changes.", "ru": "Пожалуйста, информируй меня об изменениях." },
+      { "en": "She <b>informed</b> us <b>about</b> the delay.", "ru": "Она информировала нас о задержке." }
+    ]},
+    { "ru": "настаивать на", "en": "insist on", "examples": [
+      { "en": "I <b>insist on</b> fairness.", "ru": "Я настаиваю на справедливости." },
+      { "en": "He <b>insisted on</b> the deal.", "ru": "Он настаивал на сделке." }
+    ]},
+    { "ru": "вмешиваться в", "en": "interfere in", "examples": [
+      { "en": "Don't <b>interfere in</b> my affairs.", "ru": "Не вмешивайся в мои дела." },
+      { "en": "She <b>interfered in</b> their business.", "ru": "Она вмешалась в их дело." }
+    ]},
+    { "ru": "вовлекать в", "en": "involve in", "examples": [
+      { "en": "Don't <b>involve</b> me <b>in</b> this.", "ru": "Не вовлекай меня в это." },
+      { "en": "He was <b>involved in</b> the project.", "ru": "Он был вовлечен в проект." }
+    ]},
+    { "ru": "смеяться над", "en": "laugh at", "examples": [
+      { "en": "Don't <b>laugh at</b> him.", "ru": "Не смейся над ним." },
+      { "en": "Everyone <b>laughed at</b> the joke.", "ru": "Все смеялись над шуткой." }
+    ]}
   ]
 }

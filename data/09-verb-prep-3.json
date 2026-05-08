@@ -2,27 +2,93 @@
   "name": "Предлоги после глаголов 3",
   "category": "предлоги",
   "cards": [
-    { "ru": "жить на (средства)", "en": "live on" },
-    { "ru": "принять за", "en": "mistake for" },
-    { "ru": "возражать против", "en": "object to" },
-    { "ru": "платить за", "en": "pay for" },
-    { "ru": "убеждать в", "en": "persuade of" },
-    { "ru": "указывать на", "en": "point at / to" },
-    { "ru": "хвалить за", "en": "praise for" },
-    { "ru": "готовиться к", "en": "prepare for" },
-    { "ru": "защищать от", "en": "protect from" },
-    { "ru": "наказывать за", "en": "punish for" },
-    { "ru": "ссориться с", "en": "quarrel with" },
-    { "ru": "реагировать на", "en": "react to" },
-    { "ru": "оправляться от", "en": "recover from" },
-    { "ru": "полагаться на", "en": "rely on" },
-    { "ru": "напоминать о", "en": "remind of" },
-    { "ru": "отвечать на", "en": "reply to" },
-    { "ru": "специализироваться в", "en": "specialize in" },
-    { "ru": "тратить на", "en": "spend on" },
-    { "ru": "преуспеть в", "en": "succeed in" },
-    { "ru": "страдать от", "en": "suffer from" },
-    { "ru": "подозревать в", "en": "suspect of" },
-    { "ru": "беспокоиться о", "en": "worry about" }
+    { "ru": "жить на (средства)", "en": "live on", "examples": [
+      { "en": "She <b>lives on</b> $1000 a month.", "ru": "Она живёт на 1000 долларов в месяц." },
+      { "en": "They <b>live on</b> their savings.", "ru": "Они живут на свои сбережения." }
+    ]},
+    { "ru": "принять за", "en": "mistake for", "examples": [
+      { "en": "I <b>mistook</b> him <b>for</b> his brother.", "ru": "Я принял его за его брата." },
+      { "en": "She <b>was mistaken for</b> the manager.", "ru": "Её приняли за менеджера." }
+    ]},
+    { "ru": "возражать против", "en": "object to", "examples": [
+      { "en": "I <b>object to</b> this decision.", "ru": "Я возражаю против этого решения." },
+      { "en": "He <b>objected</b> <b>to</b> the plan.", "ru": "Он возразил против плана." }
+    ]},
+    { "ru": "платить за", "en": "pay for", "examples": [
+      { "en": "Can you <b>pay for</b> lunch?", "ru": "Ты можешь заплатить за обед?" },
+      { "en": "I <b>paid</b> <b>for</b> the tickets.", "ru": "Я заплатил за билеты." }
+    ]},
+    { "ru": "убеждать в", "en": "persuade of", "examples": [
+      { "en": "I <b>persuaded</b> him <b>of</b> the truth.", "ru": "Я убедил его в правде." },
+      { "en": "Can you <b>persuade</b> me <b>of</b> that?", "ru": "Ты можешь убедить меня в этом?" }
+    ]},
+    { "ru": "указывать на", "en": "point at / to", "examples": [
+      { "en": "He <b>pointed at</b> the door.", "ru": "Он указал на дверь." },
+      { "en": "She <b>pointed to</b> the map.", "ru": "Она указала на карту." }
+    ]},
+    { "ru": "хвалить за", "en": "praise for", "examples": [
+      { "en": "They <b>praised</b> him <b>for</b> his work.", "ru": "Они похвалили его за работу." },
+      { "en": "I <b>praise</b> you <b>for</b> your effort.", "ru": "Я хвалю тебя за усилие." }
+    ]},
+    { "ru": "готовиться к", "en": "prepare for", "examples": [
+      { "en": "Are you <b>preparing for</b> the exam?", "ru": "Ты готовишься к экзамену?" },
+      { "en": "We <b>prepared for</b> the trip.", "ru": "Мы подготовились к поездке." }
+    ]},
+    { "ru": "защищать от", "en": "protect from", "examples": [
+      { "en": "We must <b>protect</b> children <b>from</b> harm.", "ru": "Мы должны защитить детей от вреда." },
+      { "en": "He <b>protected</b> her <b>from</b> danger.", "ru": "Он защитил её от опасности." }
+    ]},
+    { "ru": "наказывать за", "en": "punish for", "examples": [
+      { "en": "He was <b>punished for</b> lying.", "ru": "Его наказали за ложь." },
+      { "en": "Don't <b>punish</b> me <b>for</b> this.", "ru": "Не наказывай меня за это." }
+    ]},
+    { "ru": "ссориться с", "en": "quarrel with", "examples": [
+      { "en": "Don't <b>quarrel</b> <b>with</b> him.", "ru": "Не ссорься с ним." },
+      { "en": "They <b>quarreled</b> <b>with</b> each other.", "ru": "Они ссорились друг с другом." }
+    ]},
+    { "ru": "реагировать на", "en": "react to", "examples": [
+      { "en": "How did he <b>react to</b> the news?", "ru": "Как он отреагировал на новость?" },
+      { "en": "She <b>reacted to</b> my suggestion.", "ru": "Она отреагировала на мое предложение." }
+    ]},
+    { "ru": "оправляться от", "en": "recover from", "examples": [
+      { "en": "She's <b>recovering from</b> surgery.", "ru": "Она восстанавливается после операции." },
+      { "en": "He <b>recovered from</b> his illness.", "ru": "Он оправился от болезни." }
+    ]},
+    { "ru": "полагаться на", "en": "rely on", "examples": [
+      { "en": "I <b>rely on</b> your support.", "ru": "Я полагаюсь на вашу поддержку." },
+      { "en": "You can <b>rely on</b> us.", "ru": "Ты можешь рассчитывать на нас." }
+    ]},
+    { "ru": "напоминать о", "en": "remind of", "examples": [
+      { "en": "She <b>reminds</b> me <b>of</b> my mother.", "ru": "Она напоминает мне мою мать." },
+      { "en": "This <b>reminded</b> him <b>of</b> the past.", "ru": "Это напомнило ему о прошлом." }
+    ]},
+    { "ru": "отвечать на", "en": "reply to", "examples": [
+      { "en": "Please <b>reply to</b> my email.", "ru": "Пожалуйста, ответь на моё письмо." },
+      { "en": "He <b>replied to</b> the question.", "ru": "Он ответил на вопрос." }
+    ]},
+    { "ru": "специализироваться в", "en": "specialize in", "examples": [
+      { "en": "She <b>specializes in</b> law.", "ru": "Она специализируется в праве." },
+      { "en": "We <b>specialize in</b> technology.", "ru": "Мы специализируемся в технологиях." }
+    ]},
+    { "ru": "тратить на", "en": "spend on", "examples": [
+      { "en": "How much do you <b>spend on</b> food?", "ru": "Сколько ты тратишь на еду?" },
+      { "en": "I <b>spent</b> all my money <b>on</b> books.", "ru": "Я потратил все деньги на книги." }
+    ]},
+    { "ru": "преуспеть в", "en": "succeed in", "examples": [
+      { "en": "You will <b>succeed in</b> your goals.", "ru": "Ты преуспеешь в своих целях." },
+      { "en": "She <b>succeeded in</b> her career.", "ru": "Она преуспела в карьере." }
+    ]},
+    { "ru": "страдать от", "en": "suffer from", "examples": [
+      { "en": "He <b>suffers from</b> allergies.", "ru": "Он страдает от аллергии." },
+      { "en": "She <b>suffered from</b> the heat.", "ru": "Она страдала от жары." }
+    ]},
+    { "ru": "подозревать в", "en": "suspect of", "examples": [
+      { "en": "He was <b>suspected of</b> theft.", "ru": "Его подозревали в краже." },
+      { "en": "Don't <b>suspect</b> me <b>of</b> wrongdoing.", "ru": "Не подозревай меня в проступке." }
+    ]},
+    { "ru": "беспокоиться о", "en": "worry about", "examples": [
+      { "en": "Don't <b>worry about</b> it.", "ru": "Не беспокойся об этом." },
+      { "en": "I'm <b>worried about</b> the future.", "ru": "Я беспокоюсь о будущем." }
+    ]}
   ]
 }

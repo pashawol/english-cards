@@ -2,23 +2,77 @@
   "name": "Синонимы — глаголы",
   "category": "синонимы",
   "cards": [
-    { "ru": "bite vs beat — разница?", "en": "bite — кусать зубами | beat — наносить удары" },
-    { "ru": "do vs make — разница?", "en": "do — выполнять процесс | make — создать что-то новое" },
-    { "ru": "reach vs achieve — разница?", "en": "reach — добраться физически | achieve — добиться усилиями" },
-    { "ru": "hear vs listen — разница?", "en": "hear — слышать пассивно | listen — слушать активно" },
-    { "ru": "remember vs remind vs recall — разница?", "en": "remember — помнить | remind — кто-то напоминает | recall — вспомнить усилием" },
-    { "ru": "bring vs take vs fetch — разница?", "en": "bring — принести сюда | take — унести отсюда | fetch — сходить и принести" },
-    { "ru": "go vs come — разница?", "en": "go — двигаться от говорящего | come — двигаться к говорящему" },
-    { "ru": "fall vs drop — разница?", "en": "fall — упасть самому | drop — уронить что-то" },
-    { "ru": "fit vs suit vs match — разница?", "en": "fit — подходить по размеру | suit — идти к лицу | match — сочетаться по цвету/стилю" },
-    { "ru": "lie vs lay — разница?", "en": "lie — лежать самому | lay — класть что-то (lay + объект)" },
-    { "ru": "rise vs raise — разница?", "en": "rise — подниматься само | raise — поднять что-то (raise + объект)" },
-    { "ru": "steal vs rob — разница?", "en": "steal — украсть предмет | rob — ограбить человека/место" },
-    { "ru": "lend vs borrow — разница?", "en": "lend — дать в долг | borrow — взять в долг" },
-    { "ru": "see vs look vs watch — разница?", "en": "see — видеть автоматически | look — направить взгляд | watch — наблюдать процесс" },
-    { "ru": "study vs learn vs teach — разница?", "en": "study — учить материал | learn — получить навык/знание | teach — обучать других" },
-    { "ru": "speak vs say vs talk vs tell — разница?", "en": "speak — говорить (речь) | say — произнести слова | talk — общаться | tell — сообщить кому-то" },
-    { "ru": "wear vs put on — разница?", "en": "wear — уже надето на тебе | put on — действие надевания" },
-    { "ru": "suggest vs offer vs propose — разница?", "en": "suggest — предложить идею | offer — предложить помощь/услугу | propose — официально предложить" }
+    { "ru": "bite vs beat — разница?", "en": "bite — кусать зубами | beat — наносить удары", "examples": [
+      { "en": "The dog <b>bit</b> him on the arm.", "ru": "Собака укусила его в руку." },
+      { "en": "He <b>beat</b> the drums loudly.", "ru": "Он громко бил по барабанам." }
+    ]},
+    { "ru": "do vs make — разница?", "en": "do — выполнять процесс | make — создать что-то новое", "examples": [
+      { "en": "I need to <b>do</b> my homework.", "ru": "Мне нужно сделать домашнюю работу." },
+      { "en": "She <b>makes</b> beautiful cakes.", "ru": "Она делает красивые торты." }
+    ]},
+    { "ru": "reach vs achieve — разница?", "en": "reach — добраться физически | achieve — добиться усилиями", "examples": [
+      { "en": "We <b>reached</b> the top of the mountain.", "ru": "Мы добрались до вершины горы." },
+      { "en": "He <b>achieved</b> his dreams through hard work.", "ru": "Он добился своих мечтаний через работу." }
+    ]},
+    { "ru": "hear vs listen — разница?", "en": "hear — слышать пассивно | listen — слушать активно", "examples": [
+      { "en": "I <b>heard</b> a noise outside.", "ru": "Я услышал шум снаружи." },
+      { "en": "Please <b>listen</b> to me carefully.", "ru": "Пожалуйста, слушай меня внимательно." }
+    ]},
+    { "ru": "remember vs remind vs recall — разница?", "en": "remember — помнить | remind — кто-то напоминает | recall — вспомнить усилием", "examples": [
+      { "en": "I <b>remember</b> your birthday.", "ru": "Я помню твой день рождения." },
+      { "en": "Can you <b>recall</b> what happened?", "ru": "Ты можешь вспомнить что случилось?" }
+    ]},
+    { "ru": "bring vs take vs fetch — разница?", "en": "bring — принести сюда | take — унести отсюда | fetch — сходить и принести", "examples": [
+      { "en": "<b>Bring</b> the book to me.", "ru": "Принеси мне книгу." },
+      { "en": "<b>Take</b> this away, please.", "ru": "Унеси это пожалуйста." }
+    ]},
+    { "ru": "go vs come — разница?", "en": "go — двигаться от говорящего | come — двигаться к говорящему", "examples": [
+      { "en": "I'll <b>go</b> to the store.", "ru": "Я пойду в магазин." },
+      { "en": "<b>Come</b> here right now!", "ru": "Иди сюда прямо сейчас!" }
+    ]},
+    { "ru": "fall vs drop — разница?", "en": "fall — упасть самому | drop — уронить что-то", "examples": [
+      { "en": "He <b>fell</b> off the ladder.", "ru": "Он упал с лестницы." },
+      { "en": "I <b>dropped</b> my phone.", "ru": "Я уронил свой телефон." }
+    ]},
+    { "ru": "fit vs suit vs match — разница?", "en": "fit — подходить по размеру | suit — идти к лицу | match — сочетаться по цвету/стилю", "examples": [
+      { "en": "This shirt <b>fits</b> me well.", "ru": "Эта рубашка мне подходит." },
+      { "en": "That color <b>suits</b> you perfectly.", "ru": "Этот цвет идёт тебе идеально." }
+    ]},
+    { "ru": "lie vs lay — разница?", "en": "lie — лежать самому | lay — класть что-то (lay + объект)", "examples": [
+      { "en": "I'll <b>lie</b> down and rest.", "ru": "Я лягу и отдохну." },
+      { "en": "<b>Lay</b> the table for dinner.", "ru": "Накрой стол к ужину." }
+    ]},
+    { "ru": "rise vs raise — разница?", "en": "rise — подниматься само | raise — поднять что-то (raise + объект)", "examples": [
+      { "en": "The sun <b>rises</b> in the east.", "ru": "Солнце восходит на востоке." },
+      { "en": "<b>Raise</b> your hand if you know.", "ru": "Поднимите руку если знаете." }
+    ]},
+    { "ru": "steal vs rob — разница?", "en": "steal — украсть предмет | rob — ограбить человека/место", "examples": [
+      { "en": "Someone <b>stole</b> my wallet.", "ru": "Кто-то украл мой кошелёк." },
+      { "en": "The bank was <b>robbed</b> last night.", "ru": "Банк был ограблен вчера ночью." }
+    ]},
+    { "ru": "lend vs borrow — разница?", "en": "lend — дать в долг | borrow — взять в долг", "examples": [
+      { "en": "Can you <b>lend</b> me some money?", "ru": "Ты можешь мне дать деньги в долг?" },
+      { "en": "I need to <b>borrow</b> a pen.", "ru": "Мне нужно одолжить ручку." }
+    ]},
+    { "ru": "see vs look vs watch — разница?", "en": "see — видеть автоматически | look — направить взгляд | watch — наблюдать процесс", "examples": [
+      { "en": "I <b>see</b> a bird outside.", "ru": "Я вижу птицу снаружи." },
+      { "en": "<b>Look</b> at the beautiful sunset.", "ru": "Посмотри на прекрасный закат." }
+    ]},
+    { "ru": "study vs learn vs teach — разница?", "en": "study — учить материал | learn — получить навык/знание | teach — обучать других", "examples": [
+      { "en": "I <b>study</b> history every day.", "ru": "Я учу историю каждый день." },
+      { "en": "I <b>learned</b> to swim last year.", "ru": "Я научился плавать в прошлом году." }
+    ]},
+    { "ru": "speak vs say vs talk vs tell — разница?", "en": "speak — говорить (речь) | say — произнести слова | talk — общаться | tell — сообщить кому-то", "examples": [
+      { "en": "She <b>speaks</b> five languages.", "ru": "Она говорит на пяти языках." },
+      { "en": "<b>Say</b> hello to your mother.", "ru": "Скажи привет своей маме." }
+    ]},
+    { "ru": "wear vs put on — разница?", "en": "wear — уже надето на тебе | put on — действие надевания", "examples": [
+      { "en": "I <b>wear</b> glasses every day.", "ru": "Я ношу очки каждый день." },
+      { "en": "<b>Put on</b> your coat before going out.", "ru": "Надень своё пальто перед уходом." }
+    ]},
+    { "ru": "suggest vs offer vs propose — разница?", "en": "suggest — предложить идею | offer — предложить помощь/услугу | propose — официально предложить", "examples": [
+      { "en": "I <b>suggest</b> we go to the movies.", "ru": "Я предлагаю нам пойти в кино." },
+      { "en": "He <b>offered</b> to help me carry bags.", "ru": "Он предложил мне помочь нести сумки." }
+    ]}
   ]
 }

@@ -2,23 +2,77 @@
   "name": "Синонимы — прил. и сущ.",
   "category": "синонимы",
   "cards": [
-    { "ru": "happy vs lucky — разница?", "en": "happy — чувство радости | lucky — повезло (случай)" },
-    { "ru": "easy vs light — разница?", "en": "easy — несложно | light — лёгкий по весу" },
-    { "ru": "tall vs high — разница?", "en": "tall — высокий (люди, здания) | high — высокий уровень/высота" },
-    { "ru": "hard vs hardly — разница?", "en": "hard — трудный / сильно | hardly — едва, почти нет" },
-    { "ru": "interesting vs interested — разница?", "en": "interesting — сам предмет интересный | interested — человек заинтересован" },
-    { "ru": "exciting vs excited — разница?", "en": "exciting — захватывающий (объект) | excited — взволнованный (человек)" },
-    { "ru": "empty vs free vs vacant vs spare — разница?", "en": "empty — без содержимого | free — свободно | vacant — место свободно | spare — запасной" },
-    { "ru": "like vs as — разница?", "en": "like — похоже на (сравнение) | as — в роли / как (функция)" },
-    { "ru": "either vs too vs also — разница?", "en": "either — тоже (в отрицаниях) | too — тоже (в конце) | also — также (в начале)" },
-    { "ru": "still vs yet vs already — разница?", "en": "still — всё ещё | yet — в вопросах и отрицаниях | already — уже" },
-    { "ru": "late vs lately vs latest — разница?", "en": "late — поздно | lately — недавно | latest — самый последний" },
-    { "ru": "except vs besides — разница?", "en": "except — кроме (исключает) | besides — кроме того (добавляет)" },
-    { "ru": "among vs between — разница?", "en": "among — среди многих | between — между двумя" },
-    { "ru": "pair vs couple — разница?", "en": "pair — пара предметов | couple — пара людей (обычно)" },
-    { "ru": "cook vs cooker — разница?", "en": "cook — повар (человек) | cooker — плита (прибор)" },
-    { "ru": "shade vs shadow — разница?", "en": "shade — тень-прохлада | shadow — форма тени от предмета" },
-    { "ru": "food vs meal — разница?", "en": "food — еда вообще | meal — приём пищи (завтрак, обед...)" },
-    { "ru": "road vs street vs way vs path — разница?", "en": "road — дорога | street — улица | way — путь | path — тропа" }
+    { "ru": "happy vs lucky — разница?", "en": "happy — чувство радости | lucky — повезло (случай)", "examples": [
+      { "en": "I'm <b>happy</b> about the results.", "ru": "Я счастлив результатом." },
+      { "en": "He's <b>lucky</b> to have won.", "ru": "Ему повезло выиграть." }
+    ]},
+    { "ru": "easy vs light — разница?", "en": "easy — несложно | light — лёгкий по весу", "examples": [
+      { "en": "This task is <b>easy</b> to complete.", "ru": "Эту задачу легко выполнить." },
+      { "en": "This bag is very <b>light</b>.", "ru": "Эта сумка очень лёгкая." }
+    ]},
+    { "ru": "tall vs high — разница?", "en": "tall — высокий (люди, здания) | high — высокий уровень/высота", "examples": [
+      { "en": "He's a <b>tall</b> man.", "ru": "Он высокий мужчина." },
+      { "en": "The mountain is very <b>high</b>.", "ru": "Гора очень высокая." }
+    ]},
+    { "ru": "hard vs hardly — разница?", "en": "hard — трудный / сильно | hardly — едва, почти нет", "examples": [
+      { "en": "This is a <b>hard</b> decision.", "ru": "Это трудное решение." },
+      { "en": "I <b>hardly</b> ever see him.", "ru": "Я едва когда-либо его вижу." }
+    ]},
+    { "ru": "interesting vs interested — разница?", "en": "interesting — сам предмет интересный | interested — человек заинтересован", "examples": [
+      { "en": "This is an <b>interesting</b> book.", "ru": "Это интересная книга." },
+      { "en": "I'm very <b>interested in</b> history.", "ru": "Я очень заинтересован историей." }
+    ]},
+    { "ru": "exciting vs excited — разница?", "en": "exciting — захватывающий (объект) | excited — взволнованный (человек)", "examples": [
+      { "en": "It was an <b>exciting</b> movie.", "ru": "Это был захватывающий фильм." },
+      { "en": "The kids are <b>excited</b> about the trip.", "ru": "Дети в волнении от поездки." }
+    ]},
+    { "ru": "empty vs free vs vacant vs spare — разница?", "en": "empty — без содержимого | free — свободно | vacant — место свободно | spare — запасной", "examples": [
+      { "en": "The bottle is <b>empty</b>.", "ru": "Бутылка пуста." },
+      { "en": "Is this seat <b>free</b>?", "ru": "Это место свободно?" }
+    ]},
+    { "ru": "like vs as — разница?", "en": "like — похоже на (сравнение) | as — в роли / как (функция)", "examples": [
+      { "en": "She looks <b>like</b> her mother.", "ru": "Она похожа на свою мать." },
+      { "en": "He works <b>as</b> a teacher.", "ru": "Он работает как учитель." }
+    ]},
+    { "ru": "either vs too vs also — разница?", "en": "either — тоже (в отрицаниях) | too — тоже (в конце) | also — также (в начале)", "examples": [
+      { "en": "I don't like it <b>either</b>.", "ru": "Мне это тоже не нравится." },
+      { "en": "I want to come <b>too</b>.", "ru": "Я тоже хочу идти." }
+    ]},
+    { "ru": "still vs yet vs already — разница?", "en": "still — всё ещё | yet — в вопросах и отрицаниях | already — уже", "examples": [
+      { "en": "He's <b>still</b> working.", "ru": "Он всё ещё работает." },
+      { "en": "Have you finished <b>yet</b>?", "ru": "Ты уже закончил?" }
+    ]},
+    { "ru": "late vs lately vs latest — разница?", "en": "late — поздно | lately — недавно | latest — самый последний", "examples": [
+      { "en": "I'm sorry I'm <b>late</b>.", "ru": "Извини что я опоздал." },
+      { "en": "<b>Lately</b> I've been busy.", "ru": "Недавно я был занят." }
+    ]},
+    { "ru": "except vs besides — разница?", "en": "except — кроме (исключает) | besides — кроме того (добавляет)", "examples": [
+      { "en": "Everyone came <b>except</b> John.", "ru": "Все пришли кроме Джона." },
+      { "en": "<b>Besides</b>, it's too expensive.", "ru": "Кроме того, это слишком дорого." }
+    ]},
+    { "ru": "among vs between — разница?", "en": "among — среди многих | between — между двумя", "examples": [
+      { "en": "He stood <b>among</b> the crowd.", "ru": "Он стоял среди толпы." },
+      { "en": "We shared the secret <b>between</b> us.", "ru": "Мы поделились секретом между нами." }
+    ]},
+    { "ru": "pair vs couple — разница?", "en": "pair — пара предметов | couple — пара людей (обычно)", "examples": [
+      { "en": "I need a <b>pair</b> of socks.", "ru": "Мне нужна пара носков." },
+      { "en": "A <b>couple</b> got married yesterday.", "ru": "Пара вчера вышла замуж." }
+    ]},
+    { "ru": "cook vs cooker — разница?", "en": "cook — повар (человек) | cooker — плита (прибор)", "examples": [
+      { "en": "The <b>cook</b> prepared dinner.", "ru": "Повар приготовил ужин." },
+      { "en": "The <b>cooker</b> is broken.", "ru": "Плита сломана." }
+    ]},
+    { "ru": "shade vs shadow — разница?", "en": "shade — тень-прохлада | shadow — форма тени от предмета", "examples": [
+      { "en": "Let's sit in the <b>shade</b>.", "ru": "Давай сядем в тени." },
+      { "en": "I saw a <b>shadow</b> on the wall.", "ru": "Я видел тень на стене." }
+    ]},
+    { "ru": "food vs meal — разница?", "en": "food — еда вообще | meal — приём пищи (завтрак, обед...)", "examples": [
+      { "en": "I love Italian <b>food</b>.", "ru": "Я люблю итальянскую еду." },
+      { "en": "Our <b>meal</b> was delicious.", "ru": "Наше блюдо было вкусным." }
+    ]},
+    { "ru": "road vs street vs way vs path — разница?", "en": "road — дорога | street — улица | way — путь | path — тропа", "examples": [
+      { "en": "This <b>road</b> leads to the city.", "ru": "Эта дорога ведёт в город." },
+      { "en": "She lives on Park <b>street</b>.", "ru": "Она живёт на улице Парк." }
+    ]}
   ]
 }
