@@ -2,27 +2,93 @@
   "name": "Предлоги после глаголов 1",
   "category": "предлоги",
   "cards": [
-    { "ru": "обвинять в", "en": "accuse of" },
-    { "ru": "восхищаться чем-то", "en": "admire for" },
-    { "ru": "советовать по поводу", "en": "advise on" },
-    { "ru": "соглашаться с", "en": "agree with" },
-    { "ru": "целиться в", "en": "aim at" },
-    { "ru": "извиняться за", "en": "apologize for" },
-    { "ru": "обращаться к", "en": "appeal to" },
-    { "ru": "подавать заявку на", "en": "apply for" },
-    { "ru": "наградить за", "en": "award for" },
-    { "ru": "начинать с", "en": "begin with" },
-    { "ru": "верить в", "en": "believe in" },
-    { "ru": "извлекать выгоду из", "en": "benefit from" },
-    { "ru": "обвинять кого-то в", "en": "blame smb for" },
-    { "ru": "хвастаться чем-то", "en": "boast of / about" },
-    { "ru": "занимать у", "en": "borrow from" },
-    { "ru": "общаться с", "en": "communicate with" },
-    { "ru": "сравнивать с", "en": "compare with" },
-    { "ru": "соревноваться с", "en": "compete with" },
-    { "ru": "жаловаться на", "en": "complain about" },
-    { "ru": "сосредоточиться на", "en": "concentrate on" },
-    { "ru": "поздравлять с", "en": "congratulate on" },
-    { "ru": "состоять из", "en": "consist of" }
+    { "ru": "обвинять в", "en": "accuse of", "examples": [
+      { "en": "They <b>accused</b> him <b>of</b> theft.", "ru": "Его обвинили в краже." },
+      { "en": "She was <b>accused of</b> lying.", "ru": "Её обвинили во лжи." }
+    ]},
+    { "ru": "восхищаться чем-то", "en": "admire for", "examples": [
+      { "en": "I <b>admire</b> her <b>for</b> courage.", "ru": "Я восхищаюсь её мужеством." },
+      { "en": "They <b>admired</b> him <b>for</b> talent.", "ru": "Они восхищались его талантом." }
+    ]},
+    { "ru": "советовать по поводу", "en": "advise on", "examples": [
+      { "en": "Can you <b>advise</b> me <b>on</b> this?", "ru": "Можешь мне посоветовать по этому?" },
+      { "en": "He <b>advised</b> them <b>on</b> taxes.", "ru": "Он советовал им по налогам." }
+    ]},
+    { "ru": "соглашаться с", "en": "agree with", "examples": [
+      { "en": "I <b>agree</b> <b>with</b> you.", "ru": "Я согласен с тобой." },
+      { "en": "She <b>agreed</b> <b>with</b> my plan.", "ru": "Она согласилась с моим планом." }
+    ]},
+    { "ru": "целиться в", "en": "aim at", "examples": [
+      { "en": "He <b>aimed</b> <b>at</b> the target.", "ru": "Он целился в цель." },
+      { "en": "We <b>aim</b> <b>at</b> success.", "ru": "Мы нацелены на успех." }
+    ]},
+    { "ru": "извиняться за", "en": "apologize for", "examples": [
+      { "en": "I <b>apologize</b> <b>for</b> the error.", "ru": "Я извиняюсь за ошибку." },
+      { "en": "He <b>apologized</b> <b>for</b> being late.", "ru": "Он извинился за опоздание." }
+    ]},
+    { "ru": "обращаться к", "en": "appeal to", "examples": [
+      { "en": "I <b>appeal</b> <b>to</b> your kindness.", "ru": "Я обращаюсь к вашей доброте." },
+      { "en": "She <b>appealed</b> <b>to</b> the court.", "ru": "Она обратилась в суд." }
+    ]},
+    { "ru": "подавать заявку на", "en": "apply for", "examples": [
+      { "en": "I <b>applied</b> <b>for</b> the job.", "ru": "Я подал заявку на работу." },
+      { "en": "Will you <b>apply</b> <b>for</b> a visa?", "ru": "Ты подашь заявку на визу?" }
+    ]},
+    { "ru": "наградить за", "en": "award for", "examples": [
+      { "en": "He was <b>awarded</b> <b>for</b> bravery.", "ru": "Его наградили за мужество." },
+      { "en": "She <b>received an award for</b> service.", "ru": "Она получила награду за службу." }
+    ]},
+    { "ru": "начинать с", "en": "begin with", "examples": [
+      { "en": "Let's <b>begin</b> <b>with</b> basics.", "ru": "Начнём с основ." },
+      { "en": "The song <b>begins</b> <b>with</b> drums.", "ru": "Песня начинается с барабанов." }
+    ]},
+    { "ru": "верить в", "en": "believe in", "examples": [
+      { "en": "I <b>believe</b> <b>in</b> you.", "ru": "Я верю в тебя." },
+      { "en": "Do you <b>believe</b> <b>in</b> fate?", "ru": "Ты веришь в судьбу?" }
+    ]},
+    { "ru": "извлекать выгоду из", "en": "benefit from", "examples": [
+      { "en": "You'll <b>benefit from</b> exercise.", "ru": "Ты извлечёшь выгоду из упражнений." },
+      { "en": "She <b>benefited from</b> the training.", "ru": "Она извлекла выгоду из обучения." }
+    ]},
+    { "ru": "обвинять кого-то в", "en": "blame smb for", "examples": [
+      { "en": "Don't <b>blame</b> her <b>for</b> it.", "ru": "Не вини её за это." },
+      { "en": "He <b>blamed</b> me <b>for</b> the problem.", "ru": "Он обвинил меня в проблеме." }
+    ]},
+    { "ru": "хвастаться чем-то", "en": "boast of / about", "examples": [
+      { "en": "He <b>boasts</b> <b>of</b> his wealth.", "ru": "Он хвастается своим богатством." },
+      { "en": "She <b>boasted</b> <b>about</b> her grades.", "ru": "Она хвасталась своими оценками." }
+    ]},
+    { "ru": "занимать у", "en": "borrow from", "examples": [
+      { "en": "Can I <b>borrow</b> money <b>from</b> you?", "ru": "Могу я занять у тебя деньги?" },
+      { "en": "She <b>borrowed</b> a book <b>from</b> the library.", "ru": "Она заняла книгу из библиотеки." }
+    ]},
+    { "ru": "общаться с", "en": "communicate with", "examples": [
+      { "en": "We <b>communicate</b> <b>with</b> email.", "ru": "Мы общаемся по электронной почте." },
+      { "en": "He <b>communicates</b> <b>with</b> friends daily.", "ru": "Он общается с друзьями ежедневно." }
+    ]},
+    { "ru": "сравнивать с", "en": "compare with", "examples": [
+      { "en": "<b>Compare</b> this <b>with</b> that.", "ru": "Сравни это с тем." },
+      { "en": "She <b>compared</b> the prices <b>with</b> competitors.", "ru": "Она сравнила цены с конкурентами." }
+    ]},
+    { "ru": "соревноваться с", "en": "compete with", "examples": [
+      { "en": "We <b>compete</b> <b>with</b> bigger companies.", "ru": "Мы соревнуемся с крупными компаниями." },
+      { "en": "He <b>competed</b> <b>with</b> his rivals.", "ru": "Он соревновался со своими соперниками." }
+    ]},
+    { "ru": "жаловаться на", "en": "complain about", "examples": [
+      { "en": "She <b>complains</b> <b>about</b> the weather.", "ru": "Она жалуется на погоду." },
+      { "en": "He <b>complained</b> <b>about</b> the service.", "ru": "Он пожаловался на обслуживание." }
+    ]},
+    { "ru": "сосредоточиться на", "en": "concentrate on", "examples": [
+      { "en": "<b>Concentrate</b> <b>on</b> your work.", "ru": "Сосредоточься на своей работе." },
+      { "en": "She <b>concentrated</b> <b>on</b> the task.", "ru": "Она сосредоточилась на задаче." }
+    ]},
+    { "ru": "поздравлять с", "en": "congratulate on", "examples": [
+      { "en": "I <b>congratulate</b> you <b>on</b> the win.", "ru": "Я поздравляю тебя с победой." },
+      { "en": "He <b>congratulated</b> her <b>on</b> graduation.", "ru": "Он поздравил её с окончанием." }
+    ]},
+    { "ru": "состоять из", "en": "consist of", "examples": [
+      { "en": "The team <b>consists</b> <b>of</b> five people.", "ru": "Команда состоит из пяти человек." },
+      { "en": "The meal <b>consisted</b> <b>of</b> three courses.", "ru": "Блюдо состояло из трёх блюд." }
+    ]}
   ]
 }

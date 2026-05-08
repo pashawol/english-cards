@@ -2,27 +2,93 @@
   "name": "Предлоги после прилагательных 3",
   "category": "предлоги",
   "cards": [
-    { "ru": "впечатлённый", "en": "impressed by" },
-    { "ru": "независимый от", "en": "independent of" },
-    { "ru": "невиновный в", "en": "innocent of" },
-    { "ru": "интересующийся", "en": "interested in" },
-    { "ru": "вовлечённый в", "en": "involved in" },
-    { "ru": "раздражённый", "en": "irritated at / with" },
-    { "ru": "ревнующий к", "en": "jealous of" },
-    { "ru": "увлечённый (хобби)", "en": "keen on" },
-    { "ru": "опаздывающий на", "en": "late for" },
-    { "ru": "женатый / замужем за", "en": "married to" },
-    { "ru": "нервничающий из-за", "en": "nervous about" },
-    { "ru": "занятый чем-то", "en": "occupied with" },
-    { "ru": "терпеливый к", "en": "patient with" },
-    { "ru": "довольный", "en": "pleased with" },
-    { "ru": "связанный с", "en": "related to" },
-    { "ru": "ответственный за", "en": "responsible for" },
-    { "ru": "удовлетворённый", "en": "satisfied with" },
-    { "ru": "чувствительный к", "en": "sensitive to" },
-    { "ru": "шокированный", "en": "shocked by" },
-    { "ru": "уставший от", "en": "tired of" },
-    { "ru": "беспокоящийся", "en": "worried about" },
-    { "ru": "достойный", "en": "worthy of" }
+    { "ru": "впечатлённый", "en": "impressed by", "examples": [
+      { "en": "I was <b>impressed by</b> her talent.", "ru": "Я был впечатлён её талантом." },
+      { "en": "We're <b>impressed by</b> the results.", "ru": "Мы впечатлены результатами." }
+    ]},
+    { "ru": "независимый от", "en": "independent of", "examples": [
+      { "en": "She's <b>independent of</b> her parents.", "ru": "Она независима от родителей." },
+      { "en": "Success is <b>independent of</b> luck.", "ru": "Успех независим от удачи." }
+    ]},
+    { "ru": "невиновный в", "en": "innocent of", "examples": [
+      { "en": "He was <b>innocent of</b> the crime.", "ru": "Он был невиновен в преступлении." },
+      { "en": "She proved <b>innocent of</b> wrongdoing.", "ru": "Она доказала свою невинность." }
+    ]},
+    { "ru": "интересующийся", "en": "interested in", "examples": [
+      { "en": "Are you <b>interested in</b> sports?", "ru": "Тебя интересует спорт?" },
+      { "en": "He's <b>interested in</b> science.", "ru": "Его интересует наука." }
+    ]},
+    { "ru": "вовлечённый в", "en": "involved in", "examples": [
+      { "en": "She's <b>involved in</b> the project.", "ru": "Она вовлечена в проект." },
+      { "en": "Are you <b>involved in</b> this?", "ru": "Ты вовлечён в это?" }
+    ]},
+    { "ru": "раздражённый", "en": "irritated at / with", "examples": [
+      { "en": "He's <b>irritated at</b> the noise.", "ru": "Его раздражает шум." },
+      { "en": "She seems <b>irritated with</b> me.", "ru": "Она, кажется, раздражена на меня." }
+    ]},
+    { "ru": "ревнующий к", "en": "jealous of", "examples": [
+      { "en": "He's <b>jealous of</b> your success.", "ru": "Он ревнует к твоему успеху." },
+      { "en": "Don't be <b>jealous of</b> her.", "ru": "Не ревнуй к ней." }
+    ]},
+    { "ru": "увлечённый (хобби)", "en": "keen on", "examples": [
+      { "en": "She's <b>keen on</b> hiking.", "ru": "Она увлечена пешеходными прогулками." },
+      { "en": "Are you <b>keen on</b> this sport?", "ru": "Ты увлечён этим спортом?" }
+    ]},
+    { "ru": "опаздывающий на", "en": "late for", "examples": [
+      { "en": "I'm <b>late for</b> work.", "ru": "Я опаздываю на работу." },
+      { "en": "Don't be <b>late for</b> the meeting.", "ru": "Не опаздывай на встречу." }
+    ]},
+    { "ru": "женатый / замужем за", "en": "married to", "examples": [
+      { "en": "She's <b>married to</b> a doctor.", "ru": "Она замужем за врачом." },
+      { "en": "He got <b>married to</b> his childhood friend.", "ru": "Он женился на своей детской подруге." }
+    ]},
+    { "ru": "нервничающий из-за", "en": "nervous about", "examples": [
+      { "en": "I'm <b>nervous about</b> the exam.", "ru": "Я нервничаю из-за экзамена." },
+      { "en": "Are you <b>nervous about</b> the flight?", "ru": "Ты нервничаешь из-за полёта?" }
+    ]},
+    { "ru": "занятый чем-то", "en": "occupied with", "examples": [
+      { "en": "She's <b>occupied with</b> her kids.", "ru": "Она занята своими детьми." },
+      { "en": "He was <b>occupied with</b> work.", "ru": "Он был занят работой." }
+    ]},
+    { "ru": "терпеливый к", "en": "patient with", "examples": [
+      { "en": "Teachers are <b>patient with</b> students.", "ru": "Учителя терпеливы к студентам." },
+      { "en": "Be <b>patient with</b> me.", "ru": "Будь терпелив ко мне." }
+    ]},
+    { "ru": "довольный", "en": "pleased with", "examples": [
+      { "en": "I'm <b>pleased with</b> your work.", "ru": "Я доволен твоей работой." },
+      { "en": "She seems <b>pleased with</b> the result.", "ru": "Она, кажется, довольна результатом." }
+    ]},
+    { "ru": "связанный с", "en": "related to", "examples": [
+      { "en": "This is <b>related to</b> your case.", "ru": "Это связано с вашим делом." },
+      { "en": "Are they <b>related to</b> each other?", "ru": "Они связаны друг с другом?" }
+    ]},
+    { "ru": "ответственный за", "en": "responsible for", "examples": [
+      { "en": "He's <b>responsible for</b> the project.", "ru": "Он ответственен за проект." },
+      { "en": "Who's <b>responsible for</b> this?", "ru": "Кто ответственен за это?" }
+    ]},
+    { "ru": "удовлетворённый", "en": "satisfied with", "examples": [
+      { "en": "I'm <b>satisfied with</b> my life.", "ru": "Я удовлетворён своей жизнью." },
+      { "en": "Are you <b>satisfied with</b> the service?", "ru": "Ты доволен обслуживанием?" }
+    ]},
+    { "ru": "чувствительный к", "en": "sensitive to", "examples": [
+      { "en": "Some people are <b>sensitive to</b> light.", "ru": "Некоторые люди чувствительны к свету." },
+      { "en": "I'm <b>sensitive to</b> criticism.", "ru": "Я чувствителен к критике." }
+    ]},
+    { "ru": "шокированный", "en": "shocked by", "examples": [
+      { "en": "I was <b>shocked by</b> the news.", "ru": "Я был в шоке от новостей." },
+      { "en": "Everyone was <b>shocked by</b> the result.", "ru": "Все были в шоке от результата." }
+    ]},
+    { "ru": "уставший от", "en": "tired of", "examples": [
+      { "en": "I'm <b>tired of</b> this job.", "ru": "Я устал от этой работы." },
+      { "en": "She's <b>tired of</b> waiting.", "ru": "Она устала ждать." }
+    ]},
+    { "ru": "беспокоящийся", "en": "worried about", "examples": [
+      { "en": "I'm <b>worried about</b> her.", "ru": "Я беспокоюсь о ней." },
+      { "en": "Are you <b>worried about</b> the exam?", "ru": "Ты беспокоишься об экзамене?" }
+    ]},
+    { "ru": "достойный", "en": "worthy of", "examples": [
+      { "en": "She's <b>worthy of</b> the award.", "ru": "Она достойна награды." },
+      { "en": "Is he <b>worthy of</b> your trust?", "ru": "Он достоин твоего доверия?" }
+    ]}
   ]
 }
