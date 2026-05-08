@@ -2,27 +2,93 @@
   "name": "Артикль THE — фразы",
   "category": "артикли",
   "cards": [
-    { "ru": "в начале (урока, шоу)", "en": "at the beginning" },
-    { "ru": "в конце (итог)", "en": "in the end" },
-    { "ru": "в долгосрочной перспективе", "en": "in the long run" },
-    { "ru": "в целом", "en": "on the whole" },
-    { "ru": "тем временем", "en": "in the meantime" },
-    { "ru": "исключено, невозможно", "en": "out of the question" },
-    { "ru": "послезавтра", "en": "the day after tomorrow" },
-    { "ru": "в данный момент", "en": "at the moment" },
-    { "ru": "мешать, стоять на пути", "en": "be in the way" },
-    { "ru": "на всякий случай", "en": "be on the safe side" },
-    { "ru": "кстати", "en": "by the way" },
-    { "ru": "с одной стороны", "en": "on the one hand" },
-    { "ru": "с другой стороны", "en": "on the other hand" },
-    { "ru": "на месте / сразу", "en": "on the spot" },
-    { "ru": "на днях", "en": "the other day" },
-    { "ru": "по правде говоря", "en": "to tell the truth" },
-    { "ru": "сделать всё возможное", "en": "do one's best" },
-    { "ru": "накрыть на стол", "en": "lay the table" },
-    { "ru": "заправить постель", "en": "make the bed" },
-    { "ru": "вдали", "en": "in the distance" },
-    { "ru": "напротив", "en": "on the contrary" },
-    { "ru": "в темноте", "en": "in the dark" }
+    { "ru": "в начале (урока, шоу)", "en": "at the beginning", "examples": [
+      { "en": "At <b>the beginning</b> of class, we read.", "ru": "В начале урока мы читаем." },
+      { "en": "She was shy <b>at the beginning</b>.", "ru": "В начале она была стеснительна." }
+    ]},
+    { "ru": "в конце (итог)", "en": "in the end", "examples": [
+      { "en": "<b>In the end</b>, he understood.", "ru": "В конце концов он понял." },
+      { "en": "<b>In the end</b> they got married.", "ru": "В итоге они поженились." }
+    ]},
+    { "ru": "в долгосрочной перспективе", "en": "in the long run", "examples": [
+      { "en": "<b>In the long run</b> it will help.", "ru": "В долгосрочной перспективе это поможет." },
+      { "en": "<b>In the long run</b> we'll win.", "ru": "В конечном итоге мы победим." }
+    ]},
+    { "ru": "в целом", "en": "on the whole", "examples": [
+      { "en": "<b>On the whole</b>, it's good.", "ru": "В целом, это хорошо." },
+      { "en": "<b>On the whole</b> people agreed.", "ru": "В целом люди согласились." }
+    ]},
+    { "ru": "тем временем", "en": "in the meantime", "examples": [
+      { "en": "<b>In the meantime</b>, cook rice.", "ru": "Тем временем варим рис." },
+      { "en": "<b>In the meantime</b> we waited.", "ru": "Тем временем мы ждали." }
+    ]},
+    { "ru": "исключено, невозможно", "en": "out of the question", "examples": [
+      { "en": "That's <b>out of the question</b>.", "ru": "Это исключено." },
+      { "en": "Going now is <b>out of the question</b>.", "ru": "Идти сейчас невозможно." }
+    ]},
+    { "ru": "послезавтра", "en": "the day after tomorrow", "examples": [
+      { "en": "We'll leave <b>the day after tomorrow</b>.", "ru": "Мы уедем послезавтра." },
+      { "en": "It's <b>the day after tomorrow</b> now.", "ru": "Это послезавтра." }
+    ]},
+    { "ru": "в данный момент", "en": "at the moment", "examples": [
+      { "en": "He's busy <b>at the moment</b>.", "ru": "Он занят в данный момент." },
+      { "en": "<b>At the moment</b> I'm tired.", "ru": "В данный момент я устал." }
+    ]},
+    { "ru": "мешать, стоять на пути", "en": "be in the way", "examples": [
+      { "en": "You're <b>in the way</b>, move.", "ru": "Ты мешаешь, отойди." },
+      { "en": "Your car is <b>in the way</b>.", "ru": "Твоя машина стоит на пути." }
+    ]},
+    { "ru": "на всякий случай", "en": "be on the safe side", "examples": [
+      { "en": "Let's take umbrellas <b>to be on the safe side</b>.", "ru": "Возьмём зонтики на всякий случай." },
+      { "en": "Check it <b>to be on the safe side</b>.", "ru": "Проверь для безопасности." }
+    ]},
+    { "ru": "кстати", "en": "by the way", "examples": [
+      { "en": "<b>By the way</b>, how is Anna?", "ru": "Кстати, как Анна?" },
+      { "en": "<b>By the way</b>, I forgot to tell you.", "ru": "Кстати, я забыл тебе сказать." }
+    ]},
+    { "ru": "с одной стороны", "en": "on the one hand", "examples": [
+      { "en": "<b>On the one hand</b>, it's good.", "ru": "С одной стороны, это хорошо." },
+      { "en": "<b>On the one hand</b> I want to go.", "ru": "С одной стороны я хочу идти." }
+    ]},
+    { "ru": "с другой стороны", "en": "on the other hand", "examples": [
+      { "en": "<b>On the other hand</b>, I'm tired.", "ru": "С другой стороны, я устал." },
+      { "en": "<b>On the other hand</b> it's risky.", "ru": "С другой стороны, это рискованно." }
+    ]},
+    { "ru": "на месте / сразу", "en": "on the spot", "examples": [
+      { "en": "He decided <b>on the spot</b>.", "ru": "Он решил сразу." },
+      { "en": "Fix it <b>on the spot</b>.", "ru": "Исправь на месте." }
+    ]},
+    { "ru": "на днях", "en": "the other day", "examples": [
+      { "en": "<b>The other day</b> I saw him.", "ru": "На днях я его видел." },
+      { "en": "<b>The other day</b> it rained.", "ru": "На днях шёл дождь." }
+    ]},
+    { "ru": "по правде говоря", "en": "to tell the truth", "examples": [
+      { "en": "<b>To tell the truth</b>, I'm scared.", "ru": "По правде говоря, я боюсь." },
+      { "en": "<b>To tell the truth</b>, I don't know.", "ru": "Честно говоря, я не знаю." }
+    ]},
+    { "ru": "сделать всё возможное", "en": "do one's best", "examples": [
+      { "en": "I'll <b>do my best</b> here.", "ru": "Я сделаю всё возможное." },
+      { "en": "She <b>did her best</b> always.", "ru": "Она всегда старалась изо всех сил." }
+    ]},
+    { "ru": "накрыть на стол", "en": "lay the table", "examples": [
+      { "en": "Can you <b>lay the table</b>?", "ru": "Можешь накрыть на стол?" },
+      { "en": "She <b>laid the table</b> for dinner.", "ru": "Она накрыла стол к ужину." }
+    ]},
+    { "ru": "заправить постель", "en": "make the bed", "examples": [
+      { "en": "Go <b>make the bed</b> now.", "ru": "Иди заправь постель." },
+      { "en": "I <b>make the bed</b> every morning.", "ru": "Я застилаю постель каждое утро." }
+    ]},
+    { "ru": "вдали", "en": "in the distance", "examples": [
+      { "en": "I saw a light <b>in the distance</b>.", "ru": "Я видел свет вдали." },
+      { "en": "Mountains were <b>in the distance</b>.", "ru": "Горы были вдали." }
+    ]},
+    { "ru": "напротив", "en": "on the contrary", "examples": [
+      { "en": "<b>On the contrary</b>, I agree.", "ru": "Напротив, я согласен." },
+      { "en": "<b>On the contrary</b>, she's kind.", "ru": "Напротив, она добрая." }
+    ]},
+    { "ru": "в темноте", "en": "in the dark", "examples": [
+      { "en": "We walked <b>in the dark</b>.", "ru": "Мы шли в темноте." },
+      { "en": "He left me <b>in the dark</b>.", "ru": "Он оставил меня в неведении." }
+    ]}
   ]
 }

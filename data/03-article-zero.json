@@ -2,27 +2,93 @@
   "name": "Нулевой артикль",
   "category": "артикли",
   "cards": [
-    { "ru": "дома", "en": "at home" },
-    { "ru": "на рассвете", "en": "at dawn" },
-    { "ru": "в сумерках", "en": "at dusk" },
-    { "ru": "ночью", "en": "at night" },
-    { "ru": "на работе", "en": "at work" },
-    { "ru": "случайно", "en": "by accident" },
-    { "ru": "по ошибке", "en": "by mistake" },
-    { "ru": "наизусть", "en": "by heart" },
-    { "ru": "пешком", "en": "on foot" },
-    { "ru": "в отпуске", "en": "on holiday" },
-    { "ru": "попасть в неприятности", "en": "get into trouble" },
-    { "ru": "идти домой", "en": "go home" },
-    { "ru": "ложиться спать", "en": "go to bed" },
-    { "ru": "завтракать / обедать", "en": "have breakfast / lunch" },
-    { "ru": "на самом деле", "en": "in fact" },
-    { "ru": "вовремя", "en": "in time" },
-    { "ru": "заботиться о", "en": "take care of" },
-    { "ru": "шаг за шагом", "en": "step by step" },
-    { "ru": "без сомнения", "en": "without question" },
-    { "ru": "в постели", "en": "in bed" },
-    { "ru": "в отчаянии", "en": "in despair" },
-    { "ru": "подробно", "en": "in detail" }
+    { "ru": "дома", "en": "at home", "examples": [
+      { "en": "I'm <b>at home</b> now.", "ru": "Я дома сейчас." },
+      { "en": "Are you <b>at home</b> tonight?", "ru": "Ты дома сегодня вечером?" }
+    ]},
+    { "ru": "на рассвете", "en": "at dawn", "examples": [
+      { "en": "We left <b>at dawn</b>.", "ru": "Мы ушли на рассвете." },
+      { "en": "<b>At dawn</b> birds sing.", "ru": "На рассвете поют птицы." }
+    ]},
+    { "ru": "в сумерках", "en": "at dusk", "examples": [
+      { "en": "He came <b>at dusk</b>.", "ru": "Он пришёл в сумерках." },
+      { "en": "We met <b>at dusk</b>.", "ru": "Мы встретились в сумерках." }
+    ]},
+    { "ru": "ночью", "en": "at night", "examples": [
+      { "en": "I sleep <b>at night</b>.", "ru": "Я сплю ночью." },
+      { "en": "Owls hunt <b>at night</b>.", "ru": "Совы охотятся ночью." }
+    ]},
+    { "ru": "на работе", "en": "at work", "examples": [
+      { "en": "He's busy <b>at work</b>.", "ru": "Он занят на работе." },
+      { "en": "See you <b>at work</b> tomorrow.", "ru": "Увидимся на работе завтра." }
+    ]},
+    { "ru": "случайно", "en": "by accident", "examples": [
+      { "en": "I broke it <b>by accident</b>.", "ru": "Я разбил это случайно." },
+      { "en": "We met <b>by accident</b>.", "ru": "Мы встретились случайно." }
+    ]},
+    { "ru": "по ошибке", "en": "by mistake", "examples": [
+      { "en": "I sent it <b>by mistake</b>.", "ru": "Я отправил это по ошибке." },
+      { "en": "She called me <b>by mistake</b>.", "ru": "Она позвонила мне по ошибке." }
+    ]},
+    { "ru": "наизусть", "en": "by heart", "examples": [
+      { "en": "I know it <b>by heart</b>.", "ru": "Я знаю это наизусть." },
+      { "en": "Learn the poem <b>by heart</b>.", "ru": "Выучи стихотворение наизусть." }
+    ]},
+    { "ru": "пешком", "en": "on foot", "examples": [
+      { "en": "Let's go <b>on foot</b>.", "ru": "Давай пойдём пешком." },
+      { "en": "He came <b>on foot</b>.", "ru": "Он пришёл пешком." }
+    ]},
+    { "ru": "в отпуске", "en": "on holiday", "examples": [
+      { "en": "She's <b>on holiday</b> now.", "ru": "Она сейчас в отпуске." },
+      { "en": "We go <b>on holiday</b> in July.", "ru": "Мы ездим в отпуск в июле." }
+    ]},
+    { "ru": "попасть в неприятности", "en": "get into trouble", "examples": [
+      { "en": "Don't <b>get into trouble</b>.", "ru": "Не попадай в неприятности." },
+      { "en": "He <b>got into trouble</b> yesterday.", "ru": "Вчера он попал в неприятности." }
+    ]},
+    { "ru": "идти домой", "en": "go home", "examples": [
+      { "en": "Let's <b>go home</b> now.", "ru": "Давай идти домой." },
+      { "en": "I'll <b>go home</b> at six.", "ru": "Я пойду домой в шесть." }
+    ]},
+    { "ru": "ложиться спать", "en": "go to bed", "examples": [
+      { "en": "Time to <b>go to bed</b>.", "ru": "Пора ложиться спать." },
+      { "en": "She <b>goes to bed</b> at ten.", "ru": "Она ложится спать в десять." }
+    ]},
+    { "ru": "завтракать / обедать", "en": "have breakfast / lunch", "examples": [
+      { "en": "I <b>have breakfast</b> at eight.", "ru": "Я завтракаю в восемь." },
+      { "en": "We <b>have lunch</b> at noon.", "ru": "Мы обедаем в полдень." }
+    ]},
+    { "ru": "на самом деле", "en": "in fact", "examples": [
+      { "en": "<b>In fact</b>, I don't know.", "ru": "На самом деле я не знаю." },
+      { "en": "<b>In fact</b>, it's true.", "ru": "На самом деле это правда." }
+    ]},
+    { "ru": "вовремя", "en": "in time", "examples": [
+      { "en": "We arrived <b>in time</b>.", "ru": "Мы приехали вовремя." },
+      { "en": "Help came <b>in time</b>.", "ru": "Помощь пришла вовремя." }
+    ]},
+    { "ru": "заботиться о", "en": "take care of", "examples": [
+      { "en": "Please <b>take care of</b> my cat.", "ru": "Пожалуйста, позаботься о моём коте." },
+      { "en": "Who <b>takes care of</b> the kids?", "ru": "Кто присматривает за детьми?" }
+    ]},
+    { "ru": "шаг за шагом", "en": "step by step", "examples": [
+      { "en": "Learn <b>step by step</b>.", "ru": "Учись шаг за шагом." },
+      { "en": "<b>Step by step</b> we climbed up.", "ru": "Шаг за шагом мы поднимались." }
+    ]},
+    { "ru": "без сомнения", "en": "without question", "examples": [
+      { "en": "That's true <b>without question</b>.", "ru": "Это верно без сомнения." },
+      { "en": "<b>Without question</b> she's right.", "ru": "Без сомнения, она права." }
+    ]},
+    { "ru": "в постели", "en": "in bed", "examples": [
+      { "en": "I'm staying <b>in bed</b> today.", "ru": "Я остаюсь в постели сегодня." },
+      { "en": "He was <b>in bed</b> yesterday.", "ru": "Вчера он был в постели." }
+    ]},
+    { "ru": "в отчаянии", "en": "in despair", "examples": [
+      { "en": "She was <b>in despair</b>.", "ru": "Она была в отчаянии." },
+      { "en": "He gave up <b>in despair</b>.", "ru": "Он сдался в отчаянии." }
+    ]},
+    { "ru": "подробно", "en": "in detail", "examples": [
+      { "en": "Explain it <b>in detail</b> please.", "ru": "Объясни подробно пожалуйста." },
+      { "en": "She described it <b>in detail</b>.", "ru": "Она описала это подробно." }
+    ]}
   ]
 }

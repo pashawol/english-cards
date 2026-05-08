@@ -2,27 +2,93 @@
   "name": "Предлоги после прилагательных 2",
   "category": "предлоги",
   "cards": [
-    { "ru": "уверенный в (успехе)", "en": "certain of" },
-    { "ru": "уверенный в себе", "en": "confident in" },
-    { "ru": "довольный чем-то", "en": "content with" },
-    { "ru": "покрытый чем-то", "en": "covered with" },
-    { "ru": "без ума от", "en": "crazy about" },
-    { "ru": "любопытный насчёт", "en": "curious about" },
-    { "ru": "в восторге от", "en": "delighted with" },
-    { "ru": "зависящий от", "en": "dependent on" },
-    { "ru": "посвящённый чему-то", "en": "devoted to" },
-    { "ru": "отличающийся от", "en": "different from" },
-    { "ru": "разочарованный", "en": "disappointed at / about" },
-    { "ru": "занятый чем-то", "en": "engaged in" },
-    { "ru": "знаменитый чем-то", "en": "famous for" },
-    { "ru": "сытый по горло", "en": "fed up with" },
-    { "ru": "увлечённый чем-то", "en": "fond of" },
-    { "ru": "испуганный", "en": "frightened of" },
-    { "ru": "полный чего-то", "en": "full of" },
-    { "ru": "взбешённый", "en": "furious about / with" },
-    { "ru": "хорош в чём-то", "en": "good at" },
-    { "ru": "благодарный кому-то за", "en": "grateful to / for" },
-    { "ru": "виновный в", "en": "guilty of" },
-    { "ru": "вредный для", "en": "harmful to" }
+    { "ru": "уверенный в (успехе)", "en": "certain of", "examples": [
+      { "en": "I'm <b>certain of</b> the answer.", "ru": "Я уверен в ответе." },
+      { "en": "Are you <b>certain of</b> this?", "ru": "Ты уверен в этом?" }
+    ]},
+    { "ru": "уверенный в себе", "en": "confident in", "examples": [
+      { "en": "She's <b>confident in</b> herself.", "ru": "Она уверена в себе." },
+      { "en": "He looked <b>confident in</b> his skills.", "ru": "Он казался уверенным в своих навыках." }
+    ]},
+    { "ru": "довольный чем-то", "en": "content with", "examples": [
+      { "en": "I'm <b>content with</b> my life.", "ru": "Я доволен своей жизнью." },
+      { "en": "Are you <b>content with</b> this?", "ru": "Ты доволен этим?" }
+    ]},
+    { "ru": "покрытый чем-то", "en": "covered with", "examples": [
+      { "en": "The floor was <b>covered with</b> snow.", "ru": "Пол был покрыт снегом." },
+      { "en": "His face is <b>covered with</b> dust.", "ru": "Его лицо покрыто пылью." }
+    ]},
+    { "ru": "без ума от", "en": "crazy about", "examples": [
+      { "en": "She's <b>crazy about</b> chocolate.", "ru": "Она без ума от шоколада." },
+      { "en": "He's <b>crazy about</b> football.", "ru": "Он помешан на футболе." }
+    ]},
+    { "ru": "любопытный насчёт", "en": "curious about", "examples": [
+      { "en": "I'm <b>curious about</b> your trip.", "ru": "Я любопытен о вашей поездке." },
+      { "en": "Children are <b>curious about</b> everything.", "ru": "Дети любопытны обо всём." }
+    ]},
+    { "ru": "в восторге от", "en": "delighted with", "examples": [
+      { "en": "I'm <b>delighted with</b> the gift.", "ru": "Я в восторге от подарка." },
+      { "en": "She seemed <b>delighted with</b> the news.", "ru": "Она казалась в восторге от новостей." }
+    ]},
+    { "ru": "зависящий от", "en": "dependent on", "examples": [
+      { "en": "Children are <b>dependent on</b> parents.", "ru": "Дети зависят от родителей." },
+      { "en": "Success is <b>dependent on</b> effort.", "ru": "Успех зависит от усилий." }
+    ]},
+    { "ru": "посвящённый чему-то", "en": "devoted to", "examples": [
+      { "en": "She's <b>devoted to</b> her work.", "ru": "Она посвящена своей работе." },
+      { "en": "He's <b>devoted to</b> his family.", "ru": "Он предан своей семье." }
+    ]},
+    { "ru": "отличающийся от", "en": "different from", "examples": [
+      { "en": "This is <b>different from</b> that.", "ru": "Это отличается от того." },
+      { "en": "Her style is <b>different from</b> mine.", "ru": "Её стиль отличается от моего." }
+    ]},
+    { "ru": "разочарованный", "en": "disappointed at / about", "examples": [
+      { "en": "I'm <b>disappointed at</b> the result.", "ru": "Я разочарован результатом." },
+      { "en": "He seemed <b>disappointed about</b> the delay.", "ru": "Он казался разочарованным задержкой." }
+    ]},
+    { "ru": "занятый чем-то", "en": "engaged in", "examples": [
+      { "en": "She's <b>engaged in</b> work.", "ru": "Она занята работой." },
+      { "en": "They're <b>engaged in</b> a conversation.", "ru": "Они заняты разговором." }
+    ]},
+    { "ru": "знаменитый чем-то", "en": "famous for", "examples": [
+      { "en": "Paris is <b>famous for</b> its art.", "ru": "Париж знаменит своим искусством." },
+      { "en": "She's <b>famous for</b> her singing.", "ru": "Она знаменита своим пением." }
+    ]},
+    { "ru": "сытый по горло", "en": "fed up with", "examples": [
+      { "en": "I'm <b>fed up with</b> this job.", "ru": "Я сыт по горло этой работой." },
+      { "en": "He's <b>fed up with</b> waiting.", "ru": "Он устал от ожидания." }
+    ]},
+    { "ru": "увлечённый чем-то", "en": "fond of", "examples": [
+      { "en": "I'm <b>fond of</b> cats.", "ru": "Я люблю кошек." },
+      { "en": "She's <b>fond of</b> reading.", "ru": "Она увлечена чтением." }
+    ]},
+    { "ru": "испуганный", "en": "frightened of", "examples": [
+      { "en": "He's <b>frightened of</b> the dark.", "ru": "Он испугался темноты." },
+      { "en": "Are you <b>frightened of</b> snakes?", "ru": "Ты испугана змей?" }
+    ]},
+    { "ru": "полный чего-то", "en": "full of", "examples": [
+      { "en": "The room is <b>full of</b> people.", "ru": "Комната полна людей." },
+      { "en": "She's <b>full of</b> energy.", "ru": "Она полна энергии." }
+    ]},
+    { "ru": "взбешённый", "en": "furious about / with", "examples": [
+      { "en": "He's <b>furious about</b> the mistake.", "ru": "Он в ярости из-за ошибки." },
+      { "en": "She was <b>furious with</b> him.", "ru": "Она была взбешена на него." }
+    ]},
+    { "ru": "хорош в чём-то", "en": "good at", "examples": [
+      { "en": "She's <b>good at</b> languages.", "ru": "Она хороша в языках." },
+      { "en": "Are you <b>good at</b> cooking?", "ru": "Ты хорош в готовке?" }
+    ]},
+    { "ru": "благодарный кому-то за", "en": "grateful to / for", "examples": [
+      { "en": "I'm <b>grateful to</b> you.", "ru": "Я благодарен тебе." },
+      { "en": "We're <b>grateful for</b> your help.", "ru": "Мы благодарны за вашу помощь." }
+    ]},
+    { "ru": "виновный в", "en": "guilty of", "examples": [
+      { "en": "He was <b>guilty of</b> the crime.", "ru": "Он виновен в преступлении." },
+      { "en": "She felt <b>guilty of</b> the lie.", "ru": "Она чувствовала себя виноватой во лжи." }
+    ]},
+    { "ru": "вредный для", "en": "harmful to", "examples": [
+      { "en": "Smoking is <b>harmful to</b> health.", "ru": "Курение вредно для здоровья." },
+      { "en": "This chemical is <b>harmful to</b> fish.", "ru": "Этот химикат вреден для рыб." }
+    ]}
   ]
 }
