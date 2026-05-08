@@ -2,16 +2,16 @@
   "name": "Предлоги времени — IN",
   "category": "предлоги",
   "cards": [
-    { "ru": "части суток (не ночь!)", "en": "IN the morning / IN the afternoon / IN the evening" },
-    { "ru": "месяц", "en": "IN January / IN March / IN December" },
-    { "ru": "сезон", "en": "IN spring / IN summer / IN autumn / IN winter" },
-    { "ru": "год", "en": "IN 2024 / IN 1999 / IN 2000" },
-    { "ru": "век / эпоха", "en": "IN the 21st century / IN the Middle Ages" },
-    { "ru": "через (будущее)", "en": "IN 5 minutes / IN a week / IN two years" },
-    { "ru": "в итоге (= eventually)", "en": "IN the end ← но: AT the end = в конце (позиция)" },
-    { "ru": "за время (срок)", "en": "IN time — he did it in record time" },
-    { "ru": "успеть до срока", "en": "IN time ← но: ON time = пунктуально, точно в срок" },
-    { "ru": "в первую / последнюю неделю", "en": "IN the first week / IN the last month" },
-    { "ru": "в декаду / в период", "en": "IN the 1990s / IN the Victorian era" }
+    { "ru": "части суток (не ночь!)", "en": "IN the morning / IN the afternoon / IN the evening", "examples": [{ "en": "I exercise <b>in the morning</b>.", "ru": "Я тренируюсь с утра." }, { "en": "Tea served <b>in the afternoon</b>.", "ru": "Чай подают в полдник." }, { "en": "We talk <b>in the evening</b>.", "ru": "Мы разговариваем вечером." }] },
+    { "ru": "месяц", "en": "IN January / IN March / IN December", "examples": [{ "en": "Snow falls <b>in January</b>.", "ru": "Снег падает в январе." }, { "en": "Spring arrives <b>in March</b>.", "ru": "Весна приходит в марте." }, { "en": "Holidays come <b>in December</b>.", "ru": "Праздники приходят в декабре." }] },
+    { "ru": "сезон", "en": "IN spring / IN summer / IN autumn / IN winter", "examples": [{ "en": "Flowers bloom <b>in spring</b>.", "ru": "Цветы цветут весной." }, { "en": "People swim <b>in summer</b>.", "ru": "Люди плавают летом." }, { "en": "Leaves fall <b>in autumn</b>.", "ru": "Листья падают осенью." }, { "en": "It freezes <b>in winter</b>.", "ru": "Замерзает зимой." }] },
+    { "ru": "год", "en": "IN 2024 / IN 1999 / IN 2000", "examples": [{ "en": "Olympics happen <b>in 2024</b>.", "ru": "Олимпиада в 2024 году." }, { "en": "Y2K panic occurred <b>in 1999</b>.", "ru": "Паника Y2K была в 1999 году." }, { "en": "Millennium started <b>in 2000</b>.", "ru": "Тысячелетие началось в 2000 году." }] },
+    { "ru": "век / эпоха", "en": "IN the 21st century / IN the Middle Ages", "examples": [{ "en": "We live <b>in the 21st century</b>.", "ru": "Мы живём в XXI веке." }, { "en": "Knights fought <b>in the Middle Ages</b>.", "ru": "Рыцари сражались в Средние века." }, { "en": "Technology advances <b>in this era</b>.", "ru": "Технология развивается в эту эпоху." }] },
+    { "ru": "через (будущее)", "en": "IN 5 minutes / IN a week / IN two years", "examples": [{ "en": "I arrive <b>in 5 minutes</b>.", "ru": "Я приду в течение 5 минут." }, { "en": "Exam starts <b>in a week</b>.", "ru": "Экзамен начинается через неделю." }, { "en": "Graduation happens <b>in two years</b>.", "ru": "Выпуск будет через два года." }] },
+    { "ru": "в итоге (= eventually)", "en": "IN the end ← но: AT the end = в конце (позиция)", "examples": [{ "en": "<b>In the end</b>, she succeeded.", "ru": "В конечном итоге она добилась успеха." }, { "en": "All's well <b>in the end</b>.", "ru": "Всё хорошо, что хорошо кончается." }, { "en": "<b>In the end</b>, truth prevails.", "ru": "В итоге истина торжествует." }] },
+    { "ru": "за время (срок)", "en": "IN time — he did it in record time", "examples": [{ "en": "He finished <b>in record time</b>.", "ru": "Он закончил за рекордное время." }, { "en": "The project completed <b>in three months</b>.", "ru": "Проект завершился за три месяца." }, { "en": "I ran mile <b>in 4 minutes</b>.", "ru": "Я пробежал милю за 4 минуты." }] },
+    { "ru": "успеть до срока", "en": "IN time ← но: ON time = пунктуально, точно в срок", "examples": [{ "en": "We arrived <b>in time</b> for the show.", "ru": "Мы прибыли вовремя на представление." }, { "en": "Help came <b>in time</b>.", "ru": "Помощь пришла вовремя." }, { "en": "Just <b>in time</b> to catch the train.", "ru": "Как раз вовремя, чтобы поймать поезд." }] },
+    { "ru": "в первую / последнюю неделю", "en": "IN the first week / IN the last month", "examples": [{ "en": "Results appear <b>in the first week</b>.", "ru": "Результаты появляются в первую неделю." }, { "en": "Deadline is <b>in the last month</b>.", "ru": "Дедлайн в последний месяц." }, { "en": "Flowers bloom <b>in the first days</b>.", "ru": "Цветы цветут в первые дни." }] },
+    { "ru": "в декаду / в период", "en": "IN the 1990s / IN the Victorian era", "examples": [{ "en": "Tech boomed <b>in the 1990s</b>.", "ru": "Технология бурно развивалась в 1990х." }, { "en": "Values shaped <b>in the Victorian era</b>.", "ru": "Ценности сформировались в викторианскую эпоху." }, { "en": "Culture thrived <b>in the Renaissance</b>.", "ru": "Культура процветала в Ренессанс." }] }
   ]
 }
