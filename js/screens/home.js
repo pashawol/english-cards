@@ -13,7 +13,7 @@ import {
 } from '../core.js';
 import { getReminderPermission, isStandaloneApp } from '../reminders.js';
 
-export function renderHome({ startSet, toggleSetInMix, showTableView }) {
+export function renderHome({ startSet, toggleSetInMix, showTableView, startQuiz }) {
   const goal = app.state.dailyGoal;
   const done = app.state.todayCount;
   const activeFilters = getActiveCategoryFilters();
@@ -82,7 +82,7 @@ export function renderHome({ startSet, toggleSetInMix, showTableView }) {
         else next.add(category);
         app.state.homeCategoryFilter = [...next];
         saveState();
-        renderHome({ startSet, toggleSetInMix, showTableView });
+        renderHome({ startSet, toggleSetInMix, showTableView, startQuiz });
       });
       catWrap.appendChild(btn);
     });
@@ -119,6 +119,7 @@ export function renderHome({ startSet, toggleSetInMix, showTableView }) {
         <div class="set-pct">${pct}%</div>
       </div>
       <button class="set-view-btn" data-id="${set.id}" title="Просмотр списком">≡</button>
+      <button class="set-quiz-btn" data-id="${set.id}" title="Quiz">⊞</button>
     `;
     el.addEventListener('click', () => startSet(set.id));
     el.querySelector('.set-check').addEventListener('click', (e) => {
@@ -128,6 +129,10 @@ export function renderHome({ startSet, toggleSetInMix, showTableView }) {
     el.querySelector('.set-view-btn').addEventListener('click', (e) => {
       e.stopPropagation();
       showTableView(set.id);
+    });
+    el.querySelector('.set-quiz-btn').addEventListener('click', (e) => {
+      e.stopPropagation();
+      startQuiz(set.id);
     });
     list.appendChild(el);
   });

@@ -33,6 +33,8 @@ import {
 } from './js/screens/study.js';
 import { renderHome as renderHomeScreen, toggleAllSets as toggleAllSetsScreen, toggleSetInMix as toggleSetInMixScreen } from './js/screens/home.js';
 import { showMixTableView as showMixTableViewScreen, showTableView as showTableViewScreen } from './js/screens/table.js';
+import { startQuiz as startQuizScreen, answerQuiz as answerQuizScreen, restartQuiz as restartQuizScreen } from './js/screens/quiz.js';
+import { startMatch as startMatchScreen, restartMatch as restartMatchScreen } from './js/screens/match.js';
 import {
   buildDOM,
   initTheme,
@@ -68,6 +70,7 @@ function renderHome() {
     startSet,
     toggleSetInMix,
     showTableView,
+    startQuiz,
   });
 }
 
@@ -109,6 +112,33 @@ function restartWrong() {
 
 function restartAll() {
   restartAllScreen({ startMix, startSet });
+}
+
+function startQuiz(setId) {
+  const set = app.sets.find((s) => s.id === setId);
+  if (!set) return;
+  const cards = set.cards.map((card, i) => ({ ...card, _setId: set.id, _cardIdx: i }));
+  startQuizScreen(cards, { showScreen });
+}
+
+function startQuizFromSession() {
+  startQuizScreen(app.session.queue, { showScreen });
+}
+
+function startMatchFromSession() {
+  startMatchScreen(app.session.queue, { showScreen });
+}
+
+function answerQuiz(optionIdx) {
+  answerQuizScreen(optionIdx, { showScreen });
+}
+
+function restartQuiz() {
+  restartQuizScreen({ showScreen });
+}
+
+function restartMatch() {
+  restartMatchScreen({ showScreen });
 }
 
 function toggleLanguage() {
@@ -159,6 +189,11 @@ async function init() {
     scheduleReminderCheck: () => scheduleReminderCheck(renderHome),
     formatReminderTime,
     getReminderPermission,
+    answerQuiz,
+    restartQuiz,
+    restartMatch,
+    startQuizFromSession,
+    startMatchFromSession,
   });
 
   let shouldSave = false;

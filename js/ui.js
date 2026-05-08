@@ -61,6 +61,11 @@ export function buildDOM({
   scheduleReminderCheck,
   formatReminderTime,
   getReminderPermission,
+  answerQuiz,
+  restartQuiz,
+  restartMatch,
+  startQuizFromSession,
+  startMatchFromSession,
 }) {
   const v = window.APP_VERSION || '';
 
@@ -229,6 +234,10 @@ export function buildDOM({
           <div class="done-stat-label" data-i18n="statTotal"></div>
         </div>
       </div>
+      <div class="done-practice-row">
+        <button class="done-btn practice-btn" id="done-quiz-btn" data-i18n="practiceQuiz"></button>
+        <button class="done-btn practice-btn" id="done-match-btn" data-i18n="practiceMatch"></button>
+      </div>
       <div class="done-btns">
         <button class="done-btn" id="done-retry-btn" data-i18n="retryMistakes"></button>
         <button class="done-btn" id="done-again-btn" data-i18n="goAgain"></button>
@@ -246,6 +255,68 @@ export function buildDOM({
         <button id="table-toggle-ru"></button>
       </div>
       <div id="table-body"></div>
+    </div>
+
+    <div id="quiz-screen" class="screen">
+      <div id="quiz-header">
+        <button id="quiz-back-btn">←</button>
+        <div id="quiz-title"></div>
+        <div id="quiz-counter"></div>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="quiz-progress-fill" style="width: 0%"></div>
+      </div>
+      <div id="quiz-question-area">
+        <div id="quiz-question" class="quiz-question"></div>
+        <div id="quiz-options" class="quiz-options">
+          <button class="quiz-option-btn" data-idx="0"></button>
+          <button class="quiz-option-btn" data-idx="1"></button>
+          <button class="quiz-option-btn" data-idx="2"></button>
+          <button class="quiz-option-btn" data-idx="3"></button>
+        </div>
+      </div>
+      <div id="quiz-done-area" hidden>
+        <div class="done-icon">✦</div>
+        <div class="done-title" data-i18n="doneTitle"></div>
+        <div class="done-stats">
+          <div class="done-stat good">
+            <div class="done-stat-num" id="quiz-done-right">0</div>
+            <div class="done-stat-label" data-i18n="statKnew"></div>
+          </div>
+          <div class="done-stat bad">
+            <div class="done-stat-num" id="quiz-done-wrong">0</div>
+            <div class="done-stat-label" data-i18n="statDidntKnow"></div>
+          </div>
+          <div class="done-stat">
+            <div class="done-stat-num" id="quiz-done-total">0</div>
+            <div class="done-stat-label" data-i18n="statTotal"></div>
+          </div>
+        </div>
+        <div class="done-btns">
+          <button class="done-btn" id="quiz-done-again-btn" data-i18n="goAgain"></button>
+          <button class="done-btn primary" id="quiz-done-home-btn" data-i18n="backToTopics"></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="match-screen" class="screen">
+      <div id="match-header">
+        <button id="match-back-btn">←</button>
+        <div id="match-title" data-i18n="matchTitle"></div>
+        <div id="match-counter"></div>
+      </div>
+      <div id="match-grid" class="match-grid">
+        <div id="match-col-ru" class="match-col"></div>
+        <div id="match-col-en" class="match-col"></div>
+      </div>
+      <div id="match-done-area" hidden>
+        <div class="done-icon">✦</div>
+        <div class="done-title" data-i18n="matchDoneTitle"></div>
+        <div class="done-btns">
+          <button class="done-btn" id="match-done-again-btn" data-i18n="goAgain"></button>
+          <button class="done-btn primary" id="match-done-home-btn" data-i18n="backToTopics"></button>
+        </div>
+      </div>
     </div>
 
     <footer class="app-footer visible">
@@ -271,7 +342,20 @@ export function buildDOM({
   document.getElementById('done-retry-btn').addEventListener('click', restartWrong);
   document.getElementById('done-again-btn').addEventListener('click', restartAll);
   document.getElementById('done-home-btn').addEventListener('click', goHome);
+  document.getElementById('done-quiz-btn').addEventListener('click', startQuizFromSession);
+  document.getElementById('done-match-btn').addEventListener('click', startMatchFromSession);
   document.getElementById('table-back-btn').addEventListener('click', goHome);
+  document.getElementById('quiz-back-btn').addEventListener('click', goHome);
+  document.getElementById('match-back-btn').addEventListener('click', goHome);
+
+  document.querySelectorAll('.quiz-option-btn').forEach((btn) => {
+    btn.addEventListener('click', () => answerQuiz(parseInt(btn.dataset.idx, 10)));
+  });
+
+  document.getElementById('quiz-done-again-btn').addEventListener('click', restartQuiz);
+  document.getElementById('quiz-done-home-btn').addEventListener('click', goHome);
+  document.getElementById('match-done-again-btn').addEventListener('click', restartMatch);
+  document.getElementById('match-done-home-btn').addEventListener('click', goHome);
 
   document.getElementById('daily-goal').addEventListener('input', function () {
     app.state.dailyGoal = parseInt(this.value, 10);

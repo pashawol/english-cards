@@ -43,6 +43,11 @@ window.I18N = {
     tableReveal: 'reveal answers',
     tableHide: 'hide answers',
     examples: 'examples',
+    quizTitle: 'Quiz',
+    matchTitle: 'Match',
+    matchDoneTitle: 'All matched!',
+    practiceQuiz: '⊞ quiz',
+    practiceMatch: '⊟ match',
     mascot: {
       opening: [
         'let’s go. two or three in a row and you are in rhythm',
@@ -180,6 +185,11 @@ window.I18N = {
     tableReveal: 'показать ответы',
     tableHide: 'скрыть ответы',
     examples: 'примеры',
+    quizTitle: 'Квиз',
+    matchTitle: 'Совпадение',
+    matchDoneTitle: 'Всё совпало!',
+    practiceQuiz: '⊞ квиз',
+    practiceMatch: '⊟ матч',
     mascot: {
       opening: [
         'погнали. две-три подряд и уже полетело',
