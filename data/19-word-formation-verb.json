@@ -2,27 +2,93 @@
   "name": "Словообразование — глагол → сущ.",
   "category": "словообразование",
   "cards": [
-    { "ru": "принимать (accept) → существительное?", "en": "acceptance" },
-    { "ru": "допускать (admit) → существительное?", "en": "admission" },
-    { "ru": "рекламировать (advertise) → существительное?", "en": "advertisement" },
-    { "ru": "объявлять (announce) → существительное?", "en": "announcement" },
-    { "ru": "подавать заявление (apply) → существительное?", "en": "application" },
-    { "ru": "одобрять (approve) → существительное?", "en": "approval" },
-    { "ru": "организовывать (arrange) → существительное?", "en": "arrangement" },
-    { "ru": "решать (decide) → существительное?", "en": "decision" },
-    { "ru": "отрицать (deny) → существительное?", "en": "denial" },
-    { "ru": "описывать (describe) → существительное?", "en": "description" },
-    { "ru": "открывать/обнаруживать (discover) → существительное?", "en": "discovery" },
-    { "ru": "делить (divide) → существительное?", "en": "division" },
-    { "ru": "обучать (educate) → существительное?", "en": "education" },
-    { "ru": "выбирать голосованием (elect) → существительное?", "en": "election" },
-    { "ru": "нанимать на работу (employ) → существительное?", "en": "employment" },
-    { "ru": "существовать (exist) → существительное?", "en": "existence" },
-    { "ru": "объяснять (explain) → существительное?", "en": "explanation" },
-    { "ru": "воображать (imagine) → существительное?", "en": "imagination" },
-    { "ru": "улучшать (improve) → существительное?", "en": "improvement" },
-    { "ru": "изобретать (invent) → существительное?", "en": "invention" },
-    { "ru": "выступать (perform) → существительное?", "en": "performance" },
-    { "ru": "разрешать (permit) → существительное?", "en": "permission" }
+    { "ru": "принимать (accept) → существительное?", "en": "acceptance", "examples": [
+      { "en": "His <b>acceptance</b> of the job was instant.", "ru": "Его согласие на работу было мгновенным." },
+      { "en": "The <b>acceptance</b> rate is high.", "ru": "Уровень принятия высокий." }
+    ]},
+    { "ru": "допускать (admit) → существительное?", "en": "admission", "examples": [
+      { "en": "Her <b>admission</b> to the university was guaranteed.", "ru": "Её поступление в университет было гарантировано." },
+      { "en": "The museum charges <b>admission</b>.", "ru": "Музей берёт плату за вход." }
+    ]},
+    { "ru": "рекламировать (advertise) → существительное?", "en": "advertisement", "examples": [
+      { "en": "The TV <b>advertisement</b> was funny.", "ru": "Телевизионная реклама была смешной." },
+      { "en": "I saw an <b>advertisement</b> for the product.", "ru": "Я видел объявление о продукте." }
+    ]},
+    { "ru": "объявлять (announce) → существительное?", "en": "announcement", "examples": [
+      { "en": "The president made an <b>announcement</b>.", "ru": "Президент сделал объявление." },
+      { "en": "Listen to this important <b>announcement</b>.", "ru": "Слушайте это важное объявление." }
+    ]},
+    { "ru": "подавать заявление (apply) → существительное?", "en": "application", "examples": [
+      { "en": "His job <b>application</b> was accepted.", "ru": "Его заявление на работу было принято." },
+      { "en": "Fill in the <b>application</b> form.", "ru": "Заполни форму заявления." }
+    ]},
+    { "ru": "одобрять (approve) → существительное?", "en": "approval", "examples": [
+      { "en": "We need the boss's <b>approval</b>.", "ru": "Нам нужно одобрение начальника." },
+      { "en": "The project got <b>approval</b> yesterday.", "ru": "Проект получил одобрение вчера." }
+    ]},
+    { "ru": "организовывать (arrange) → существительное?", "en": "arrangement", "examples": [
+      { "en": "The <b>arrangement</b> of the room looks nice.", "ru": "Расстановка мебели в комнате выглядит хорошо." },
+      { "en": "We made <b>arrangements</b> for the trip.", "ru": "Мы сделали предварительные договорённости для поездки." }
+    ]},
+    { "ru": "решать (decide) → существительное?", "en": "decision", "examples": [
+      { "en": "It was a difficult <b>decision</b>.", "ru": "Это было трудное решение." },
+      { "en": "The judge's <b>decision</b> was final.", "ru": "Решение судьи было окончательным." }
+    ]},
+    { "ru": "отрицать (deny) → существительное?", "en": "denial", "examples": [
+      { "en": "His <b>denial</b> of the claim was strong.", "ru": "Его отрицание претензии было сильным." },
+      { "en": "The <b>denial</b> was unexpected.", "ru": "Отрицание было неожиданным." }
+    ]},
+    { "ru": "описывать (describe) → существительное?", "en": "description", "examples": [
+      { "en": "Give me a <b>description</b> of the car.", "ru": "Дай мне описание машины." },
+      { "en": "The <b>description</b> was accurate.", "ru": "Описание было точным." }
+    ]},
+    { "ru": "открывать/обнаруживать (discover) → существительное?", "en": "discovery", "examples": [
+      { "en": "His <b>discovery</b> changed science.", "ru": "Его открытие изменило науку." },
+      { "en": "The <b>discovery</b> was remarkable.", "ru": "Открытие было замечательным." }
+    ]},
+    { "ru": "делить (divide) → существительное?", "en": "division", "examples": [
+      { "en": "The <b>division</b> of the money was fair.", "ru": "Разделение денег было справедливым." },
+      { "en": "There's a clear <b>division</b> here.", "ru": "Здесь чёткое разделение." }
+    ]},
+    { "ru": "обучать (educate) → существительное?", "en": "education", "examples": [
+      { "en": "Good <b>education</b> is important.", "ru": "Хорошее образование важно." },
+      { "en": "He received <b>education</b> abroad.", "ru": "Он получил образование за границей." }
+    ]},
+    { "ru": "выбирать голосованием (elect) → существительное?", "en": "election", "examples": [
+      { "en": "The <b>election</b> results are in.", "ru": "Результаты выборов известны." },
+      { "en": "When is the next <b>election</b>?", "ru": "Когда следующие выборы?" }
+    ]},
+    { "ru": "нанимать на работу (employ) → существительное?", "en": "employment", "examples": [
+      { "en": "She found new <b>employment</b>.", "ru": "Она нашла новую работу." },
+      { "en": "<b>Employment</b> rates are rising.", "ru": "Уровень занятости растёт." }
+    ]},
+    { "ru": "существовать (exist) → существительное?", "en": "existence", "examples": [
+      { "en": "The <b>existence</b> of life on Mars is unknown.", "ru": "Существование жизни на Марсе неизвестно." },
+      { "en": "His <b>existence</b> was peaceful.", "ru": "Его существование было мирным." }
+    ]},
+    { "ru": "объяснять (explain) → существительное?", "en": "explanation", "examples": [
+      { "en": "I need an <b>explanation</b> for this.", "ru": "Мне нужно объяснение этому." },
+      { "en": "His <b>explanation</b> made sense.", "ru": "Его объяснение имело смысл." }
+    ]},
+    { "ru": "воображать (imagine) → существительное?", "en": "imagination", "examples": [
+      { "en": "Use your <b>imagination</b>.", "ru": "Используй своё воображение." },
+      { "en": "Children have great <b>imagination</b>.", "ru": "У детей хорошее воображение." }
+    ]},
+    { "ru": "улучшать (improve) → существительное?", "en": "improvement", "examples": [
+      { "en": "I see an <b>improvement</b> in your work.", "ru": "Я вижу улучшение в твоей работе." },
+      { "en": "There's room for <b>improvement</b>.", "ru": "Есть место для улучшения." }
+    ]},
+    { "ru": "изобретать (invent) → существительное?", "en": "invention", "examples": [
+      { "en": "His <b>invention</b> was groundbreaking.", "ru": "Его изобретение было революционным." },
+      { "en": "The <b>invention</b> of the phone changed everything.", "ru": "Изобретение телефона изменило всё." }
+    ]},
+    { "ru": "выступать (perform) → существительное?", "en": "performance", "examples": [
+      { "en": "Her <b>performance</b> was outstanding.", "ru": "Её выступление было замечательным." },
+      { "en": "The concert <b>performance</b> was amazing.", "ru": "Выступление на концерте было потрясающим." }
+    ]},
+    { "ru": "разрешать (permit) → существительное?", "en": "permission", "examples": [
+      { "en": "I need your <b>permission</b> to leave.", "ru": "Мне нужно твоё разрешение на уход." },
+      { "en": "He asked for <b>permission</b>.", "ru": "Он попросил разрешение." }
+    ]}
   ]
 }

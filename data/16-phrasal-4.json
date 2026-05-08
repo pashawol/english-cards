@@ -2,27 +2,93 @@
   "name": "Фразовые глаголы 4",
   "category": "фразовые глаголы",
   "cards": [
-    { "ru": "выделяться", "en": "stand out" },
-    { "ru": "вмешиваться", "en": "step in" },
-    { "ru": "суммировать", "en": "sum up" },
-    { "ru": "быть похожим", "en": "take after" },
-    { "ru": "убирать / уносить", "en": "take away" },
-    { "ru": "записывать", "en": "take down" },
-    { "ru": "принять за кого-то", "en": "take for" },
-    { "ru": "снимать / взлетать", "en": "take off" },
-    { "ru": "принимать на работу", "en": "take on" },
-    { "ru": "принимать дела", "en": "take over" },
-    { "ru": "взяться за что-то", "en": "take up" },
-    { "ru": "обсудить", "en": "talk over" },
-    { "ru": "обдумать", "en": "think over" },
-    { "ru": "выбросить", "en": "throw away" },
-    { "ru": "отказывать / убавить звук", "en": "turn down" },
-    { "ru": "включать / выключать", "en": "turn on / off" },
-    { "ru": "оказываться", "en": "turn out" },
-    { "ru": "обернуться", "en": "turn round" },
-    { "ru": "появиться / усилить звук", "en": "turn up" },
-    { "ru": "мыть посуду", "en": "wash up" },
-    { "ru": "остерегаться", "en": "watch out" },
-    { "ru": "разработать / составить", "en": "work out" }
+    { "ru": "выделяться", "en": "stand out", "examples": [
+      { "en": "She <b>stands out</b> in the crowd.", "ru": "Она выделяется в толпе." },
+      { "en": "His work <b>stands out</b> clearly.", "ru": "Его работа явно выделяется." }
+    ]},
+    { "ru": "вмешиваться", "en": "step in", "examples": [
+      { "en": "Someone needs to <b>step in</b> here.", "ru": "Кто-то должен вмешаться здесь." },
+      { "en": "The manager <b>stepped in</b> immediately.", "ru": "Менеджер сразу вмешался." }
+    ]},
+    { "ru": "суммировать", "en": "sum up", "examples": [
+      { "en": "Let me <b>sum</b> this <b>up</b> for you.", "ru": "Дай мне суммировать это для тебя." },
+      { "en": "To <b>sum up</b>, the plan is good.", "ru": "Суммируя, план хорош." }
+    ]},
+    { "ru": "быть похожим", "en": "take after", "examples": [
+      { "en": "She <b>takes after</b> her mother.", "ru": "Она похожа на свою мать." },
+      { "en": "Who does he <b>take after</b>?", "ru": "На кого он похож?" }
+    ]},
+    { "ru": "убирать / уносить", "en": "take away", "examples": [
+      { "en": "Can you <b>take away</b> the plates?", "ru": "Ты можешь убрать тарелки?" },
+      { "en": "She <b>took away</b> his phone.", "ru": "Она взяла у него телефон." }
+    ]},
+    { "ru": "записывать", "en": "take down", "examples": [
+      { "en": "Please <b>take down</b> this number.", "ru": "Пожалуйста, запиши это число." },
+      { "en": "I <b>took</b> <b>down</b> his address.", "ru": "Я записал его адрес." }
+    ]},
+    { "ru": "принять за кого-то", "en": "take for", "examples": [
+      { "en": "Don't <b>take</b> me <b>for</b> a fool.", "ru": "Не принимай меня за дурака." },
+      { "en": "What do you <b>take</b> me <b>for</b>?", "ru": "За кого ты меня принимаешь?" }
+    ]},
+    { "ru": "снимать / взлетать", "en": "take off", "examples": [
+      { "en": "<b>Take off</b> your shoes.", "ru": "Сними свои туфли." },
+      { "en": "The plane <b>takes off</b> at 10 AM.", "ru": "Самолёт взлетает в 10 утра." }
+    ]},
+    { "ru": "принимать на работу", "en": "take on", "examples": [
+      { "en": "We're <b>taking on</b> new employees.", "ru": "Мы нанимаем новых сотрудников." },
+      { "en": "The boss <b>took</b> me <b>on</b> yesterday.", "ru": "Начальник нанял меня вчера." }
+    ]},
+    { "ru": "принимать дела", "en": "take over", "examples": [
+      { "en": "She'll <b>take over</b> the project.", "ru": "Она возьмёт на себя проект." },
+      { "en": "Who will <b>take over</b> after him?", "ru": "Кто возьмёт на себя дела после него?" }
+    ]},
+    { "ru": "взяться за что-то", "en": "take up", "examples": [
+      { "en": "I want to <b>take up</b> skiing.", "ru": "Я хочу взяться за горные лыжи." },
+      { "en": "She <b>took up</b> painting last year.", "ru": "Она взялась за живопись в прошлом году." }
+    ]},
+    { "ru": "обсудить", "en": "talk over", "examples": [
+      { "en": "Let's <b>talk over</b> this problem.", "ru": "Давай обсудим эту проблему." },
+      { "en": "They <b>talked it over</b> carefully.", "ru": "Они тщательно это обсудили." }
+    ]},
+    { "ru": "обдумать", "en": "think over", "examples": [
+      { "en": "I need to <b>think</b> this <b>over</b>.", "ru": "Мне нужно это обдумать." },
+      { "en": "<b>Think it over</b> carefully.", "ru": "Обдумай это тщательно." }
+    ]},
+    { "ru": "выбросить", "en": "throw away", "examples": [
+      { "en": "Don't <b>throw away</b> that paper.", "ru": "Не выбрасывай эту бумагу." },
+      { "en": "He <b>threw away</b> the trash.", "ru": "Он выбросил мусор." }
+    ]},
+    { "ru": "отказывать / убавить звук", "en": "turn down", "examples": [
+      { "en": "Please <b>turn down</b> the volume.", "ru": "Пожалуйста, убавь звук." },
+      { "en": "He <b>turned down</b> my offer.", "ru": "Он отказал в моём предложении." }
+    ]},
+    { "ru": "включать / выключать", "en": "turn on / off", "examples": [
+      { "en": "<b>Turn on</b> the light, please.", "ru": "Включи свет, пожалуйста." },
+      { "en": "Can you <b>turn off</b> the TV?", "ru": "Ты можешь выключить телевизор?" }
+    ]},
+    { "ru": "оказываться", "en": "turn out", "examples": [
+      { "en": "It <b>turned out</b> to be true.", "ru": "Оказалось, что это правда." },
+      { "en": "How did it <b>turn out</b>?", "ru": "Как это оказалось?" }
+    ]},
+    { "ru": "обернуться", "en": "turn round", "examples": [
+      { "en": "He <b>turned round</b> and saw me.", "ru": "Он обернулся и меня увидел." },
+      { "en": "<b>Turn round</b>, I want to talk to you.", "ru": "Обернись, я с тобой хочу поговорить." }
+    ]},
+    { "ru": "появиться / усилить звук", "en": "turn up", "examples": [
+      { "en": "He finally <b>turned up</b> late.", "ru": "Он наконец появился с опозданием." },
+      { "en": "Can you <b>turn up</b> the music?", "ru": "Ты можешь усилить музыку?" }
+    ]},
+    { "ru": "мыть посуду", "en": "wash up", "examples": [
+      { "en": "Please <b>wash up</b> after dinner.", "ru": "Пожалуйста, помойте посуду после ужина." },
+      { "en": "I'll <b>wash up</b> the dishes.", "ru": "Я помою посуду." }
+    ]},
+    { "ru": "остерегаться", "en": "watch out", "examples": [
+      { "en": "<b>Watch out</b> for that car!", "ru": "Остерегайся этой машины!" },
+      { "en": "We need to <b>watch out</b> here.", "ru": "Нам нужно остерегаться здесь." }
+    ]},
+    { "ru": "разработать / составить", "en": "work out", "examples": [
+      { "en": "I need to <b>work out</b> this math problem.", "ru": "Мне нужно разработать эту математическую задачу." },
+      { "en": "Did it <b>work out</b> well?", "ru": "Это хорошо получилось?" }
+    ]}
   ]
 }
