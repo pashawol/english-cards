@@ -71,10 +71,45 @@ export function showCard({ showDone }) {
   const idx = app.session.index;
   const cardArea = document.getElementById('card-area');
 
+  const cardInnerEl = document.getElementById('card-inner');
+  if (cardInnerEl) {
+    cardInnerEl.style.transform = '';
+    cardInnerEl.style.transition = '';
+    cardInnerEl.style.opacity = '';
+  }
+
   document.getElementById('front-word').textContent = card.ru;
   document.getElementById('back-word').textContent = card.en;
   document.getElementById('front-hint').textContent = '';
   document.getElementById('back-hint').textContent = '';
+
+  const examplesContainer = document.getElementById('card-examples');
+  const examplesBody = document.getElementById('examples-body');
+  if (examplesContainer && examplesBody) {
+    const examples = card.examples;
+    if (Array.isArray(examples) && examples.length > 0) {
+      examplesContainer.hidden = false;
+      examplesBody.hidden = true;
+      const chev = examplesContainer.querySelector('.examples-toggle-chev');
+      if (chev) chev.classList.remove('open');
+      examplesBody.innerHTML = '';
+      examples.forEach((ex) => {
+        const div = document.createElement('div');
+        div.className = 'example';
+        const enDiv = document.createElement('div');
+        enDiv.className = 'example-en';
+        enDiv.innerHTML = ex.en;
+        const ruDiv = document.createElement('div');
+        ruDiv.className = 'example-ru';
+        ruDiv.textContent = ex.ru;
+        div.appendChild(enDiv);
+        div.appendChild(ruDiv);
+        examplesBody.appendChild(div);
+      });
+    } else {
+      examplesContainer.hidden = true;
+    }
+  }
 
   const crumbEl = document.getElementById('card-breadcrumb');
   if (crumbEl) {
