@@ -2,25 +2,19 @@
   "name": "Предлоги движения",
   "category": "предлоги",
   "cards": [
-    { "ru": "к (направление)", "en": "TO — go to school / fly to Paris / walk to the shop" },
-    {
-      "ru": "по направлению к (не обязательно достичь)",
-      "en": "TOWARDS — walk towards the river / move towards the door"
-    },
-    { "ru": "внутрь (движение вовнутрь)", "en": "INTO — go into the room / jump into the pool" },
-    {
-      "ru": "наружу из (движение из)",
-      "en": "OUT OF — get out of the car / run out of the building"
-    },
-    { "ru": "вверх по / на", "en": "UP — go up the stairs / walk up the hill" },
-    { "ru": "вниз по", "en": "DOWN — come down the stairs / run down the slope" },
-    { "ru": "вдоль (в движении)", "en": "ALONG — walk along the street / drive along the road" },
-    { "ru": "через (поперёк)", "en": "ACROSS — swim across the river / walk across the road" },
-    { "ru": "сквозь (внутри)", "en": "THROUGH — drive through the tunnel / walk through the park" },
-    { "ru": "мимо", "en": "PAST — drive past the school / walk past the café" },
-    { "ru": "вокруг", "en": "AROUND / ROUND — walk around the lake / go round the corner" },
-    { "ru": "прочь от", "en": "AWAY FROM — move away from the window / run away from danger" },
-    { "ru": "на (транспорт — садиться)", "en": "GET ON — get on the bus / get on the train" },
-    { "ru": "с (транспорт — выходить)", "en": "GET OFF — get off the bus / get off the plane" }
+    { "ru": "к (направление)", "en": "TO — go to school / fly to Paris / walk to the shop", "examples": [{ "en": "I go <b>to school</b> daily.", "ru": "Я хожу в школу ежедневно." }, { "en": "Flight <b>to Paris</b> departs.", "ru": "Рейс в Париж вылетает." }, { "en": "Walk <b>to the shop</b>.", "ru": "Иди в магазин." }] },
+    { "ru": "по направлению к (не обязательно достичь)", "en": "TOWARDS — walk towards the river / move towards the door", "examples": [{ "en": "Walking <b>towards the river</b>.", "ru": "Идём к реке." }, { "en": "Move <b>towards the door</b>.", "ru": "Двигайся к двери." }, { "en": "Run <b>towards the light</b>.", "ru": "Беги к свету." }] },
+    { "ru": "внутрь (движение вовнутрь)", "en": "INTO — go into the room / jump into the pool", "examples": [{ "en": "Go <b>into the room</b>.", "ru": "Войди в комнату." }, { "en": "Jump <b>into the pool</b>.", "ru": "Прыгай в бассейн." }, { "en": "Dive <b>into the water</b>.", "ru": "Прыгай в воду." }] },
+    { "ru": "наружу из (движение из)", "en": "OUT OF — get out of the car / run out of the building", "examples": [{ "en": "Get <b>out of the car</b>.", "ru": "Выходи из машины." }, { "en": "Run <b>out of the building</b>.", "ru": "Беги из здания." }, { "en": "Climb <b>out of the window</b>.", "ru": "Вылезай из окна." }] },
+    { "ru": "вверх по / на", "en": "UP — go up the stairs / walk up the hill", "examples": [{ "en": "Go <b>up the stairs</b> carefully.", "ru": "Поднимайся по лестнице осторожно." }, { "en": "Walk <b>up the hill</b>.", "ru": "Поднимайся в гору." }, { "en": "Climb <b>up the mountain</b>.", "ru": "Взбирайся на гору." }] },
+    { "ru": "вниз по", "en": "DOWN — come down the stairs / run down the slope", "examples": [{ "en": "Come <b>down the stairs</b>.", "ru": "Спускайся по лестнице." }, { "en": "Run <b>down the slope</b>.", "ru": "Бегите вниз по склону." }, { "en": "Go <b>down the path</b>.", "ru": "Идите вниз по тропе." }] },
+    { "ru": "вдоль (в движении)", "en": "ALONG — walk along the street / drive along the road", "examples": [{ "en": "Walk <b>along the street</b>.", "ru": "Иди вдоль улицы." }, { "en": "Drive <b>along the road</b>.", "ru": "Езди вдоль дороги." }, { "en": "Sail <b>along the coast</b>.", "ru": "Плывите вдоль берега." }] },
+    { "ru": "через (поперёк)", "en": "ACROSS — swim across the river / walk across the road", "examples": [{ "en": "Swim <b>across the river</b>.", "ru": "Плыви через реку." }, { "en": "Walk <b>across the road</b> safely.", "ru": "Переходи дорогу безопасно." }, { "en": "Jump <b>across the gap</b>.", "ru": "Прыгай через пропасть." }] },
+    { "ru": "сквозь (внутри)", "en": "THROUGH — drive through the tunnel / walk through the park", "examples": [{ "en": "Drive <b>through the tunnel</b>.", "ru": "Едь сквозь туннель." }, { "en": "Walk <b>through the park</b>.", "ru": "Иди сквозь парк." }, { "en": "Run <b>through the forest</b>.", "ru": "Беги сквозь лес." }] },
+    { "ru": "мимо", "en": "PAST — drive past the school / walk past the café", "examples": [{ "en": "Drive <b>past the school</b>.", "ru": "Проезжайте мимо школы." }, { "en": "Walk <b>past the café</b>.", "ru": "Иди мимо кафе." }, { "en": "Pass <b>past the statue</b>.", "ru": "Проходи мимо статуи." }] },
+    { "ru": "вокруг", "en": "AROUND / ROUND — walk around the lake / go round the corner", "examples": [{ "en": "Walk <b>around the lake</b>.", "ru": "Иди вокруг озера." }, { "en": "Go <b>round the corner</b>.", "ru": "Обойди угол." }, { "en": "Run <b>around the track</b>.", "ru": "Беги вокруг трека." }] },
+    { "ru": "прочь от", "en": "AWAY FROM — move away from the window / run away from danger", "examples": [{ "en": "Move <b>away from the window</b>.", "ru": "Отойди от окна." }, { "en": "Run <b>away from danger</b>.", "ru": "Беги от опасности." }, { "en": "Step <b>away from the edge</b>.", "ru": "Отойди от края." }] },
+    { "ru": "на (транспорт — садиться)", "en": "GET ON — get on the bus / get on the train", "examples": [{ "en": "Get <b>on the bus</b>.", "ru": "Подойди к автобусу." }, { "en": "Get <b>on the train</b>.", "ru": "Подойди к поезду." }, { "en": "Board <b>on the plane</b>.", "ru": "Садись в самолёт." }] },
+    { "ru": "с (транспорт — выходить)", "en": "GET OFF — get off the bus / get off the plane", "examples": [{ "en": "Get <b>off the bus</b> here.", "ru": "Выходи из автобуса здесь." }, { "en": "Get <b>off the plane</b>.", "ru": "Выходи из самолёта." }, { "en": "Step <b>off the train</b>.", "ru": "Сходи с поезда." }] }
   ]
 }

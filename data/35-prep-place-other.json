@@ -2,34 +2,19 @@
   "name": "Предлоги места — другие",
   "category": "предлоги",
   "cards": [
-    {
-      "ru": "над (выше, не касается)",
-      "en": "ABOVE — above the clouds / the picture above the sofa"
-    },
-    {
-      "ru": "над / поверх (прямо сверху)",
-      "en": "OVER — a bridge over the river / a blanket over him"
-    },
-    { "ru": "под (ниже, не касается)", "en": "BELOW — below sea level / below the surface" },
-    { "ru": "под / снизу (прямо под)", "en": "UNDER — under the table / under the bed" },
-    { "ru": "рядом с", "en": "BESIDE / NEXT TO — beside the window / next to the bank" },
-    { "ru": "напротив", "en": "OPPOSITE — opposite the station / sit opposite each other" },
-    { "ru": "между (двумя)", "en": "BETWEEN — between the two chairs / between 5 and 6" },
-    { "ru": "среди (многих)", "en": "AMONG — among the trees / among the crowd" },
-    {
-      "ru": "перед (лицом к)",
-      "en": "IN FRONT OF — in front of the mirror / in front of the class"
-    },
-    { "ru": "позади, за", "en": "BEHIND — behind the door / behind the building" },
-    { "ru": "вблизи, около", "en": "NEAR — near the school / near the river" },
-    { "ru": "вдоль", "en": "ALONG — along the street / along the coast" },
-    {
-      "ru": "сквозь, через (пространство)",
-      "en": "THROUGH — through the tunnel / through the forest"
-    },
-    {
-      "ru": "через (препятствие / поверхность)",
-      "en": "ACROSS — across the road / across the river"
-    }
+    { "ru": "над (выше, не касается)", "en": "ABOVE — above the clouds / the picture above the sofa", "examples": [{ "en": "Plane flies <b>above the clouds</b>.", "ru": "Самолёт летит над облаками." }, { "en": "Picture hangs <b>above the sofa</b>.", "ru": "Картина висит над диваном." }, { "en": "Stars shine <b>above</b> us.", "ru": "Звёзды светят над нами." }] },
+    { "ru": "над / поверх (прямо сверху)", "en": "OVER — a bridge over the river / a blanket over him", "examples": [{ "en": "Bridge crosses <b>over the river</b>.", "ru": "Мост пересекает реку." }, { "en": "Blanket spreads <b>over him</b>.", "ru": "Одеяло распространяется над ним." }, { "en": "Arch bends <b>over the path</b>.", "ru": "Арка гнётся над тропой." }] },
+    { "ru": "под (ниже, не касается)", "en": "BELOW — below sea level / below the surface", "examples": [{ "en": "Depths <b>below sea level</b>.", "ru": "Глубины ниже уровня моря." }, { "en": "Life thrives <b>below the surface</b>.", "ru": "Жизнь процветает под поверхностью." }, { "en": "Temperature <b>below zero</b>.", "ru": "Температура ниже нуля." }] },
+    { "ru": "под / снизу (прямо под)", "en": "UNDER — under the table / under the bed", "examples": [{ "en": "Cat hides <b>under the table</b>.", "ru": "Кошка прячется под столом." }, { "en": "Things stored <b>under the bed</b>.", "ru": "Вещи хранятся под кроватью." }, { "en": "Dog sleeps <b>under the tree</b>.", "ru": "Собака спит под деревом." }] },
+    { "ru": "рядом с", "en": "BESIDE / NEXT TO — beside the window / next to the bank", "examples": [{ "en": "Sit <b>beside the window</b>.", "ru": "Сидишь рядом с окном." }, { "en": "House <b>next to the bank</b>.", "ru": "Дом рядом с банком." }, { "en": "Park <b>beside the lake</b>.", "ru": "Парк рядом с озером." }] },
+    { "ru": "напротив", "en": "OPPOSITE — opposite the station / sit opposite each other", "examples": [{ "en": "Shop stands <b>opposite the station</b>.", "ru": "Магазин стоит напротив станции." }, { "en": "We sit <b>opposite each other</b>.", "ru": "Мы сидим напротив друг друга." }, { "en": "House <b>opposite the park</b>.", "ru": "Дом напротив парка." }] },
+    { "ru": "между (двумя)", "en": "BETWEEN — between the two chairs / between 5 and 6", "examples": [{ "en": "Table sits <b>between two chairs</b>.", "ru": "Стол стоит между двумя стульями." }, { "en": "Appointment <b>between 5 and 6</b>.", "ru": "Встреча между 5 и 6 часами." }, { "en": "Secret <b>between us</b>.", "ru": "Секрет между нами." }] },
+    { "ru": "среди (многих)", "en": "AMONG — among the trees / among the crowd", "examples": [{ "en": "Lost <b>among the trees</b>.", "ru": "Потеряйся среди деревьев." }, { "en": "She stands <b>among the crowd</b>.", "ru": "Она стоит среди толпы." }, { "en": "Hidden <b>among flowers</b>.", "ru": "Спрятано среди цветов." }] },
+    { "ru": "перед (лицом к)", "en": "IN FRONT OF — in front of the mirror / in front of the class", "examples": [{ "en": "Stand <b>in front of the mirror</b>.", "ru": "Встань перед зеркалом." }, { "en": "Speak <b>in front of the class</b>.", "ru": "Говори перед классом." }, { "en": "Sit <b>in front of the screen</b>.", "ru": "Сидишь перед экраном." }] },
+    { "ru": "позади, за", "en": "BEHIND — behind the door / behind the building", "examples": [{ "en": "Hide <b>behind the door</b>.", "ru": "Прячься за дверью." }, { "en": "House <b>behind the building</b>.", "ru": "Дом позади здания." }, { "en": "Mountains <b>behind us</b>.", "ru": "Горы позади нас." }] },
+    { "ru": "вблизи, около", "en": "NEAR — near the school / near the river", "examples": [{ "en": "Live <b>near the school</b>.", "ru": "Живу рядом со школой." }, { "en": "Park <b>near the river</b>.", "ru": "Парк рядом с рекой." }, { "en": "Shop <b>near home</b>.", "ru": "Магазин рядом с домом." }] },
+    { "ru": "вдоль", "en": "ALONG — along the street / along the coast", "examples": [{ "en": "Walk <b>along the street</b>.", "ru": "Иди вдоль улицы." }, { "en": "Boat sails <b>along the coast</b>.", "ru": "Лодка плывёт вдоль берега." }, { "en": "Shops line <b>along the road</b>.", "ru": "Магазины выстроены вдоль дороги." }] },
+    { "ru": "сквозь, через (пространство)", "en": "THROUGH — through the tunnel / through the forest", "examples": [{ "en": "Train goes <b>through the tunnel</b>.", "ru": "Поезд проходит сквозь туннель." }, { "en": "Path <b>through the forest</b>.", "ru": "Тропа сквозь лес." }, { "en": "Light shines <b>through the window</b>.", "ru": "Свет светит сквозь окно." }] },
+    { "ru": "через (препятствие / поверхность)", "en": "ACROSS — across the road / across the river", "examples": [{ "en": "Cross <b>across the road</b> carefully.", "ru": "Пересекай дорогу осторожно." }, { "en": "Bridge spans <b>across the river</b>.", "ru": "Мост переходит через реку." }, { "en": "Swim <b>across the lake</b>.", "ru": "Плыви через озеро." }] }
   ]
 }

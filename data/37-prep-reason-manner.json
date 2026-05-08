@@ -2,16 +2,16 @@
   "name": "Предлоги причины и способа",
   "category": "предлоги",
   "cards": [
-    { "ru": "из-за (причина — нейтрально)", "en": "BECAUSE OF — cancelled because of rain / late because of traffic" },
-    { "ru": "из-за (причина — официально)", "en": "DUE TO — delayed due to technical issues / due to illness" },
-    { "ru": "по причине (официально)", "en": "OWING TO — owing to bad weather / owing to staff shortage" },
-    { "ru": "несмотря на", "en": "DESPITE / IN SPITE OF — despite the rain / in spite of the delay" },
-    { "ru": "с помощью / посредством", "en": "BY — by car / by email / by chance / made by hand" },
-    { "ru": "с (инструмент)", "en": "WITH — write with a pen / cut with scissors / pay with cash" },
-    { "ru": "без", "en": "WITHOUT — without a map / without help / without thinking" },
-    { "ru": "вместо", "en": "INSTEAD OF — instead of calling / instead of me" },
-    { "ru": "для (цель / назначение)", "en": "FOR — for fun / for free / a tool for cutting / it's for you" },
-    { "ru": "в обмен на", "en": "IN EXCHANGE FOR — in exchange for money / in return for help" },
-    { "ru": "с точки зрения", "en": "IN TERMS OF — in terms of cost / in terms of quality" }
+    { "ru": "из-за (причина — нейтрально)", "en": "BECAUSE OF — cancelled because of rain / late because of traffic", "examples": [{ "en": "Event cancelled <b>because of rain</b>.", "ru": "Событие отменено из-за дождя." }, { "en": "Late <b>because of traffic</b>.", "ru": "Опоздал из-за трафика." }, { "en": "Failed <b>because of mistakes</b>.", "ru": "Потерпел неудачу из-за ошибок." }] },
+    { "ru": "из-за (причина — официально)", "en": "DUE TO — delayed due to technical issues / due to illness", "examples": [{ "en": "Delayed <b>due to technical issues</b>.", "ru": "Задержка из-за технических сбоев." }, { "en": "Absent <b>due to illness</b>.", "ru": "Отсутствует из-за болезни." }, { "en": "Cancelled <b>due to weather</b>.", "ru": "Отменено из-за погоды." }] },
+    { "ru": "по причине (официально)", "en": "OWING TO — owing to bad weather / owing to staff shortage", "examples": [{ "en": "Closed <b>owing to bad weather</b>.", "ru": "Закрыто по причине плохой погоды." }, { "en": "Limited service <b>owing to staff shortage</b>.", "ru": "Ограниченный сервис по причине нехватки персонала." }, { "en": "Delayed <b>owing to unforeseen circumstances</b>.", "ru": "Задержка по причине непредвиденных обстоятельств." }] },
+    { "ru": "несмотря на", "en": "DESPITE / IN SPITE OF — despite the rain / in spite of the delay", "examples": [{ "en": "Played <b>despite the rain</b>.", "ru": "Играли несмотря на дождь." }, { "en": "Won <b>in spite of the delay</b>.", "ru": "Выиграли несмотря на задержку." }, { "en": "Succeeded <b>despite the obstacles</b>.", "ru": "Добились успеха несмотря на препятствия." }] },
+    { "ru": "с помощью / посредством", "en": "BY — by car / by email / by chance / made by hand", "examples": [{ "en": "Travel <b>by car</b>.", "ru": "Путешествуй на машине." }, { "en": "Send <b>by email</b>.", "ru": "Отправь по почте." }, { "en": "Met <b>by chance</b>.", "ru": "Встретились случайно." }] },
+    { "ru": "с (инструмент)", "en": "WITH — write with a pen / cut with scissors / pay with cash", "examples": [{ "en": "Write <b>with a pen</b>.", "ru": "Пиши ручкой." }, { "en": "Cut <b>with scissors</b>.", "ru": "Режь ножницами." }, { "en": "Pay <b>with cash</b>.", "ru": "Платите наличными." }] },
+    { "ru": "без", "en": "WITHOUT — without a map / without help / without thinking", "examples": [{ "en": "Navigate <b>without a map</b>.", "ru": "Ориентируйся без карты." }, { "en": "Succeed <b>without help</b>.", "ru": "Добейся успеха без помощи." }, { "en": "Act <b>without thinking</b>.", "ru": "Действуй без раздумий." }] },
+    { "ru": "вместо", "en": "INSTEAD OF — instead of calling / instead of me", "examples": [{ "en": "Email <b>instead of calling</b>.", "ru": "Отправь письмо вместо звонка." }, { "en": "He came <b>instead of me</b>.", "ru": "Он пришёл вместо меня." }, { "en": "Tea <b>instead of coffee</b>.", "ru": "Чай вместо кофе." }] },
+    { "ru": "для (цель / назначение)", "en": "FOR — for fun / for free / a tool for cutting / it's for you", "examples": [{ "en": "Play <b>for fun</b>.", "ru": "Играй для развлечения." }, { "en": "Open <b>for free</b>.", "ru": "Открыто бесплатно." }, { "en": "This gift <b>for you</b>.", "ru": "Этот подарок для тебя." }] },
+    { "ru": "в обмен на", "en": "IN EXCHANGE FOR — in exchange for money / in return for help", "examples": [{ "en": "Services <b>in exchange for money</b>.", "ru": "Услуги в обмен на деньги." }, { "en": "Help <b>in return for help</b>.", "ru": "Помощь в обмен на помощь." }, { "en": "Gift <b>in exchange for favour</b>.", "ru": "Подарок в обмен на услугу." }] },
+    { "ru": "с точки зрения", "en": "IN TERMS OF — in terms of cost / in terms of quality", "examples": [{ "en": "Expensive <b>in terms of cost</b>.", "ru": "Дорого с точки зрения стоимости." }, { "en": "Excellent <b>in terms of quality</b>.", "ru": "Отлично с точки зрения качества." }, { "en": "Better <b>in terms of efficiency</b>.", "ru": "Лучше с точки зрения эффективности." }] }
   ]
 }
