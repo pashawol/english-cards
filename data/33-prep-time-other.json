@@ -2,28 +2,16 @@
   "name": "Другие предлоги времени",
   "category": "предлоги",
   "cards": [
-    {
-      "ru": "в течение (процесс внутри периода)",
-      "en": "DURING — during the meeting / during summer"
-    },
-    {
-      "ru": "на протяжении (длительность)",
-      "en": "FOR — for 3 hours / for two years / for a long time"
-    },
-    {
-      "ru": "с тех пор как (и до сих пор)",
-      "en": "SINCE — since Monday / since 2010 / since I was a child"
-    },
-    {
-      "ru": "не позднее чем, к (дедлайн)",
-      "en": "BY — by Friday / by 6 o'clock / by the end of the day"
-    },
-    { "ru": "до тех пор пока не", "en": "UNTIL / TILL — until midnight / till Monday" },
-    { "ru": "с … до …", "en": "FROM … TO … — from 9 to 5 / from Monday to Friday" },
-    { "ru": "тому назад", "en": "AGO — 3 days ago / two years ago / a moment ago" },
-    { "ru": "в течение (успеть за срок)", "en": "WITHIN — within a week / within 24 hours" },
-    { "ru": "перед / после", "en": "BEFORE / AFTER — before lunch / after the meeting" },
-    { "ru": "незадолго до", "en": "SHORTLY BEFORE — shortly before the exam" },
-    { "ru": "вскоре после", "en": "SHORTLY AFTER — shortly after midnight" }
+    { "ru": "в течение (процесс внутри периода)", "en": "DURING — during the meeting / during summer", "examples": [{ "en": "Be quiet <b>during the meeting</b>.", "ru": "Молчите во время встречи." }, { "en": "Heat waves strike <b>during summer</b>.", "ru": "Волны жары удаляют летом." }, { "en": "Interruptions <b>during the speech</b> annoy.", "ru": "Перебивания во время речи раздражают." }] },
+    { "ru": "на протяжении (длительность)", "en": "FOR — for 3 hours / for two years / for a long time", "examples": [{ "en": "Wait <b>for 3 hours</b>.", "ru": "Ждите 3 часа." }, { "en": "We studied <b>for two years</b>.", "ru": "Мы учились два года." }, { "en": "It rained <b>for a long time</b>.", "ru": "Дождь шёл долго." }] },
+    { "ru": "с тех пор как (и до сих пор)", "en": "SINCE — since Monday / since 2010 / since I was a child", "examples": [{ "en": "No word <b>since Monday</b>.", "ru": "Никакого слова с понедельника." }, { "en": "I've lived here <b>since 2010</b>.", "ru": "Я живу здесь с 2010 года." }, { "en": "<b>Since childhood</b>, I loved books.", "ru": "С детства я любил книги." }] },
+    { "ru": "не позднее чем, к (дедлайн)", "en": "BY — by Friday / by 6 o'clock / by the end of the day", "examples": [{ "en": "Report due <b>by Friday</b>.", "ru": "Доклад до пятницы." }, { "en": "Arrive <b>by 6 o'clock</b>.", "ru": "Приходите к 6 часам." }, { "en": "Finish <b>by end of day</b>.", "ru": "Закончите к концу дня." }] },
+    { "ru": "до тех пор пока не", "en": "UNTIL / TILL — until midnight / till Monday", "examples": [{ "en": "Dance <b>until midnight</b>.", "ru": "Танцуйте до полночи." }, { "en": "Wait <b>till Monday</b>.", "ru": "Подождите до понедельника." }, { "en": "Close shop <b>until morning</b>.", "ru": "Закроем магазин до утра." }] },
+    { "ru": "с … до …", "en": "FROM … TO … — from 9 to 5 / from Monday to Friday", "examples": [{ "en": "Work <b>from 9 to 5</b>.", "ru": "Работаю с 9 до 5." }, { "en": "Holiday <b>from Monday to Friday</b>.", "ru": "Отпуск с понедельника по пятницу." }, { "en": "Event <b>from 2 to 4 PM</b>.", "ru": "Событие с 2 до 4 часов дня." }] },
+    { "ru": "тому назад", "en": "AGO — 3 days ago / two years ago / a moment ago", "examples": [{ "en": "She left <b>3 days ago</b>.", "ru": "Она уехала 3 дня назад." }, { "en": "We met <b>two years ago</b>.", "ru": "Мы встретились два года назад." }, { "en": "That was <b>a moment ago</b>.", "ru": "Это было мгновение назад." }] },
+    { "ru": "в течение (успеть за срок)", "en": "WITHIN — within a week / within 24 hours", "examples": [{ "en": "Reply <b>within a week</b>.", "ru": "Ответьте в течение недели." }, { "en": "Delivery <b>within 24 hours</b>.", "ru": "Доставка в течение 24 часов." }, { "en": "Heal <b>within days</b>.", "ru": "Заживёт в течение дней." }] },
+    { "ru": "перед / после", "en": "BEFORE / AFTER — before lunch / after the meeting", "examples": [{ "en": "Eat <b>before lunch</b>.", "ru": "Ешь перед обедом." }, { "en": "Coffee <b>after the meeting</b>.", "ru": "Кофе после встречи." }, { "en": "Chat <b>before sleep</b>.", "ru": "Болтайте перед сном." }] },
+    { "ru": "незадолго до", "en": "SHORTLY BEFORE — shortly before the exam", "examples": [{ "en": "Revise <b>shortly before exam</b>.", "ru": "Повторяйте незадолго до экзамена." }, { "en": "Arrive <b>shortly before the show</b>.", "ru": "Приходи незадолго до шоу." }, { "en": "<b>Shortly before departure</b>, we packed.", "ru": "Незадолго до отъезда мы упаковывались." }] },
+    { "ru": "вскоре после", "en": "SHORTLY AFTER — shortly after midnight", "examples": [{ "en": "He arrived <b>shortly after midnight</b>.", "ru": "Он прибыл вскоре после полночи." }, { "en": "Rain started <b>shortly after noon</b>.", "ru": "Дождь начался вскоре после полудня." }, { "en": "She recovered <b>shortly after surgery</b>.", "ru": "Она выздоровела вскоре после операции." }] }
   ]
 }

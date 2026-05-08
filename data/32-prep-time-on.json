@@ -2,20 +2,14 @@
   "name": "Предлоги времени — ON",
   "category": "предлоги",
   "cards": [
-    { "ru": "день недели", "en": "ON Monday / ON Friday / ON Sunday" },
-    { "ru": "конкретная дата", "en": "ON 5th May / ON the 1st of January" },
-    { "ru": "день рождения / годовщина", "en": "ON my birthday / ON our anniversary" },
-    {
-      "ru": "день праздника (сам день)",
-      "en": "ON Christmas Day / ON New Year's Day ← но: AT Christmas = период"
-    },
-    { "ru": "день + часть суток", "en": "ON Monday morning / ON Friday evening / ON Sunday night" },
-    {
-      "ru": "вовремя (пунктуально)",
-      "en": "ON time — The train arrived on time ← не путать: IN time = успеть"
-    },
-    { "ru": "в тот / этот день", "en": "ON that day / ON the day of the wedding" },
-    { "ru": "в следующий / прошлый (день)", "en": "ON the following day / ON the previous day" },
-    { "ru": "на выходных (амер.)", "en": "ON the weekend ← брит.: AT the weekend" }
+    { "ru": "день недели", "en": "ON Monday / ON Friday / ON Sunday", "examples": [{ "en": "I work <b>on Monday</b>.", "ru": "Я работаю в понедельник." }, { "en": "Football game <b>on Friday</b>.", "ru": "Матч по футболу в пятницу." }, { "en": "Church visit <b>on Sunday</b>.", "ru": "Посещение церкви в воскресенье." }] },
+    { "ru": "конкретная дата", "en": "ON 5th May / ON the 1st of January", "examples": [{ "en": "Election <b>on May 5th</b>.", "ru": "Выборы 5 мая." }, { "en": "New Year begins <b>on January 1st</b>.", "ru": "Новый год начинается 1 января." }, { "en": "My birthday <b>on December 25th</b>.", "ru": "Мой день рождения 25 декабря." }] },
+    { "ru": "день рождения / годовщина", "en": "ON my birthday / ON our anniversary", "examples": [{ "en": "Cake served <b>on my birthday</b>.", "ru": "Торт подают в мой день рождения." }, { "en": "Dinner planned <b>on our anniversary</b>.", "ru": "Ужин запланирован на нашу годовщину." }, { "en": "Gifts exchanged <b>on birthdays</b>.", "ru": "Подарки обмениваются в дни рождения." }] },
+    { "ru": "день праздника (сам день)", "en": "ON Christmas Day / ON New Year's Day ← но: AT Christmas = период", "examples": [{ "en": "Church packed <b>on Christmas Day</b>.", "ru": "Церковь переполнена в День Рождества." }, { "en": "Fireworks <b>on New Year's Day</b>.", "ru": "Фейерверки в день Нового года." }, { "en": "Families gather <b>on Easter Day</b>.", "ru": "Семьи собираются в день Пасхи." }] },
+    { "ru": "день + часть суток", "en": "ON Monday morning / ON Friday evening / ON Sunday night", "examples": [{ "en": "Meeting <b>on Monday morning</b>.", "ru": "Встреча в понедельник утром." }, { "en": "Party <b>on Friday evening</b>.", "ru": "Вечеринка в пятницу вечером." }, { "en": "Call <b>on Sunday night</b>.", "ru": "Позвони в воскресенье ночью." }] },
+    { "ru": "вовремя (пунктуально)", "en": "ON time — The train arrived on time ← не путать: IN time = успеть", "examples": [{ "en": "The bus arrived <b>on time</b>.", "ru": "Автобус прибыл вовремя." }, { "en": "She delivered <b>on time</b>.", "ru": "Она доставила вовремя." }, { "en": "Project finished <b>on time</b>.", "ru": "Проект закончился в срок." }] },
+    { "ru": "в тот / этот день", "en": "ON that day / ON the day of the wedding", "examples": [{ "en": "<b>On that day</b>, everything changed.", "ru": "В тот день всё изменилось." }, { "en": "Rings exchanged <b>on the wedding day</b>.", "ru": "Кольца обменены в день свадьбы." }, { "en": "<b>On the day</b> of victory, celebrations.", "ru": "В день победы торжества." }] },
+    { "ru": "в следующий / прошлый (день)", "en": "ON the following day / ON the previous day", "examples": [{ "en": "News broke <b>on the following day</b>.", "ru": "Новость вышла в следующий день." }, { "en": "Preparations <b>on the previous day</b>.", "ru": "Подготовка в предыдущий день." }, { "en": "He left <b>the next day</b>.", "ru": "Он уехал на следующий день." }] },
+    { "ru": "на выходных (амер.)", "en": "ON the weekend ← брит.: AT the weekend", "examples": [{ "en": "We hike <b>on the weekend</b>.", "ru": "Мы ходим в поход на выходных." }, { "en": "Shops busy <b>on weekends</b>.", "ru": "Магазины заняты на выходных." }, { "en": "Movie night <b>on the weekend</b>.", "ru": "Кинночь на выходных." }] }
   ]
 }
