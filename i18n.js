@@ -42,6 +42,7 @@ window.I18N = {
     doneSub: '{name} · {right} of {total} correct',
     tableReveal: 'reveal answers',
     tableHide: 'hide answers',
+    examples: 'examples',
     mascot: {
       opening: [
         'let’s go. two or three in a row and you are in rhythm',
@@ -178,6 +179,7 @@ window.I18N = {
     doneSub: '{name} · {right} из {total} правильно',
     tableReveal: 'показать ответы',
     tableHide: 'скрыть ответы',
+    examples: 'примеры',
     mascot: {
       opening: [
         'погнали. две-три подряд и уже полетело',

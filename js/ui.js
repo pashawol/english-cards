@@ -171,6 +171,13 @@ export function buildDOM({
             <div class="card-label" data-i18n="english"></div>
             <div class="card-word" id="back-word"></div>
             <div class="card-hint" id="back-hint"></div>
+            <div class="card-examples" id="card-examples" hidden>
+              <button class="examples-toggle" id="examples-toggle" type="button">
+                <span class="examples-toggle-label" data-i18n="examples"></span>
+                <span class="examples-toggle-chev">▾</span>
+              </button>
+              <div class="examples-body" id="examples-body" hidden></div>
+            </div>
           </div>
         </div>
       </div>
@@ -252,7 +259,12 @@ export function buildDOM({
   document.getElementById('mix-table-btn').addEventListener('click', showMixTableView);
   document.getElementById('mix-start-btn').addEventListener('click', startMix);
   document.getElementById('back-btn').addEventListener('click', goHome);
-  document.getElementById('card-area').addEventListener('click', flipCard);
+  let swipeConsumed = false;
+  document.getElementById('card-area').addEventListener('click', (e) => {
+    if (e.target.closest('.card-examples')) return;
+    if (swipeConsumed) { swipeConsumed = false; return; }
+    flipCard();
+  });
   document.getElementById('study-backtrack-btn').addEventListener('click', goPrevCard);
   document.getElementById('btn-wrong').addEventListener('click', () => answer(false));
   document.getElementById('btn-right').addEventListener('click', () => answer(true));
@@ -282,6 +294,95 @@ export function buildDOM({
     saveState();
     renderHome();
     scheduleReminderCheck();
+  });
+
+  document.getElementById('examples-toggle').addEventListener('click', (e) => {
+    e.stopPropagation();
+    const body = document.getElementById('examples-body');
+    const chev = document.querySelector('#examples-toggle .examples-toggle-chev');
+    const isOpen = !body.hidden;
+    body.hidden = isOpen;
+    if (chev) chev.classList.toggle('open', !isOpen);
+  });
+
+  // Swipe gestures on card area
+  const cardAreaEl = document.getElementById('card-area');
+  const cardInnerEl = document.getElementById('card-inner');
+  const swipeOverlayEl = document.createElement('div');
+  swipeOverlayEl.className = 'swipe-overlay';
+  swipeOverlayEl.id = 'swipe-overlay';
+  cardAreaEl.appendChild(swipeOverlayEl);
+
+  const SWIPE_THRESHOLD = 80;
+  let swipeStart = null;
+  let swipeDx = 0;
+  let swipeActive = false;
+
+  cardAreaEl.addEventListener('touchstart', (e) => {
+    if (e.target.closest('.card-examples')) return;
+    const touch = e.touches[0];
+    swipeStart = { x: touch.clientX, y: touch.clientY };
+    swipeDx = 0;
+    swipeActive = false;
+  }, { passive: true });
+
+  cardAreaEl.addEventListener('touchmove', (e) => {
+    if (!swipeStart) return;
+    const touch = e.touches[0];
+    const dx = touch.clientX - swipeStart.x;
+    const dy = touch.clientY - swipeStart.y;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    if (absDx < 10 && absDy < 10) return;
+
+    if (absDy > absDx) {
+      if (swipeActive) {
+        cardInnerEl.style.transform = '';
+        swipeOverlayEl.style.opacity = '0';
+        cardAreaEl.classList.remove('swiping');
+        swipeActive = false;
+      }
+      swipeStart = null;
+      return;
+    }
+
+    e.preventDefault();
+    swipeActive = true;
+    swipeDx = dx;
+    cardAreaEl.classList.add('swiping');
+    cardInnerEl.style.transform = `translateX(${dx}px) rotate(${dx * 0.05}deg)`;
+    const intensity = Math.min(1, absDx / SWIPE_THRESHOLD) * 0.45;
+    swipeOverlayEl.style.opacity = String(intensity);
+    swipeOverlayEl.style.background = dx < 0 ? 'var(--green-light)' : 'var(--red-light)';
+  }, { passive: false });
+
+  cardAreaEl.addEventListener('touchend', () => {
+    if (!swipeStart) return;
+    swipeStart = null;
+    if (!swipeActive) return;
+    swipeActive = false;
+
+    const absDx = Math.abs(swipeDx);
+    if (absDx >= SWIPE_THRESHOLD) {
+      swipeConsumed = true;
+      const correct = swipeDx < 0;
+      cardAreaEl.classList.remove('swiping');
+      swipeOverlayEl.style.opacity = '0';
+      const flyX = swipeDx < 0 ? '-130%' : '130%';
+      const flyRot = swipeDx < 0 ? '-15deg' : '15deg';
+      cardInnerEl.style.transition = 'transform 0.22s ease-in, opacity 0.22s ease-in';
+      cardInnerEl.style.transform = `translateX(${flyX}) rotate(${flyRot})`;
+      cardInnerEl.style.opacity = '0';
+      setTimeout(() => { answer(correct); }, 220);
+    } else {
+      cardAreaEl.classList.remove('swiping');
+      swipeOverlayEl.style.opacity = '0';
+      cardInnerEl.style.transition = 'transform 0.2s ease-out';
+      cardInnerEl.style.transform = '';
+      setTimeout(() => { cardInnerEl.style.transition = ''; }, 200);
+    }
+    swipeDx = 0;
   });
 
   bindMascotInteraction('study-mascot', 'mascot-text');
