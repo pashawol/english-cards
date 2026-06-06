@@ -58,11 +58,11 @@
       { "en": "Don't <b>put</b> the meeting <b>off</b>.", "ru": "Не откладывай встречу." },
       { "en": "We <b>put off</b> the trip.", "ru": "Мы отложили поездку." }
     ]},
-    { "ru": "надевать / включать", "en": "put on", "examples": [
+    { "ru": "надевать / включать", "en": "put on", "image": "data/images/s32_14.jpg", "examples": [
       { "en": "<b>Put on</b> your coat.", "ru": "Надень своё пальто." },
       { "en": "She <b>put on</b> her makeup.", "ru": "Она надела макияж." }
     ]},
-    { "ru": "тушить (огонь)", "en": "put out", "examples": [
+    { "ru": "тушить (огонь)", "en": "put out", "image": "data/images/s32_15.jpg", "examples": [
       { "en": "Please <b>put out</b> the fire.", "ru": "Пожалуйста, потуши огонь." },
       { "en": "They <b>put out</b> the lights.", "ru": "Они выключили свет." }
     ]},

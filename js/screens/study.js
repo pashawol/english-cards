@@ -83,6 +83,19 @@ export function showCard({ showDone }) {
   document.getElementById('front-hint').textContent = '';
   document.getElementById('back-hint').textContent = '';
 
+  const cardImage = document.getElementById('card-image');
+  if (cardImage) {
+    if (card.image) {
+      cardImage.src = card.image;
+      cardImage.alt = card.en;
+      cardImage.hidden = false;
+    } else {
+      cardImage.removeAttribute('src');
+      cardImage.alt = '';
+      cardImage.hidden = true;
+    }
+  }
+
   const examplesContainer = document.getElementById('card-examples');
   const examplesBody = document.getElementById('examples-body');
   if (examplesContainer && examplesBody) {

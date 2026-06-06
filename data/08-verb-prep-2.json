@@ -86,7 +86,7 @@
       { "en": "Don't <b>involve</b> me <b>in</b> this.", "ru": "Не вовлекай меня в это." },
       { "en": "He was <b>involved in</b> the project.", "ru": "Он был вовлечен в проект." }
     ]},
-    { "ru": "смеяться над", "en": "laugh at", "examples": [
+    { "ru": "смеяться над", "en": "laugh at", "image": "data/images/s25_21.jpg", "examples": [
       { "en": "Don't <b>laugh at</b> him.", "ru": "Не смейся над ним." },
       { "en": "Everyone <b>laughed at</b> the joke.", "ru": "Все смеялись над шуткой." }
     ]}

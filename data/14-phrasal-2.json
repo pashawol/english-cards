@@ -46,7 +46,7 @@
       { "en": "Let's <b>get down to</b> business.", "ru": "Давай приступим к делу." },
       { "en": "She <b>got</b> <b>down to</b> working seriously.", "ru": "Она серьёзно приступила к работе." }
     ]},
-    { "ru": "выйти из транспорта", "en": "get off", "examples": [
+    { "ru": "выйти из транспорта", "en": "get off", "image": "data/images/s31_11.jpg", "examples": [
       { "en": "<b>Get off</b> at the next stop.", "ru": "Выйди на следующей остановке." },
       { "en": "We <b>got off</b> the train early.", "ru": "Мы вышли из поезда рано." }
     ]},

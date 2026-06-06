@@ -1,0 +1,115 @@
+# Image credits
+
+All images sourced via the Openverse API (openverse.org) under Creative Commons / public-domain licenses.
+Grammar-card images (slug `sN_M`) are visual hints for prepositions, phrasal verbs and set phrases.
+Each entry: slug — title — creator — license — source.
+
+- **aircraft** — P-51D Mustang — slezo — by-sa 2.0 — https://www.flickr.com/photos/36344488@N03/52537387741
+- **athletics** — Project 365 #200: 190713 The Finishing Line — comedy_nose — pdm 1.0 — https://www.flickr.com/photos/23408922@N07/9320845849
+- **baggage** — Suitcases — wwarby — by 2.0 — https://www.flickr.com/photos/26782864@N00/21403013269
+- **barracks** — Royal Artillery Barracks Woolwich — Defence Images — by-sa 2.0 — https://www.flickr.com/photos/48399297@N04/8554348007
+- **billiards** — Pool vs. snooker — Derbeth — by 2.0 — https://www.flickr.com/photos/76351845@N00/5069179060
+- **binoculars** — Binoculars V — chase_elliott — by 2.0 — https://www.flickr.com/photos/19746950@N00/8502151556
+- **blow** — Boy 2 strains to blow up a balloon — lupinoduck — by-nd 2.0 — https://www.flickr.com/photos/56459230@N00/5908963612
+- **bowls** — Lawn Bowling — ZeroOne — by-sa 2.0 — https://www.flickr.com/photos/70591690@N00/2886114544
+- **bracers** — worldbraces50.jpg — new1mproved — by 2.0 — https://www.flickr.com/photos/34124793@N00/446620079
+- **build** — concrete pump on building construction site — fsse8info — by-sa 2.0 — https://www.flickr.com/photos/37031529@N00/3238264011
+- **burn** — On fire — Infomastern — by-sa 2.0 — https://www.flickr.com/photos/55856449@N04/10156574865
+- **buy** — Long Lines at Costco — ATIS547 — by-nc-sa 2.0 — https://www.flickr.com/photos/25654510@N00/4321264296
+- **cash** — Banknotes, money, cash — HowardLake — by-sa 2.0 — https://www.flickr.com/photos/53941041@N00/4550761104
+- **catch** — Catcher — Czar Hey — by-sa 2.0 — https://www.flickr.com/photos/161174688@N08/51532991568
+- **cattle** — Cows at ease - Explored :) — Leszek.Leszczynski — by 2.0 — https://www.flickr.com/photos/47190679@N06/9325662885
+- **checkers** — Checkers — Thad Zajdowicz — cc0 1.0 — https://www.flickr.com/photos/40632439@N00/26073817771
+- **clothes** — Project 365 #73: 140313 Off The Rack — comedy_nose — pdm 1.0 — https://www.flickr.com/photos/23408922@N07/8558691314
+- **clothing** — laundry day stacks — EvelynGiggles — by 2.0 — https://www.flickr.com/photos/23797059@N02/3470371977
+- **crossroads** — Crossroad — halfrain — by-sa 2.0 — https://www.flickr.com/photos/54217251@N05/5936848838
+- **cut** — Vegetables on a Cutting Board — rgirardin — by-sa 2.0 — https://www.flickr.com/photos/30559266@N04/9304466280
+- **darts** — Dartboard with darts — Santeri Viinamäki — by-sa 4.0 — https://commons.wikimedia.org/w/index.php?curid=49408494
+- **deer** — Fallow deer stag, Epping Forest — martin_vmorris — by-sa 2.0 — https://www.flickr.com/photos/24108242@N05/8154686956
+- **dig** — Equipment Outdoors Dirt Dig Edited 2020 — chimpwithcan — by 2.0 — https://www.flickr.com/photos/188454520@N02/49916958953
+- **dominoes** — CUBAN DOUBLE 9 DOMINOES — JustoRuiz, Capturing smiles one shot at a time © — by 2.0 — https://www.flickr.com/photos/29067672@N05/3679125413
+- **draw** — drawing hand — cdaltonrowe — by 2.0 — https://www.flickr.com/photos/30485180@N06/3967682030
+- **drink** — ____________ — Steven Leonti — by 2.0 — https://www.flickr.com/photos/47493434@N03/4862459700
+- **drive** — Russian Jeep — jurvetson — by 2.0 — https://www.flickr.com/photos/44124348109@N01/29842746
+- **eat** — You don't need proof when you have instinct — Ryan Vaarsi — by 2.0 — https://www.flickr.com/photos/77799978@N00/7113053757
+- **feed** — Woman feeding chickens, probably on the Olympic Peninsula — IMLS DCC — by 2.0 — https://www.flickr.com/photos/42381338@N04/4647385747
+- **fish** — Surprise!!! 4/365 — Benson Kua — by-sa 2.0 — https://www.flickr.com/photos/91545223@N00/2754312951
+- **fly** — Birds Flying Against Sky — Gabe Fiorini — by 2.0 — https://www.flickr.com/photos/43098294@N00/11059899344
+- **freeze** — What you try, everyday. — nattu — by 2.0 — https://www.flickr.com/photos/33345813@N00/3165716469
+- **fruit** — Rows of plastic cups filled with assorted fresh fruit, including strawberries, blueberries, and kiwis, covered with clear lids and arranged neatly on a table. — Nilo Velez — cc0 1.0 — https://wordpress.org/photos/photo/9567d720d7/
+- **furniture** — Halo living room — The Pug Father — by 2.0 — https://www.flickr.com/photos/76929828@N00/1394346975
+- **give** — Gift — asenat29 — by 2.0 — https://www.flickr.com/photos/72153088@N08/6510934443
+- **glasses** — I'm done reading my magazine, I quit. magazine & eyeglasses — photosteve101 — by 2.0 — https://www.flickr.com/photos/42931449@N07/6092424291
+- **greens** — A patch of leafy green vegetables, possibly kale or collard greens, growing in a garden. The leaves are vibrant green and covered with water droplets, suggesting a recent rain or watering. Captured from the Government Botanical Garden, Ooty, Tamil Nadu. — Bigul Malayi — cc0 1.0 — https://wordpress.org/photos/photo/596849056b/
+- **groceries** — Shopping in supermarket store, mall — www.readyelements.com — cc0 1.0 — https://www.flickr.com/photos/155753322@N06/43712540391
+- **grow** — Carrots — briannaorg — by 2.0 — https://www.flickr.com/photos/81631332@N00/2268419600
+- **gymnastics** — Ring Gymnast Gymnastic Rings — ThirdLegReviews — by-sa 2.0 — https://www.flickr.com/photos/55155831@N03/5120645917
+- **hair** — Lapis Lazuli Lady — reddau — by 2.0 — https://www.flickr.com/photos/43455860@N03/14354555597
+- **jeans** — Woman in blue denim jeans posing at home. A watch and a bracelet on her wrist — Ivan Radic — by 2.0 — https://www.flickr.com/photos/26344495@N05/49106600577
+- **jewelry** — My Engagement and Wedding Rings — slgckgc — by 2.0 — https://www.flickr.com/photos/14771153@N04/5555275297
+- **leggings** — Leggings clothing back view — Leirarieleira — by-sa 4.0 — https://commons.wikimedia.org/w/index.php?curid=99208827
+- **lightning** — Lightning — nathan_lounds — pdm 1.0 — https://www.flickr.com/photos/27095118@N00/6771097341
+- **linen** — Bed Linen — Filter Forge — by 2.0 — https://www.flickr.com/photos/93421824@N06/8853440876
+- **money** — 299-365 (Year 7) M is for Money — ♔ Georgie R — by-nd 2.0 — https://www.flickr.com/photos/19396658@N00/12498020555
+- **overalls** — Via Velo photos — Richard Masoner / Cyclelicious — by-sa 2.0 — https://www.flickr.com/photos/99247795@N00/4612715692
+- **pants** — Chatsworth House - Sept 2014 - Candid Couple Enjoying a Walk in the Park — Gareth1953 All Right Now — by 2.0 — https://www.flickr.com/photos/40837632@N05/15377846116
+- **people** — Crowd of People on the Waterfront — Augapfel — by 2.0 — https://www.flickr.com/photos/47038415@N00/3250117527
+- **police** — Police Officer Contingent — Chris Hunkeler — by-sa 2.0 — https://www.flickr.com/photos/14913305@N00/6995830953
+- **poultry** — Chickens — wattpublishing — by 2.0 — https://www.flickr.com/photos/56112382@N08/6726227761
+- **pyjamas** — The Safety of Fear — Alyssa L. Miller — by 2.0 — https://www.flickr.com/photos/34701044@N06/3250804881
+- **read** — Reading a book on the street — Monique Broekhuisen — by 2.0 — https://www.flickr.com/photos/67177481@N07/13855281853
+- **ride** — Bicycle Confidence Workshop — Bike SLO County — by 2.0 — https://www.flickr.com/photos/47737490@N03/5115177616
+- **rise** — Sun day #sunrise #sun #horizon #trees #daylight #daybreak #bournemouth #dorset — Phil Guest — by-sa 2.0 — https://www.flickr.com/photos/83232559@N00/29431455613
+- **rubbish** — Garbage Trash Bins for collecting a recycle materials. Garbage trash bins for waste segregation. Separate waste collection food waste, plastic, paper and danger waste. Recycling. Environment. — EU-Ukraine cooperation — by-sa 2.0 — https://www.flickr.com/photos/149400054@N04/54548323536
+- **run** — Hyde Park Runer — Waterford_Man — by 2.0 — https://www.flickr.com/photos/47121377@N00/31405545673
+- **s10_1** — Keele Street, Toronto, ON, Canada — MSVG — by 2.0 — https://www.flickr.com/photos/13907834@N00/4865220858
+- **s10_9** — The Dance — Tom Fullerton — by-nc 2.0 — https://www.flickr.com/photos/17123407@N00/11419040786
+- **s14_0** — A7R+F.Zuiko1.8/50 @f8, Shanghai — ronghualu — by-nd 2.0 — https://www.flickr.com/photos/49615044@N03/15621946502
+- **s14_3** — 1. Open cardboard box, 2. Suddenly, #cat !!! #cats #catstagram #catsofinstagram #pets #animals #neko — 3juha — by 2.0 — https://www.flickr.com/photos/91037380@N04/15342265617
+- **s14_7** — Free black coffee cup and — ? — cc0 1.0 — https://www.rawpixel.com/image/5926576/photo-image-book-public-domain-note
+- **s14_8** — old people on a bus — alainlm — by 2.0 — https://www.flickr.com/photos/44984463@N00/4297474853
+- **s15_1** — l002211-The Stone Bridge over the River Donau (Danube — lyng883 — by 2.0 — https://www.flickr.com/photos/87616709@N00/3195968372
+- **s15_12** — Tunnel — rpongsaj — by 2.0 — https://www.flickr.com/photos/15131913@N00/7214821
+- **s15_6** — Breakfast nook in dining room - FDR National Historic Site - Springwood Estate - Hyde Park NY - 2013-02-17 — Tim Evanson — by-sa 2.0 — https://www.flickr.com/photos/23165290@N00/8515388599
+- **s16_12** — Mrs. Jack Wright boards a bus on her way to work at a munitions factory. / Mme Jack Wright monte dans un autobus pour aller travailler dans une fabrique de munitions — BiblioArchives / LibraryArchives — by 2.0 — https://www.flickr.com/photos/28853433@N02/4678566611
+- **s16_13** — Getting off the bus — Dushan and Miae — by-sa 2.0 — https://www.flickr.com/photos/97304820@N00/5311512251
+- **s16_2** — Badeschiff — Paul Keller — by 2.0 — https://www.flickr.com/photos/18259771@N00/19571976312
+- **s16_4** — directions (cc) — marfis75 — by-sa 2.0 — https://www.flickr.com/photos/45409431@N00/9138401800
+- **s16_5** — directions (cc) — marfis75 — by-sa 2.0 — https://www.flickr.com/photos/45409431@N00/9138401800
+- **s16_7** — Pedestrian Crosswalk Sign — TireZoo — by 2.0 — https://www.flickr.com/photos/48722259@N02/6549501977
+- **s16_8** — Tunnel — rpongsaj — by 2.0 — https://www.flickr.com/photos/15131913@N00/7214821
+- **s18_12** — migraine-headache-pain.jpg — r.nial.bradshaw — by 2.0 — https://www.flickr.com/photos/33227787@N05/7484820084
+- **s18_19** — Shower Clean! — greggoconnell — by 2.0 — https://www.flickr.com/photos/72511655@N00/332278936
+- **s19_17** — Candle and butter knives — winecountrymedia — by 2.0 — https://www.flickr.com/photos/136394702@N02/23046950289
+- **s19_21** — Squared — penerik — by 2.0 — https://www.flickr.com/photos/53267244@N03/18281411471
+- **s20_13** — Eaten — craigCloutier — by-sa 2.0 — https://www.flickr.com/photos/23656277@N00/4227935766
+- **s20_19** — Loving couple lying in bed — LyndaSanchez — by-sa 2.0 — https://www.flickr.com/photos/93963757@N05/8550838313
+- **s23_9** — Exchanging rings. — lori05871 — by 2.0 — https://www.flickr.com/photos/10563005@N06/1418814462
+- **s25_21** — My Fun Elevator Story — GollyGforce - Living My Worst Nightmare — by 2.0 — https://www.flickr.com/photos/20581458@N00/5414817728
+- **s29_13** — Three women hold signs at the Merchandise Mart in Atlanta, Georgia, urging people not to buy Judy Bond blouses, March 1, 1962. — Kheel Center, Cornell University Library — by 2.0 — https://www.flickr.com/photos/38445726@N04/5279672806
+- **s30_0** — Detached wheel near broken broken down car — Horia Varlan — by 2.0 — https://www.flickr.com/photos/10361931@N06/4303842427
+- **s31_11** — my ride — michale — by 2.0 — https://www.flickr.com/photos/95286689@N00/90870378
+- **s32_14** — Winter has a way of making us grumpy. — kennethkonica — by-nd 2.0 — https://www.flickr.com/photos/38912465@N00/24425897771
+- **s32_15** — Firefighters — starmanseries — by 2.0 — https://www.flickr.com/photos/69125796@N00/7415300266
+- **s33_13** — recycling — orphanjones — by 2.0 — https://www.flickr.com/photos/97299052@N00/427193721
+- **s33_19** — Dishes — aaron13251 — by 2.0 — https://www.flickr.com/photos/23063164@N00/674301883
+- **s33_7** — Emirates - A6-EWA — InSapphoWeTrust — by-sa 2.0 — https://www.flickr.com/photos/56619626@N05/8225475701
+- **salmon** — sashimi Plate — G.A.I.N — by 2.0 — https://www.flickr.com/photos/59496030@N02/14380972844
+- **scales** — Weigh Scale — haven't the slightest — by-nd 2.0 — https://www.flickr.com/photos/24085129@N07/3816818196
+- **scenery** — scottish scenery — mike138 — by-nd 2.0 — https://www.flickr.com/photos/72486075@N00/433447751
+- **scissors** — sewing scissors — crwr — by-nc 2.0 — https://www.flickr.com/photos/36348786@N00/2109291474
+- **sheep** — sheep — Royalty-free image collection — by 2.0 — https://www.flickr.com/photos/78458997@N00/139764660
+- **shorts** — Volco-C0931108-Orange — Symic — by 2.0 — https://www.flickr.com/photos/73344134@N00/8572370494
+- **sing** — Lady X singing at microphone — D Coetzee — cc0 1.0 — https://www.flickr.com/photos/29507259@N02/5535157726
+- **sit** — Man sits on a chair beneath a staircase — simpleinsomnia — by 2.0 — https://www.flickr.com/photos/95329455@N02/24842415105
+- **sleep** — Sickies. — Monica Holli — by 2.0 — https://www.flickr.com/photos/21928115@N08/8549469725
+- **slide** — Playgrounds: slide — jonolist — by-sa 2.0 — https://www.flickr.com/photos/46635911@N00/143997346
+- **spacecraft** — HRC Atun - Maguro class asteroid prospector — breadman017 — by 2.0 — https://www.flickr.com/photos/39911510@N00/35287501053
+- **stairs** — #interior #design #wallpaper #floral #staircase #stairs #steps #floor #boards #wood #design #lifestyle #love — matrianklw — by-nd 2.0 — https://www.flickr.com/photos/65079007@N00/8006475636
+- **sunglasses** — Coloured letters spell out the word 'travel' on a flat lay — Holiday Gems UK — by 2.0 — https://www.flickr.com/photos/143472177@N08/32203908038
+- **swim** — Patrick Callan, 2023 Pac-12 Championships, 200 yard freestyle preliminaries - 3 March 2023 — Tanis Coralee Leonhardi — by-sa 4.0 — https://commons.wikimedia.org/w/index.php?curid=129271852
+- **swine** — Vintage red pig, farm animal — ? — cc0 1.0 — https://www.rawpixel.com/image/6259755/image-vintage-public-domain-art
+- **traffic** — Innisfil, Ontario — MSVG — by 2.0 — https://www.flickr.com/photos/13907834@N00/4962604100
+- **trousers** — Men's suit pants and white suspenders — Unidentified — cc0 1.0 — https://nmaahc.si.edu/object/nmaahc_2007.3.624ab
+- **trout** — Trout Fishing — PapaPiper — by-nd 2.0 — https://www.flickr.com/photos/16516058@N03/15043876185
+- **write** — The write thing Project 365(2) Day 12 — Keith Williamson — by 2.0 — https://www.flickr.com/photos/34673186@N03/4355765412

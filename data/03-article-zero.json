@@ -54,7 +54,7 @@
       { "en": "Time to <b>go to bed</b>.", "ru": "Пора ложиться спать." },
       { "en": "She <b>goes to bed</b> at ten.", "ru": "Она ложится спать в десять." }
     ]},
-    { "ru": "завтракать / обедать", "en": "have breakfast / lunch", "examples": [
+    { "ru": "завтракать / обедать", "en": "have breakfast / lunch", "image": "data/images/s20_13.jpg", "examples": [
       { "en": "I <b>have breakfast</b> at eight.", "ru": "Я завтракаю в восемь." },
       { "en": "We <b>have lunch</b> at noon.", "ru": "Мы обедаем в полдень." }
     ]},
@@ -78,7 +78,7 @@
       { "en": "That's true <b>without question</b>.", "ru": "Это верно без сомнения." },
       { "en": "<b>Without question</b> she's right.", "ru": "Без сомнения, она права." }
     ]},
-    { "ru": "в постели", "en": "in bed", "examples": [
+    { "ru": "в постели", "en": "in bed", "image": "data/images/s20_19.jpg", "examples": [
       { "en": "I'm staying <b>in bed</b> today.", "ru": "Я остаюсь в постели сегодня." },
       { "en": "He was <b>in bed</b> yesterday.", "ru": "Вчера он был в постели." }
     ]},

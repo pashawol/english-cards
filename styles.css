@@ -708,6 +708,18 @@ header {
   text-align: center;
 }
 
+.card-image {
+  margin-top: 14px;
+  max-width: 100%;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image[hidden] {
+  display: none;
+}
+
 .tap-hint {
   text-align: center;
   font-size: 12px;

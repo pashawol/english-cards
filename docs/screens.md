@@ -49,6 +49,10 @@ Study session: card display, flip, answer recording, back-navigation, done scree
 
 `recomputeSessionState()` is called after every answer. It replays `session.answers` from scratch to rebuild `state.progress`, `session.right`, `session.wrong`, and `state.todayCount`. Do not replace with naive increment/decrement — see CLAUDE.md.
 
+### Card image
+
+If the current card has an optional `image` field (a path like `data/images/<word>.jpg`), `showCard()` shows it on the **front** face (the Russian/question side) as a visual hint to help recall the English word, via the `#card-image` element declared in `js/ui.js`. Cards without `image` hide the element. The image is set/cleared each render — `cardImage.src = card.image; cardImage.hidden = false` when present, otherwise `removeAttribute('src')` + `hidden = true`. Styling lives in `.card-image` in `styles.css` (capped height, rounded, works in both themes). Bundled images come from Openverse (CC-licensed); attribution is in `data/images/CREDITS.md`. Images cover concrete, picturable cards across both vocabulary sets (nouns, concrete verbs) and grammar sets where a scene helps (prepositions of place/movement, some phrasal verbs and set phrases). Truly abstract cards (most collocations, articles, word-formation) intentionally have none. Grammar-card image files use `sN_M.jpg` naming (set id + card index).
+
 ---
 
 ## quiz.js

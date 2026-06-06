@@ -50,7 +50,7 @@
       { "en": "I'm <b>in a rush</b> to catch the train.", "ru": "Я тороплюсь поймать поезд." },
       { "en": "Don't leave <b>in a rush</b>, relax.", "ru": "Не уходи так быстро, расслабься." }
     ]},
-    { "ru": "болит голова", "en": "have a headache", "examples": [
+    { "ru": "болит голова", "en": "have a headache", "image": "data/images/s18_12.jpg", "examples": [
       { "en": "I <b>have a headache</b> today.", "ru": "У меня болит голова." },
       { "en": "She <b>has a headache</b> from stress.", "ru": "У неё болит голова от стресса." }
     ]},
@@ -78,7 +78,7 @@
       { "en": "<b>It's a pity</b> you're leaving.", "ru": "Жаль, что ты уходишь." },
       { "en": "<b>It's a pity</b> we didn't meet.", "ru": "Жаль, что мы не встретились." }
     ]},
-    { "ru": "принять душ / ванну", "en": "have a shower / bath", "examples": [
+    { "ru": "принять душ / ванну", "en": "have a shower / bath", "image": "data/images/s18_19.jpg", "examples": [
       { "en": "I'll <b>have a shower</b> before bed.", "ru": "Я приму душ перед сном." },
       { "en": "She <b>has a bath</b> every evening.", "ru": "Она принимает ванну каждый вечер." }
     ]},

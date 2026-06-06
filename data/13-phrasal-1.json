@@ -2,7 +2,7 @@
   "name": "Фразовые глаголы 1",
   "category": "фразовые глаголы",
   "cards": [
-    { "ru": "сломаться / потерпеть неудачу", "en": "break down", "examples": [
+    { "ru": "сломаться / потерпеть неудачу", "en": "break down", "image": "data/images/s30_0.jpg", "examples": [
       { "en": "The car <b>broke</b> <b>down</b> yesterday.", "ru": "Машина сломалась вчера." },
       { "en": "The system <b>broke down</b> completely.", "ru": "Система полностью вышла из строя." }
     ]},

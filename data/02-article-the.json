@@ -70,7 +70,7 @@
       { "en": "I'll <b>do my best</b> here.", "ru": "Я сделаю всё возможное." },
       { "en": "She <b>did her best</b> always.", "ru": "Она всегда старалась изо всех сил." }
     ]},
-    { "ru": "накрыть на стол", "en": "lay the table", "examples": [
+    { "ru": "накрыть на стол", "en": "lay the table", "image": "data/images/s19_17.jpg", "examples": [
       { "en": "Can you <b>lay the table</b>?", "ru": "Можешь накрыть на стол?" },
       { "en": "She <b>laid the table</b> for dinner.", "ru": "Она накрыла стол к ужину." }
     ]},
@@ -86,7 +86,7 @@
       { "en": "<b>On the contrary</b>, I agree.", "ru": "Напротив, я согласен." },
       { "en": "<b>On the contrary</b>, she's kind.", "ru": "Напротив, она добрая." }
     ]},
-    { "ru": "в темноте", "en": "in the dark", "examples": [
+    { "ru": "в темноте", "en": "in the dark", "image": "data/images/s19_21.jpg", "examples": [
       { "en": "We walked <b>in the dark</b>.", "ru": "Мы шли в темноте." },
       { "en": "He left me <b>in the dark</b>.", "ru": "Он оставил меня в неведении." }
     ]}

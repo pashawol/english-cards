@@ -170,6 +170,7 @@ export function buildDOM({
             <div class="card-breadcrumb" id="card-breadcrumb"></div>
             <div class="card-label" data-i18n="russian"></div>
             <div class="card-word" id="front-word"></div>
+            <img class="card-image" id="card-image" alt="" decoding="async" hidden />
             <div class="card-hint" id="front-hint"></div>
           </div>
           <div class="card-face back">

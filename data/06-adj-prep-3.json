@@ -38,7 +38,7 @@
       { "en": "I'm <b>late for</b> work.", "ru": "Я опаздываю на работу." },
       { "en": "Don't be <b>late for</b> the meeting.", "ru": "Не опаздывай на встречу." }
     ]},
-    { "ru": "женатый / замужем за", "en": "married to", "examples": [
+    { "ru": "женатый / замужем за", "en": "married to", "image": "data/images/s23_9.jpg", "examples": [
       { "en": "She's <b>married to</b> a doctor.", "ru": "Она замужем за врачом." },
       { "en": "He got <b>married to</b> his childhood friend.", "ru": "Он женился на своей детской подруге." }
     ]},

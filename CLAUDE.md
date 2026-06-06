@@ -130,6 +130,20 @@ Some sets also use categories in loaded data. The app normalizes both:
 
 via `normalizeCategories(set)`.
 
+### Card images (optional)
+
+A card may carry an optional `image` field:
+
+```json
+{ "ru": "ножницы", "en": "scissors", "image": "data/images/scissors.jpg" }
+```
+
+- shown on the **front** (Russian/question) face as a visual hint to recall the English word, rendered by `showCard()` in `js/screens/study.js` into the `#card-image` element
+- bundled images live in `data/images/` (downscaled JPEGs, ~512px), sourced from Openverse under Creative Commons / public-domain licenses. Vocabulary images are named by word (`scissors.jpg`); grammar-card images by set+index (`s16_2.jpg`)
+- attribution for every image is recorded in `data/images/CREDITS.md` / `CREDITS.json` (CC requires it — keep it in sync when adding images)
+- only **concrete, picturable** cards have images: object/animal nouns, concrete actions, and grammar cards that map to a clear scene (prepositions of place/movement, some phrasal verbs and set phrases like `make the bed`). Truly abstract cards (most adjective/verb/noun + preposition collocations, articles, word-formation) intentionally have none — a forced image there hurts more than it helps
+- the field is optional everywhere; cards without it simply render no image
+
 ### Set ordering
 
 `data/manifest.json` controls display order.

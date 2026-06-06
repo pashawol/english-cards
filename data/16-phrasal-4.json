@@ -30,7 +30,7 @@
       { "en": "Don't <b>take</b> me <b>for</b> a fool.", "ru": "Не принимай меня за дурака." },
       { "en": "What do you <b>take</b> me <b>for</b>?", "ru": "За кого ты меня принимаешь?" }
     ]},
-    { "ru": "снимать / взлетать", "en": "take off", "examples": [
+    { "ru": "снимать / взлетать", "en": "take off", "image": "data/images/s33_7.jpg", "examples": [
       { "en": "<b>Take off</b> your shoes.", "ru": "Сними свои туфли." },
       { "en": "The plane <b>takes off</b> at 10 AM.", "ru": "Самолёт взлетает в 10 утра." }
     ]},
@@ -54,7 +54,7 @@
       { "en": "I need to <b>think</b> this <b>over</b>.", "ru": "Мне нужно это обдумать." },
       { "en": "<b>Think it over</b> carefully.", "ru": "Обдумай это тщательно." }
     ]},
-    { "ru": "выбросить", "en": "throw away", "examples": [
+    { "ru": "выбросить", "en": "throw away", "image": "data/images/s33_13.jpg", "examples": [
       { "en": "Don't <b>throw away</b> that paper.", "ru": "Не выбрасывай эту бумагу." },
       { "en": "He <b>threw away</b> the trash.", "ru": "Он выбросил мусор." }
     ]},
@@ -78,7 +78,7 @@
       { "en": "He finally <b>turned up</b> late.", "ru": "Он наконец появился с опозданием." },
       { "en": "Can you <b>turn up</b> the music?", "ru": "Ты можешь усилить музыку?" }
     ]},
-    { "ru": "мыть посуду", "en": "wash up", "examples": [
+    { "ru": "мыть посуду", "en": "wash up", "image": "data/images/s33_19.jpg", "examples": [
       { "en": "Please <b>wash up</b> after dinner.", "ru": "Пожалуйста, помойте посуду после ужина." },
       { "en": "I'll <b>wash up</b> the dishes.", "ru": "Я помою посуду." }
     ]},

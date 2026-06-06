@@ -54,7 +54,7 @@
       { "en": "I didn't do it <b>on purpose</b>.", "ru": "Я это сделал не нарочно." },
       { "en": "Did you break it <b>on purpose</b>?", "ru": "Ты разбил это нарочно?" }
     ]},
-    { "ru": "на забастовке", "en": "on strike", "examples": [
+    { "ru": "на забастовке", "en": "on strike", "image": "data/images/s29_13.jpg", "examples": [
       { "en": "The workers are <b>on strike</b>.", "ru": "Рабочие на забастовке." },
       { "en": "The buses are <b>on strike</b> today.", "ru": "Автобусы на забастовке сегодня." }
     ]},
