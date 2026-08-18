@@ -2272,6 +2272,11 @@ header {
   overflow-y: auto;
 }
 
+.table-practice-row {
+  flex-shrink: 0;
+  margin-bottom: 14px;
+}
+
 .table-group-heading {
   font-size: 11px;
   letter-spacing: 0.1em;
@@ -2365,6 +2370,14 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+#quiz-question-area[hidden],
+#quiz-done-area[hidden],
+#match-done-area[hidden],
+.match-grid[hidden],
+#table-practice-row[hidden] {
+  display: none;
 }
 
 .quiz-question {

@@ -49,6 +49,7 @@ window.I18N = {
     practiceQuiz: '⊞ quiz',
     practiceMatch: '⊟ match',
     practiceTable: '⊡ table',
+    practiceCards: '⊙ cards',
     backToPractice: '← to practice',
     mascot: {
       opening: [
@@ -193,6 +194,7 @@ window.I18N = {
     practiceQuiz: '⊞ квиз',
     practiceMatch: '⊟ матч',
     practiceTable: '⊡ таблица',
+    practiceCards: '⊙ карточки',
     backToPractice: '← к упражнениям',
     mascot: {
       opening: [

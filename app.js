@@ -1,6 +1,7 @@
 import {
   app,
   checkNewDay,
+  createSession,
   getActiveCategoryFilters,
   getAllCategoryLabels,
   getBaseEnabledIds,
@@ -130,11 +131,19 @@ function startQuiz(setId) {
 
 let practiceReturnsToDone = false;
 
+const PRACTICE_RETURN_ELS = [
+  'quiz-done-back-btn',
+  'match-done-back-btn',
+  'quiz-done-practice-row',
+  'match-done-practice-row',
+  'table-practice-row',
+];
+
 function setPracticeReturn(value) {
   practiceReturnsToDone = value;
-  ['quiz-done-back-btn', 'match-done-back-btn'].forEach((id) => {
-    const btn = document.getElementById(id);
-    if (btn) btn.hidden = !value;
+  PRACTICE_RETURN_ELS.forEach((id) => {
+    const el = document.getElementById(id);
+    if (el) el.hidden = !value;
   });
 }
 
@@ -163,6 +172,22 @@ function startMatchFromSession() {
 function startTableFromSession() {
   setPracticeReturn(true);
   showSessionTableViewScreen(getSessionPracticePool(), { showScreen });
+}
+
+function startCardsFromSession() {
+  const pool = getSessionPracticePool();
+  if (!pool.length) {
+    goHome();
+    return;
+  }
+  const shuffled = [...pool];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  app.session = createSession(app.session.setId, shuffled, pool);
+  showScreen('study-screen');
+  showCard();
 }
 
 function answerQuiz(optionIdx) {
@@ -231,6 +256,7 @@ async function init() {
     startQuizFromSession,
     startMatchFromSession,
     startTableFromSession,
+    startCardsFromSession,
     exitPractice,
   });
 

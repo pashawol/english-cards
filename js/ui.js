@@ -67,6 +67,7 @@ export function buildDOM({
   startQuizFromSession,
   startMatchFromSession,
   startTableFromSession,
+  startCardsFromSession,
   exitPractice,
 }) {
   const v = window.APP_VERSION || '';
@@ -258,6 +259,11 @@ export function buildDOM({
         </div>
         <button id="table-toggle-ru"></button>
       </div>
+      <div class="done-practice-row table-practice-row" id="table-practice-row" hidden>
+        <button class="done-btn practice-btn" id="table-practice-quiz-btn" data-i18n="practiceQuiz"></button>
+        <button class="done-btn practice-btn" id="table-practice-match-btn" data-i18n="practiceMatch"></button>
+        <button class="done-btn practice-btn" id="table-practice-cards-btn" data-i18n="practiceCards"></button>
+      </div>
       <div id="table-body"></div>
     </div>
 
@@ -296,6 +302,11 @@ export function buildDOM({
             <div class="done-stat-label" data-i18n="statTotal"></div>
           </div>
         </div>
+        <div class="done-practice-row" id="quiz-done-practice-row" hidden>
+          <button class="done-btn practice-btn" id="quiz-done-match-btn" data-i18n="practiceMatch"></button>
+          <button class="done-btn practice-btn" id="quiz-done-table-btn" data-i18n="practiceTable"></button>
+          <button class="done-btn practice-btn" id="quiz-done-cards-btn" data-i18n="practiceCards"></button>
+        </div>
         <div class="done-btns">
           <button class="done-btn" id="quiz-done-again-btn" data-i18n="goAgain"></button>
           <button class="done-btn practice-return-btn" id="quiz-done-back-btn" data-i18n="backToPractice" hidden></button>
@@ -317,6 +328,11 @@ export function buildDOM({
       <div id="match-done-area" hidden>
         <div class="done-icon">✦</div>
         <div class="done-title" data-i18n="matchDoneTitle"></div>
+        <div class="done-practice-row" id="match-done-practice-row" hidden>
+          <button class="done-btn practice-btn" id="match-done-quiz-btn" data-i18n="practiceQuiz"></button>
+          <button class="done-btn practice-btn" id="match-done-table-btn" data-i18n="practiceTable"></button>
+          <button class="done-btn practice-btn" id="match-done-cards-btn" data-i18n="practiceCards"></button>
+        </div>
         <div class="done-btns">
           <button class="done-btn" id="match-done-again-btn" data-i18n="goAgain"></button>
           <button class="done-btn practice-return-btn" id="match-done-back-btn" data-i18n="backToPractice" hidden></button>
@@ -351,6 +367,15 @@ export function buildDOM({
   document.getElementById('done-quiz-btn').addEventListener('click', startQuizFromSession);
   document.getElementById('done-match-btn').addEventListener('click', startMatchFromSession);
   document.getElementById('done-table-btn').addEventListener('click', startTableFromSession);
+  document.getElementById('quiz-done-match-btn').addEventListener('click', startMatchFromSession);
+  document.getElementById('quiz-done-table-btn').addEventListener('click', startTableFromSession);
+  document.getElementById('quiz-done-cards-btn').addEventListener('click', startCardsFromSession);
+  document.getElementById('match-done-quiz-btn').addEventListener('click', startQuizFromSession);
+  document.getElementById('match-done-table-btn').addEventListener('click', startTableFromSession);
+  document.getElementById('match-done-cards-btn').addEventListener('click', startCardsFromSession);
+  document.getElementById('table-practice-quiz-btn').addEventListener('click', startQuizFromSession);
+  document.getElementById('table-practice-match-btn').addEventListener('click', startMatchFromSession);
+  document.getElementById('table-practice-cards-btn').addEventListener('click', startCardsFromSession);
   document.getElementById('table-back-btn').addEventListener('click', exitPractice);
   document.getElementById('quiz-back-btn').addEventListener('click', exitPractice);
   document.getElementById('match-back-btn').addEventListener('click', exitPractice);
