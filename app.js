@@ -32,7 +32,11 @@ import {
   startSet as startSetScreen,
 } from './js/screens/study.js';
 import { renderHome as renderHomeScreen, toggleAllSets as toggleAllSetsScreen, toggleSetInMix as toggleSetInMixScreen } from './js/screens/home.js';
-import { showMixTableView as showMixTableViewScreen, showTableView as showTableViewScreen } from './js/screens/table.js';
+import {
+  showMixTableView as showMixTableViewScreen,
+  showSessionTableView as showSessionTableViewScreen,
+  showTableView as showTableViewScreen,
+} from './js/screens/table.js';
 import { startQuiz as startQuizScreen, answerQuiz as answerQuizScreen, restartQuiz as restartQuizScreen } from './js/screens/quiz.js';
 import { startMatch as startMatchScreen, restartMatch as restartMatchScreen } from './js/screens/match.js';
 import {
@@ -83,10 +87,12 @@ function toggleSetInMix(setId) {
 }
 
 function showTableView(setId) {
+  setPracticeReturn(false);
   showTableViewScreen(setId, { showScreen });
 }
 
 function showMixTableView() {
+  setPracticeReturn(false);
   showMixTableViewScreen({ showScreen });
 }
 
@@ -118,7 +124,26 @@ function startQuiz(setId) {
   const set = app.sets.find((s) => s.id === setId);
   if (!set) return;
   const cards = set.cards.map((card, i) => ({ ...card, _setId: set.id, _cardIdx: i }));
+  setPracticeReturn(false);
   startQuizScreen(cards, { showScreen });
+}
+
+let practiceReturnsToDone = false;
+
+function setPracticeReturn(value) {
+  practiceReturnsToDone = value;
+  ['quiz-done-back-btn', 'match-done-back-btn'].forEach((id) => {
+    const btn = document.getElementById(id);
+    if (btn) btn.hidden = !value;
+  });
+}
+
+function exitPractice() {
+  if (practiceReturnsToDone) {
+    showScreen('done-screen');
+    return;
+  }
+  goHome();
 }
 
 function getSessionPracticePool() {
@@ -126,11 +151,18 @@ function getSessionPracticePool() {
 }
 
 function startQuizFromSession() {
+  setPracticeReturn(true);
   startQuizScreen(getSessionPracticePool(), { showScreen });
 }
 
 function startMatchFromSession() {
+  setPracticeReturn(true);
   startMatchScreen(getSessionPracticePool(), { showScreen });
+}
+
+function startTableFromSession() {
+  setPracticeReturn(true);
+  showSessionTableViewScreen(getSessionPracticePool(), { showScreen });
 }
 
 function answerQuiz(optionIdx) {
@@ -198,6 +230,8 @@ async function init() {
     restartMatch,
     startQuizFromSession,
     startMatchFromSession,
+    startTableFromSession,
+    exitPractice,
   });
 
   let shouldSave = false;

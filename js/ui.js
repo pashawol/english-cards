@@ -66,6 +66,8 @@ export function buildDOM({
   restartMatch,
   startQuizFromSession,
   startMatchFromSession,
+  startTableFromSession,
+  exitPractice,
 }) {
   const v = window.APP_VERSION || '';
 
@@ -238,6 +240,7 @@ export function buildDOM({
       <div class="done-practice-row">
         <button class="done-btn practice-btn" id="done-quiz-btn" data-i18n="practiceQuiz"></button>
         <button class="done-btn practice-btn" id="done-match-btn" data-i18n="practiceMatch"></button>
+        <button class="done-btn practice-btn" id="done-table-btn" data-i18n="practiceTable"></button>
       </div>
       <div class="done-btns">
         <button class="done-btn" id="done-retry-btn" data-i18n="retryMistakes"></button>
@@ -295,6 +298,7 @@ export function buildDOM({
         </div>
         <div class="done-btns">
           <button class="done-btn" id="quiz-done-again-btn" data-i18n="goAgain"></button>
+          <button class="done-btn practice-return-btn" id="quiz-done-back-btn" data-i18n="backToPractice" hidden></button>
           <button class="done-btn primary" id="quiz-done-home-btn" data-i18n="backToTopics"></button>
         </div>
       </div>
@@ -315,6 +319,7 @@ export function buildDOM({
         <div class="done-title" data-i18n="matchDoneTitle"></div>
         <div class="done-btns">
           <button class="done-btn" id="match-done-again-btn" data-i18n="goAgain"></button>
+          <button class="done-btn practice-return-btn" id="match-done-back-btn" data-i18n="backToPractice" hidden></button>
           <button class="done-btn primary" id="match-done-home-btn" data-i18n="backToTopics"></button>
         </div>
       </div>
@@ -345,17 +350,20 @@ export function buildDOM({
   document.getElementById('done-home-btn').addEventListener('click', goHome);
   document.getElementById('done-quiz-btn').addEventListener('click', startQuizFromSession);
   document.getElementById('done-match-btn').addEventListener('click', startMatchFromSession);
-  document.getElementById('table-back-btn').addEventListener('click', goHome);
-  document.getElementById('quiz-back-btn').addEventListener('click', goHome);
-  document.getElementById('match-back-btn').addEventListener('click', goHome);
+  document.getElementById('done-table-btn').addEventListener('click', startTableFromSession);
+  document.getElementById('table-back-btn').addEventListener('click', exitPractice);
+  document.getElementById('quiz-back-btn').addEventListener('click', exitPractice);
+  document.getElementById('match-back-btn').addEventListener('click', exitPractice);
 
   document.querySelectorAll('.quiz-option-btn').forEach((btn) => {
     btn.addEventListener('click', () => answerQuiz(parseInt(btn.dataset.idx, 10)));
   });
 
   document.getElementById('quiz-done-again-btn').addEventListener('click', restartQuiz);
+  document.getElementById('quiz-done-back-btn').addEventListener('click', exitPractice);
   document.getElementById('quiz-done-home-btn').addEventListener('click', goHome);
   document.getElementById('match-done-again-btn').addEventListener('click', restartMatch);
+  document.getElementById('match-done-back-btn').addEventListener('click', exitPractice);
   document.getElementById('match-done-home-btn').addEventListener('click', goHome);
 
   document.getElementById('daily-goal').addEventListener('input', function () {

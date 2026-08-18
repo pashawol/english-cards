@@ -107,4 +107,28 @@ export function showMixTableView(deps) {
   renderTableScreen(t('randomMix'), null, groups, deps);
 }
 
+export function showSessionTableView(cards, deps) {
+  if (!Array.isArray(cards) || cards.length === 0) return;
+
+  const bySet = new Map();
+  cards.forEach((card) => {
+    const key = card._setId ?? null;
+    if (!bySet.has(key)) bySet.set(key, []);
+    bySet.get(key).push(card);
+  });
+
+  const groups = [...bySet.entries()].map(([setId, setCards]) => {
+    const set = app.sets.find((item) => item.id === setId);
+    return {
+      label: bySet.size > 1 && set ? translateSetName(set.name) : null,
+      cards: setCards,
+    };
+  });
+
+  const singleSet = bySet.size === 1 ? app.sets.find((item) => item.id === [...bySet.keys()][0]) : null;
+  const title = singleSet ? translateSetName(singleSet.name) : t('randomMix');
+
+  renderTableScreen(title, t('cards', { count: cards.length }), groups, deps);
+}
+
 export { getSetBreadcrumb };

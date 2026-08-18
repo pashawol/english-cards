@@ -48,6 +48,8 @@ window.I18N = {
     matchDoneTitle: 'All matched!',
     practiceQuiz: '⊞ quiz',
     practiceMatch: '⊟ match',
+    practiceTable: '⊡ table',
+    backToPractice: '← to practice',
     mascot: {
       opening: [
         'let’s go. two or three in a row and you are in rhythm',
@@ -190,6 +192,8 @@ window.I18N = {
     matchDoneTitle: 'Всё совпало!',
     practiceQuiz: '⊞ квиз',
     practiceMatch: '⊟ матч',
+    practiceTable: '⊡ таблица',
+    backToPractice: '← к упражнениям',
     mascot: {
       opening: [
         'погнали. две-три подряд и уже полетело',

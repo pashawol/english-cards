@@ -2531,13 +2531,15 @@ header {
 /* DONE-SCREEN PRACTICE BUTTONS */
 .done-practice-row {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
   margin-bottom: 16px;
 
   & .practice-btn {
-    width: 116px;
-    padding: 10px 12px;
+    flex: 1 1 96px;
+    max-width: 116px;
+    padding: 10px 8px;
     font-size: 13px;
   }
 }
