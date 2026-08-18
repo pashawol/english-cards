@@ -711,6 +711,12 @@ header {
 .card-image {
   margin-top: 14px;
   max-width: 100%;
+  max-height: 26vh;
+  width: auto;
+  height: auto;
+  min-height: 0;
+  flex: 0 1 auto;
+  object-fit: contain;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);

@@ -325,7 +325,8 @@ export function restartWrong({ goHome, showScreen, showCard }) {
     goHome();
     return;
   }
-  app.session = createSession(app.session.setId, [...app.session.wrong]);
+  const practicePool = app.session.practicePool?.length ? app.session.practicePool : app.session.queue;
+  app.session = createSession(app.session.setId, [...app.session.wrong], practicePool);
   showScreen('study-screen');
   showCard();
 }

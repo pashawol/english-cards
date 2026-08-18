@@ -19,6 +19,7 @@ export const app = {
   session: {
     setId: null,
     queue: [],
+    practicePool: [],
     index: 0,
     wrong: [],
     right: 0,
@@ -124,7 +125,7 @@ export function cloneProgressEntry(entry) {
   };
 }
 
-export function createSession(setId, queue) {
+export function createSession(setId, queue, practicePool) {
   const touchedSetIds = [...new Set(queue.map((card) => card._setId))];
   const initialProgress = {};
   touchedSetIds.forEach((id) => {
@@ -134,6 +135,7 @@ export function createSession(setId, queue) {
   return {
     setId,
     queue,
+    practicePool: Array.isArray(practicePool) && practicePool.length ? practicePool : queue,
     index: 0,
     wrong: [],
     right: 0,

@@ -121,12 +121,16 @@ function startQuiz(setId) {
   startQuizScreen(cards, { showScreen });
 }
 
+function getSessionPracticePool() {
+  return app.session.practicePool?.length ? app.session.practicePool : app.session.queue;
+}
+
 function startQuizFromSession() {
-  startQuizScreen(app.session.queue, { showScreen });
+  startQuizScreen(getSessionPracticePool(), { showScreen });
 }
 
 function startMatchFromSession() {
-  startMatchScreen(app.session.queue, { showScreen });
+  startMatchScreen(getSessionPracticePool(), { showScreen });
 }
 
 function answerQuiz(optionIdx) {
